@@ -11,6 +11,7 @@
     "@tailwindcss/postcss7-compat": "^2.0.2",
     "autoprefixer": "^9",
     "core-js": "^3.6.5",
+    "feather-icons": "^4.28.0",
     "postcss": "^7",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-import": "^14.0.2",
