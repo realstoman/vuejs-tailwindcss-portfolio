@@ -1,5 +1,5 @@
 <template>
-    <div class="container mx-auto">
+    <div class="container mx-auto px-4">
         <p>About Page</p>
         <i data-feather="home"></i>
     </div>

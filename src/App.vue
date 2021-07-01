@@ -1,7 +1,7 @@
 <template>
   <!-- Header Start -->
   <nav id="nav" class="container mx-auto bg-white">
-      <div class="md:flex items-center justify-between py-5">
+      <div class="md:flex items-center justify-between px-4 py-5">
           <div class="flex justify-between items-center">
               <div class="text-2xl font-bold text-gray-800 md:text-3xl">
                     <a href="#">Brand</a>
@@ -31,7 +31,7 @@
   <!-- Render Active Component Contents End -->
 
   <!-- Footer Start -->
-  <div class="container mx-auto bg-white">
+  <div class="container mx-auto bg-white px-4">
     <div class="md:flex items-center justify-between py-5">
         <div class="flex justify-between items-center">
             <div class="text-lg text-gray-800">
@@ -40,9 +40,9 @@
         </div>
         <div>
           <ul class="flex gap-4">
-            <li class="text-gray-500"><i data-feather="twitter"></i></li>
-            <li class="text-gray-500"><i data-feather="instagram"></i></li>
-            <li class="text-gray-500"><i data-feather="github"></i></li>
+            <li class="text-gray-500 cursor-pointer"><i data-feather="twitter"></i></li>
+            <li class="text-gray-500 cursor-pointer"><i data-feather="instagram"></i></li>
+            <li class="text-gray-500 cursor-pointer"><i data-feather="github"></i></li>
           </ul>
         </div>
     </div>

@@ -6,4 +6,4 @@ import './assets/css/tailwind.css'
 const feather = require('feather-icons')
 feather.replace()
 
-createApp(App).use(router).use(router).mount('#app')
+createApp(App).use(router).mount('#app')
