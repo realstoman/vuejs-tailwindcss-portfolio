@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <p>Home Page</p>
     <i data-feather="home"></i>
   </div>
 </template>
