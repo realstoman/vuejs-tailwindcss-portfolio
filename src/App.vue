@@ -18,8 +18,8 @@
           <div class="flex justify-between items-center flex-col md:flex-row">
               <router-link to="/projects" class="text-lg font-medium text-gray-400 uppercase  md:mx-6 mb-2 sm:py-2">Projects</router-link>
               <router-link to="/about" class="text-lg font-medium text-gray-400 uppercase  md:mx-2 mb-2 sm:py-2">About Me</router-link>
-              <div class="sm:-mt-3 sm:ml-10 bg-gray-50 hover:bg-gray-100 p-2 rounded-lg shadow-sm hover:shadow-md cursor-pointer">
-                <a href="#"><i data-feather="moon" class="text-gray-500"></i></a>
+              <div class="sm:-mt-3 sm:ml-10 bg-gray-50 p-2 rounded-lg shadow-sm cursor-pointer">
+                <a href="#"><i data-feather="moon" class="text-gray-600 hover:text-gray-400"></i></a>
               </div>
           </div>
           
