@@ -1,6 +1,9 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import './index.css'
-import './assets/tailwind.css'
+import router from './router'
+import './assets/css/tailwind.css'
 
-createApp(App).mount('#app')
+const feather = require('feather-icons')
+feather.replace()
+
+createApp(App).use(router).mount('#app')
