@@ -4,7 +4,7 @@
       <div class="md:flex items-center justify-between px-4 py-5">
           <div class="flex justify-between items-center">
               <div class="text-2xl font-bold text-gray-800 md:text-3xl">
-                    <a href="#">Brand</a>
+                    <router-link to="/">Logo</router-link>
               </div>
               <div class="md:hidden">
                   <button type="button" class="block text-gray-800 hover:text-gray-700 focus:text-gray-700 focus:outline-none">
@@ -15,13 +15,14 @@
                   </button>
               </div>
           </div>
-          <div class="flex flex-col md:flex-row md:block -mx-2">
-              <router-link to="/" class="text-lg font-medium text-gray-800  md:mx-2 uppercase">Home</router-link>
-              <router-link to="about" class="text-lg font-medium text-gray-800  md:mx-2 uppercase">About</router-link>
+          <div class="flex justify-between items-center flex-col md:flex-row">
+              <router-link to="/projects" class="text-lg font-medium text-gray-400 uppercase  md:mx-6 mb-2 sm:py-2">Projects</router-link>
+              <router-link to="/about" class="text-lg font-medium text-gray-400 uppercase  md:mx-2 mb-2 sm:py-2">About Me</router-link>
+              <div class="sm:-mt-3 sm:ml-10 bg-gray-50 hover:bg-gray-100 p-2 rounded-lg shadow-sm hover:shadow-md cursor-pointer">
+                <a href="#"><i data-feather="moon" class="text-gray-500"></i></a>
+              </div>
           </div>
-          <div>
-            <a href="#"><i data-feather="moon" class="text-gray-500"></i></a>
-          </div>
+          
       </div>
   </nav>
   <!-- Header End -->
@@ -34,15 +35,15 @@
   <div class="container mx-auto bg-white px-4">
     <div class="md:flex items-center justify-between py-5">
         <div class="flex justify-between items-center">
-            <div class="text-lg text-gray-800">
-              &copy; Copyright 2021
+            <div class="text-lg text-gray-500">
+              &copy; Copyright 2021. <a href="https://stoman.me" target="__blank" class="text-gray-600 font-medium">Stoman</a>
             </div>
         </div>
         <div>
           <ul class="flex gap-4">
-            <li class="text-gray-500 cursor-pointer"><i data-feather="twitter"></i></li>
-            <li class="text-gray-500 cursor-pointer"><i data-feather="instagram"></i></li>
-            <li class="text-gray-500 cursor-pointer"><i data-feather="github"></i></li>
+            <li class="text-gray-400 hover:text-green-500 cursor-pointer"><i data-feather="twitter"></i></li>
+            <li class="text-gray-400 hover:text-green-500 cursor-pointer"><i data-feather="instagram"></i></li>
+            <li class="text-gray-400 hover:text-green-500 cursor-pointer"><i data-feather="github"></i></li>
           </ul>
         </div>
     </div>
@@ -73,6 +74,6 @@
   }
 
   #nav a.router-link-exact-active {
-    color: #42b983;
+    @apply text-gray-700;
   }
 </style>
