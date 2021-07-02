@@ -1,6 +1,6 @@
 <template>
     <div class="container mx-auto px-4">
-        <p>About Page</p>
+        <p>Projects Page</p>
         <i data-feather="home"></i>
     </div>
 </template>
@@ -9,7 +9,7 @@
 import feather from 'feather-icons'
 
 export default {
-    name: 'About',
+    name: 'Projects',
     props: {
         msg: String
     },
