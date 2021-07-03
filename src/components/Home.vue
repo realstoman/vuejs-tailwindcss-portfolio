@@ -14,7 +14,7 @@
     <!-- Home Poject Section Start -->
     <section>
       <div>
-        <div data-w-id="24a1979e-d557-8cdc-aefe-c0d1783a993d" class="holder-with-border holder-with-border-64" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"><p style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;" class="sub-title-new">Orizon is a leading design agency based in Canada. We help startups &amp; Fortune 500 companies delight humans on the other side of the screen.<br></p><div style="opacity: 1;" class="blue-separator blue-separator-new"></div><div class="about-white-holder-hide-blue-line-on-mobile about-white-holder-hide-blue-line-on-mobile-new2"></div><div class="about-white-holder-hide-blue-line-on-mobile-2 about-white-holder-hide-blue-line-on-mobile-new"></div></div>
+        <p>lorem10 </p>
       </div>
     </section>
     <!-- Home Poject Section End -->
