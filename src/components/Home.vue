@@ -26,9 +26,42 @@
 		<!-- Banner End -->
 
 		<!-- Home Poject Section Start -->
-		<section>
-			<div>
-				<p>lorem10</p>
+		<section class="py-48">
+			<div class="text-center">
+				<p class="text-4xl font-semibold mb-3 text-gray-600">
+					Projects Portfolio
+				</p>
+				<p class="text-lg text-gray-500">
+					Some of the projects I have successfully completed
+				</p>
+			</div>
+			<div class="w-full flex mt-12 gap-10">
+				<div
+					class="w-1/3 border border-indigo-500 rounded-xl shadow cursor-pointer"
+				>
+					<div class="bg-indigo-100 py-48">
+						Prject Image
+					</div>
+					<div class="text-center px-4 py-4">
+						Project Title
+					</div>
+				</div>
+				<div class="w-1/3 rounded-xl shadow cursor-pointer">
+					<div class="bg-indigo-100 py-48">
+						Prject Image
+					</div>
+					<div class="text-center px-4 py-4">
+						Project Title
+					</div>
+				</div>
+				<div class="w-1/3 rounded-xl shadow cursor-pointer">
+					<div class="bg-indigo-100 py-48">
+						Prject Image
+					</div>
+					<div class="text-center px-4 py-4">
+						Project Title
+					</div>
+				</div>
 			</div>
 		</section>
 		<!-- Home Poject Section End -->
