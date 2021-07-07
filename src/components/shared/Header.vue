@@ -37,18 +37,18 @@
 			<div class="flex justify-between items-center flex-col md:flex-row">
 				<div>
 					<button
-						class="text-md font-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-lg px-5 py-2.5"
+						class="text-md font-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-lg px-5 py-2.5 uppercase"
 					>
 						Hire Me
 					</button>
 				</div>
 				<div
-					class=" sm:ml-10 bg-gray-50 p-2 rounded-lg shadow-sm cursor-pointer"
+					class=" sm:ml-7 bg-gray-50 p-2 rounded-lg shadow-sm cursor-pointer"
 				>
 					<a href="#"
 						><i
 							data-feather="moon"
-							class="text-gray-600 hover:text-gray-400"
+							class="text-gray-500 hover:text-gray-400"
 						></i
 					></a>
 				</div>
