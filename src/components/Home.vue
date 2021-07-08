@@ -37,7 +37,7 @@
 			</div>
 			<div class="w-full flex mt-12 gap-10">
 				<div
-					class="w-1/3 border border-indigo-500 rounded-xl shadow cursor-pointer"
+					class="w-full md:w-1/3 border border-indigo-500 rounded-xl shadow cursor-pointer"
 				>
 					<div class="bg-indigo-100 py-48">
 						Prject Image
@@ -46,7 +46,7 @@
 						Project Title
 					</div>
 				</div>
-				<div class="w-1/3 rounded-xl shadow cursor-pointer">
+				<div class="w-full md:w-1/3 rounded-xl shadow cursor-pointer">
 					<div class="bg-indigo-100 py-48">
 						Prject Image
 					</div>
@@ -54,7 +54,7 @@
 						Project Title
 					</div>
 				</div>
-				<div class="w-1/3 rounded-xl shadow cursor-pointer">
+				<div class="w-full md:w-1/3 rounded-xl shadow cursor-pointer">
 					<div class="bg-indigo-100 py-48">
 						Prject Image
 					</div>
