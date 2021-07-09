@@ -6,6 +6,11 @@
 				<li
 					class="text-gray-400 hover:text-indigo-500 cursor-pointer rounded-lg bg-gray-50 hover:bg-gray-100 shadow-sm p-4"
 				>
+					<i data-feather="github" class="w-10 h-10"></i>
+				</li>
+				<li
+					class="text-gray-400 hover:text-indigo-500 cursor-pointer rounded-lg bg-gray-50 hover:bg-gray-100 shadow-sm p-4"
+				>
 					<i data-feather="twitter" class="w-10 h-10"></i>
 				</li>
 				<li
@@ -16,7 +21,7 @@
 				<li
 					class="text-gray-400 hover:text-indigo-500 cursor-pointer rounded-lg bg-gray-50 hover:bg-gray-100 shadow-sm p-4"
 				>
-					<i data-feather="github" class="w-10 h-10"></i>
+					<i data-feather="dribbble" class="w-10 h-10"></i>
 				</li>
 			</ul>
 		</div>

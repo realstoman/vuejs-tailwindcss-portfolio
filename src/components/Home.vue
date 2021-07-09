@@ -15,7 +15,7 @@
 					href="#"
 					class="flex w-48 mt-10 text-lg border border-indigo-500 py-3 shadow-sm rounded-xl bg-indigo-50 hover:bg-indigo-500 hover:text-white"
 				>
-					<i data-feather="download" class="ml-4 mr-3"></i>
+					<i data-feather="arrow-down-circle" class="ml-4 mr-3"></i>
 					<span>Download CV</span></a
 				>
 			</div>
@@ -35,10 +35,34 @@
 					Some of the projects I have successfully completed
 				</p>
 			</div>
-			<div class="w-full flex mt-12 gap-10">
+			<div class="w-full flexh mt-12 gap-10">
 				<div
 					class="w-full md:w-1/3 border border-indigo-500 rounded-xl shadow cursor-pointer"
 				>
+					<div class="bg-indigo-100 py-48">
+						Prject Image
+					</div>
+					<div class="text-center px-4 py-4">
+						Project Title
+					</div>
+				</div>
+				<div class="w-full md:w-1/3 rounded-xl shadow cursor-pointer">
+					<div class="bg-indigo-100 py-48">
+						Prject Image
+					</div>
+					<div class="text-center px-4 py-4">
+						Project Title
+					</div>
+				</div>
+				<div class="w-full md:w-1/3 rounded-xl shadow cursor-pointer">
+					<div class="bg-indigo-100 py-48">
+						Prject Image
+					</div>
+					<div class="text-center px-4 py-4">
+						Project Title
+					</div>
+				</div>
+				<div class="w-full md:w-1/3 rounded-xl shadow cursor-pointer">
 					<div class="bg-indigo-100 py-48">
 						Prject Image
 					</div>
