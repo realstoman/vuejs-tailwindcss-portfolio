@@ -36,9 +36,14 @@
 				</p>
 			</div>
 			<div class="w-full sm:grid sm:grid-cols-3 mt-10 sm:gap-6">
-				<div class="rounded-xl shadow cursor-pointer mb-6 sm:mb-0">
-					<div>
-						Prject Image
+				<div
+					class="rounded-xl hover:border hover:border-indigo-500 shadow cursor-pointer mb-6 sm:mb-0"
+				>
+					<div class="rounded-xl">
+						<img
+							src="../assets/images/apple-design-system.jpg"
+							alt=""
+						/>
 					</div>
 					<div class="text-center px-4 py-4">
 						Project Title
