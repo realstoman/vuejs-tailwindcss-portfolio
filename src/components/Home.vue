@@ -35,22 +35,24 @@
 					Some of the projects I have successfully completed
 				</p>
 			</div>
-			<div class="w-full sm:grid sm:grid-cols-3 mt-10 sm:gap-10`">
-				<div
-					class="rounded-xl hover:border hover:border-indigo-500 shadow cursor-pointer mb-6 sm:mb-0"
+			<div class="w-full sm:grid sm:grid-cols-3 mt-10 sm:gap-10">
+				<a
+					href="#"
+					class="rounded-3xl border hover:border-indigo-200 shadow-sm hover:shadow-lg cursor-pointer mb-6 sm:mb-0"
 				>
-					<div class="rounded-xl">
+					<div>
 						<img src="../assets/images/web-project-2.jpg" alt="" />
 					</div>
 					<div class="text-center px-4 py-4">
 						<p>King Health Platform</p>
 						<span>Wen Application</span>
 					</div>
-				</div>
-				<div
-					class="w-full rounded-xl shadow cursor-pointer mb-6 sm:mb-0"
+				</a>
+				<a
+					href="#"
+					class="rounded-3xl border hover:border-indigo-200 shadow-sm hover:shadow-lg cursor-pointer mb-6 sm:mb-0"
 				>
-					<div class="bg-indigo-100">
+					<div>
 						<img
 							src="../assets/images/mobile-project-2.jpg"
 							alt=""
@@ -60,33 +62,36 @@
 						<p>Pheonix Digital Agenncy</p>
 						<span>Mobile Application</span>
 					</div>
-				</div>
-				<div
-					class="w-full rounded-xl shadow cursor-pointer mb-6 sm:mb-0"
+				</a>
+				<a
+					href="#"
+					class="rounded-3xl border hover:border-indigo-200 shadow-sm hover:shadow-lg cursor-pointer mb-6 sm:mb-0"
 				>
-					<div class="bg-indigo-100">
+					<div>
 						<img src="../assets/images/ui-project-1.jpg" alt="" />
 					</div>
 					<div class="text-center px-4 py-4">
 						<p>Project Management UI</p>
 						<span>UI / Frontend</span>
 					</div>
-				</div>
-				<div
-					class="w-full rounded-xl shadow cursor-pointer mb-6 sm:mb-0"
+				</a>
+				<a
+					href="#"
+					class="rounded-3xl border hover:border-indigo-200 shadow-sm hover:shadow-lg cursor-pointer mb-6 sm:mb-0"
 				>
-					<div class="bg-indigo-100">
+					<div>
 						<img src="../assets/images/ui-project-2.jpg" alt="" />
 					</div>
 					<div class="text-center px-4 py-4">
 						<p>Cloud Storage Platform</p>
 						<span>UI / Frontend</span>
 					</div>
-				</div>
-				<div
-					class="w-full rounded-xl shadow cursor-pointer mb-6 sm:mb-0"
+				</a>
+				<a
+					href="#"
+					class="rounded-3xl border hover:border-indigo-200 shadow-sm hover:shadow-lg cursor-pointer mb-6 sm:mb-0"
 				>
-					<div class="bg-indigo-100">
+					<div>
 						<img
 							src="../assets/images/mobile-project-1.jpg"
 							alt=""
@@ -96,18 +101,19 @@
 						<p>Kabul Social App</p>
 						<span>Mobile Application</span>
 					</div>
-				</div>
-				<div
-					class="w-full rounded-xl shadow cursor-pointer mb-6 sm:mb-0"
+				</a>
+				<a
+					href="#"
+					class="rounded-3xl border hover:border-indigo-200 shadow-sm hover:shadow-lg cursor-pointer mb-6 sm:mb-0"
 				>
-					<div class="bg-indigo-100">
+					<div>
 						<img src="../assets/images/web-project-1.jpg" alt="" />
 					</div>
 					<div class="text-center px-4 py-4">
 						<p>Apple Design System</p>
 						<span>Web Application</span>
 					</div>
-				</div>
+				</a>
 			</div>
 		</section>
 		<!-- Home Poject Section End -->
