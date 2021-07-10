@@ -1,4 +1,4 @@
-# vue-tailwindcss-dark-mode
+# Clean Vue.js & TailwindCSS Portfolio Template
 
 ## Project setup
 ```
