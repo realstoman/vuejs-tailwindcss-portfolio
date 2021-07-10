@@ -35,9 +35,17 @@
 					Some of the projects I have successfully completed
 				</p>
 			</div>
-			<div class="w-full flexh mt-12 gap-10">
+			<div class="w-full sm:grid sm:grid-cols-3 mt-10 sm:gap-6">
+				<div class="rounded-xl shadow cursor-pointer mb-6 sm:mb-0">
+					<div>
+						Prject Image
+					</div>
+					<div class="text-center px-4 py-4">
+						Project Title
+					</div>
+				</div>
 				<div
-					class="w-full md:w-1/3 border border-indigo-500 rounded-xl shadow cursor-pointer"
+					class="w-full rounded-xl shadow cursor-pointer mb-6 sm:mb-0"
 				>
 					<div class="bg-indigo-100 py-48">
 						Prject Image
@@ -46,7 +54,9 @@
 						Project Title
 					</div>
 				</div>
-				<div class="w-full md:w-1/3 rounded-xl shadow cursor-pointer">
+				<div
+					class="w-full rounded-xl shadow cursor-pointer mb-6 sm:mb-0"
+				>
 					<div class="bg-indigo-100 py-48">
 						Prject Image
 					</div>
@@ -54,7 +64,9 @@
 						Project Title
 					</div>
 				</div>
-				<div class="w-full md:w-1/3 rounded-xl shadow cursor-pointer">
+				<div
+					class="w-full rounded-xl shadow cursor-pointer mb-6 sm:mb-0"
+				>
 					<div class="bg-indigo-100 py-48">
 						Prject Image
 					</div>
@@ -62,7 +74,9 @@
 						Project Title
 					</div>
 				</div>
-				<div class="w-full md:w-1/3 rounded-xl shadow cursor-pointer">
+				<div
+					class="w-full rounded-xl shadow cursor-pointer mb-6 sm:mb-0"
+				>
 					<div class="bg-indigo-100 py-48">
 						Prject Image
 					</div>
@@ -70,15 +84,9 @@
 						Project Title
 					</div>
 				</div>
-				<div class="w-full md:w-1/3 rounded-xl shadow cursor-pointer">
-					<div class="bg-indigo-100 py-48">
-						Prject Image
-					</div>
-					<div class="text-center px-4 py-4">
-						Project Title
-					</div>
-				</div>
-				<div class="w-full md:w-1/3 rounded-xl shadow cursor-pointer">
+				<div
+					class="w-full rounded-xl shadow cursor-pointer mb-6 sm:mb-0"
+				>
 					<div class="bg-indigo-100 py-48">
 						Prject Image
 					</div>
