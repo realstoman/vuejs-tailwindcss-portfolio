@@ -33,20 +33,22 @@
 		<!-- Banner End -->
 
 		<!-- Home Poject Section Start -->
-		<section class="pt-48">
+		<section class="pt-12 sm:pt-40">
 			<div class="text-center">
-				<p class="text-4xl font-semibold mb-3 text-gray-600">
+				<p
+					class="text-2xl sm:text-4xl font-semibold mb-3 text-gray-600"
+				>
 					Projects Portfolio
 				</p>
-				<p class="text-lg text-gray-500">
+				<p class="text-md sm:text-lg text-gray-500">
 					Some of the projects I have successfully completed
 				</p>
 			</div>
 
-			<div class="w-full sm:grid sm:grid-cols-3 mt-10 sm:gap-10">
+			<div class="sm:grid sm:grid-cols-3 mt-10 sm:gap-10">
 				<a
 					href="#"
-					class="rounded-3xl border hover:border-indigo-200 shadow-sm hover:shadow-lg cursor-pointer mb-6 sm:mb-0"
+					class="rounded-3xl shadow-lg hover:shadow-xl cursor-pointer mb-6 sm:mb-0"
 				>
 					<div>
 						<img
@@ -66,7 +68,7 @@
 				</a>
 				<a
 					href="#"
-					class="rounded-3xl border hover:border-indigo-200 shadow-sm hover:shadow-lg cursor-pointer mb-6 sm:mb-0"
+					class="rounded-3xl shadow-lg hover:shadow-xl cursor-pointer mb-6 sm:mb-0"
 				>
 					<div>
 						<img
@@ -86,7 +88,7 @@
 				</a>
 				<a
 					href="#"
-					class="rounded-3xl border hover:border-indigo-200 shadow-sm hover:shadow-lg cursor-pointer mb-6 sm:mb-0"
+					class="rounded-3xl shadow-lg hover:shadow-xl cursor-pointer mb-6 sm:mb-0"
 				>
 					<div>
 						<img
@@ -104,7 +106,7 @@
 				</a>
 				<a
 					href="#"
-					class="rounded-3xl border hover:border-indigo-200 shadow-sm hover:shadow-lg cursor-pointer mb-6 sm:mb-0"
+					class="rounded-3xl shadow-lg hover:shadow-xl cursor-pointer mb-6 sm:mb-0"
 				>
 					<div>
 						<img
@@ -122,7 +124,7 @@
 				</a>
 				<a
 					href="#"
-					class="rounded-3xl border hover:border-indigo-200 shadow-sm hover:shadow-lg cursor-pointer mb-6 sm:mb-0"
+					class="rounded-3xl shadow-lg hover:shadow-xl cursor-pointer mb-6 sm:mb-0"
 				>
 					<div>
 						<img
@@ -142,7 +144,7 @@
 				</a>
 				<a
 					href="#"
-					class="rounded-3xl border hover:border-indigo-200 shadow-sm hover:shadow-lg cursor-pointer mb-6 sm:mb-0"
+					class="rounded-3xl shadow-lg hover:shadow-xl cursor-pointer mb-6 sm:mb-0"
 				>
 					<div>
 						<img
