@@ -42,11 +42,19 @@
 					class="rounded-3xl border hover:border-indigo-200 shadow-sm hover:shadow-lg cursor-pointer mb-6 sm:mb-0"
 				>
 					<div>
-						<img src="../assets/images/web-project-2.jpg" alt="" />
+						<img
+							src="../assets/images/web-project-2.jpg"
+							alt=""
+							class="rounded-t-3xl border-none"
+						/>
 					</div>
 					<div class="text-center px-4 py-4">
-						<p>King Health Platform</p>
-						<span>Wen Application</span>
+						<p class="text-2xl text-gray-600 font-semibold mb-3">
+							King Health Platform
+						</p>
+						<span class="text-lg text-gray-500"
+							>Wen Application</span
+						>
 					</div>
 				</a>
 				<a
@@ -57,11 +65,16 @@
 						<img
 							src="../assets/images/mobile-project-2.jpg"
 							alt=""
+							class="rounded-t-3xl border-none"
 						/>
 					</div>
 					<div class="text-center px-4 py-4">
-						<p>Pheonix Digital Agenncy</p>
-						<span>Mobile Application</span>
+						<p class="text-2xl text-gray-600 font-semibold mb-3">
+							Pheonix Digital Agenncy
+						</p>
+						<span class="text-lg text-gray-500"
+							>Mobile Application</span
+						>
 					</div>
 				</a>
 				<a
@@ -69,11 +82,17 @@
 					class="rounded-3xl border hover:border-indigo-200 shadow-sm hover:shadow-lg cursor-pointer mb-6 sm:mb-0"
 				>
 					<div>
-						<img src="../assets/images/ui-project-1.jpg" alt="" />
+						<img
+							src="../assets/images/ui-project-1.jpg"
+							alt=""
+							class="rounded-t-3xl border-none"
+						/>
 					</div>
 					<div class="text-center px-4 py-4">
-						<p>Project Management UI</p>
-						<span>UI / Frontend</span>
+						<p class="text-2xl text-gray-600 font-semibold mb-3">
+							Project Management UI
+						</p>
+						<span class="text-lg text-gray-500">UI / Frontend</span>
 					</div>
 				</a>
 				<a
@@ -81,11 +100,17 @@
 					class="rounded-3xl border hover:border-indigo-200 shadow-sm hover:shadow-lg cursor-pointer mb-6 sm:mb-0"
 				>
 					<div>
-						<img src="../assets/images/ui-project-2.jpg" alt="" />
+						<img
+							src="../assets/images/ui-project-2.jpg"
+							alt=""
+							class="rounded-t-3xl border-none"
+						/>
 					</div>
 					<div class="text-center px-4 py-4">
-						<p>Cloud Storage Platform</p>
-						<span>UI / Frontend</span>
+						<p class="text-2xl text-gray-600 font-semibold mb-3">
+							Cloud Storage Platform
+						</p>
+						<span class="text-lg text-gray-500">UI / Frontend</span>
 					</div>
 				</a>
 				<a
@@ -96,11 +121,16 @@
 						<img
 							src="../assets/images/mobile-project-1.jpg"
 							alt=""
+							class="rounded-t-3xl border-none"
 						/>
 					</div>
 					<div class="text-center px-4 py-4">
-						<p>Kabul Social App</p>
-						<span>Mobile Application</span>
+						<p class="text-2xl text-gray-600 font-semibold mb-3">
+							Kabul Social App
+						</p>
+						<span class="text-lg text-gray-500"
+							>Mobile Application</span
+						>
 					</div>
 				</a>
 				<a
@@ -108,11 +138,19 @@
 					class="rounded-3xl border hover:border-indigo-200 shadow-sm hover:shadow-lg cursor-pointer mb-6 sm:mb-0"
 				>
 					<div>
-						<img src="../assets/images/web-project-1.jpg" alt="" />
+						<img
+							src="../assets/images/web-project-1.jpg"
+							alt=""
+							class="rounded-t-3xl border-none"
+						/>
 					</div>
 					<div class="text-center px-4 py-4">
-						<p>Apple Design System</p>
-						<span>Web Application</span>
+						<p class="text-2xl text-gray-600 font-semibold mb-3">
+							Apple Design System
+						</p>
+						<span class="text-lg text-gray-500"
+							>Web Application</span
+						>
 					</div>
 				</a>
 			</div>
