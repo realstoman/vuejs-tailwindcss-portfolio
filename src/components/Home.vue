@@ -26,7 +26,7 @@
 		<!-- Banner End -->
 
 		<!-- Home Poject Section Start -->
-		<section class="py-48">
+		<section class="pt-48">
 			<div class="text-center">
 				<p class="text-4xl font-semibold mb-3 text-gray-600">
 					Projects Portfolio
@@ -35,68 +35,77 @@
 					Some of the projects I have successfully completed
 				</p>
 			</div>
-			<div class="w-full sm:grid sm:grid-cols-3 mt-10 sm:gap-6">
+			<div class="w-full sm:grid sm:grid-cols-3 mt-10 sm:gap-10`">
 				<div
 					class="rounded-xl hover:border hover:border-indigo-500 shadow cursor-pointer mb-6 sm:mb-0"
 				>
 					<div class="rounded-xl">
+						<img src="../assets/images/web-project-2.jpg" alt="" />
+					</div>
+					<div class="text-center px-4 py-4">
+						<p>King Health Platform</p>
+						<span>Wen Application</span>
+					</div>
+				</div>
+				<div
+					class="w-full rounded-xl shadow cursor-pointer mb-6 sm:mb-0"
+				>
+					<div class="bg-indigo-100">
 						<img
-							src="../assets/images/apple-design-system.jpg"
+							src="../assets/images/mobile-project-2.jpg"
 							alt=""
 						/>
 					</div>
 					<div class="text-center px-4 py-4">
-						Project Title
+						<p>Pheonix Digital Agenncy</p>
+						<span>Mobile Application</span>
 					</div>
 				</div>
 				<div
 					class="w-full rounded-xl shadow cursor-pointer mb-6 sm:mb-0"
 				>
-					<div class="bg-indigo-100 py-48">
-						Prject Image
+					<div class="bg-indigo-100">
+						<img src="../assets/images/ui-project-1.jpg" alt="" />
 					</div>
 					<div class="text-center px-4 py-4">
-						Project Title
+						<p>Project Management UI</p>
+						<span>UI / Frontend</span>
 					</div>
 				</div>
 				<div
 					class="w-full rounded-xl shadow cursor-pointer mb-6 sm:mb-0"
 				>
-					<div class="bg-indigo-100 py-48">
-						Prject Image
+					<div class="bg-indigo-100">
+						<img src="../assets/images/ui-project-2.jpg" alt="" />
 					</div>
 					<div class="text-center px-4 py-4">
-						Project Title
+						<p>Cloud Storage Platform</p>
+						<span>UI / Frontend</span>
 					</div>
 				</div>
 				<div
 					class="w-full rounded-xl shadow cursor-pointer mb-6 sm:mb-0"
 				>
-					<div class="bg-indigo-100 py-48">
-						Prject Image
+					<div class="bg-indigo-100">
+						<img
+							src="../assets/images/mobile-project-1.jpg"
+							alt=""
+						/>
 					</div>
 					<div class="text-center px-4 py-4">
-						Project Title
+						<p>Kabul Social App</p>
+						<span>Mobile Application</span>
 					</div>
 				</div>
 				<div
 					class="w-full rounded-xl shadow cursor-pointer mb-6 sm:mb-0"
 				>
-					<div class="bg-indigo-100 py-48">
-						Prject Image
+					<div class="bg-indigo-100">
+						<img src="../assets/images/web-project-1.jpg" alt="" />
 					</div>
 					<div class="text-center px-4 py-4">
-						Project Title
-					</div>
-				</div>
-				<div
-					class="w-full rounded-xl shadow cursor-pointer mb-6 sm:mb-0"
-				>
-					<div class="bg-indigo-100 py-48">
-						Prject Image
-					</div>
-					<div class="text-center px-4 py-4">
-						Project Title
+						<p>Apple Design System</p>
+						<span>Web Application</span>
 					</div>
 				</div>
 			</div>
