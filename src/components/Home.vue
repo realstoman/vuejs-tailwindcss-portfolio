@@ -35,6 +35,7 @@
 					Some of the projects I have successfully completed
 				</p>
 			</div>
+
 			<div class="w-full sm:grid sm:grid-cols-3 mt-10 sm:gap-10">
 				<a
 					href="#"
@@ -130,12 +131,16 @@ export default {
 	props: {
 		msg: String,
 	},
+	data: () => {
+		return {};
+	},
 	mounted() {
 		feather.replace();
 	},
 	updated() {
 		feather.replace();
 	},
+	methods: {},
 };
 </script>
 
