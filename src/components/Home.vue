@@ -48,7 +48,7 @@
 			<div class="sm:grid sm:grid-cols-3 mt-10 sm:gap-10">
 				<a
 					href="#"
-					class="rounded-3xl shadow-lg hover:shadow-xl cursor-pointer mb-6 sm:mb-0"
+					class="rounded-3xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0"
 				>
 					<div>
 						<img
@@ -68,7 +68,7 @@
 				</a>
 				<a
 					href="#"
-					class="rounded-3xl shadow-lg hover:shadow-xl cursor-pointer mb-6 sm:mb-0"
+					class="rounded-3xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0"
 				>
 					<div>
 						<img
@@ -88,7 +88,7 @@
 				</a>
 				<a
 					href="#"
-					class="rounded-3xl shadow-lg hover:shadow-xl cursor-pointer mb-6 sm:mb-0"
+					class="rounded-3xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0"
 				>
 					<div>
 						<img
@@ -106,7 +106,7 @@
 				</a>
 				<a
 					href="#"
-					class="rounded-3xl shadow-lg hover:shadow-xl cursor-pointer mb-6 sm:mb-0"
+					class="rounded-3xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0"
 				>
 					<div>
 						<img
@@ -124,7 +124,7 @@
 				</a>
 				<a
 					href="#"
-					class="rounded-3xl shadow-lg hover:shadow-xl cursor-pointer mb-6 sm:mb-0"
+					class="rounded-3xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0"
 				>
 					<div>
 						<img
@@ -144,7 +144,7 @@
 				</a>
 				<a
 					href="#"
-					class="rounded-3xl shadow-lg hover:shadow-xl cursor-pointer mb-6 sm:mb-0"
+					class="rounded-3xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0"
 				>
 					<div>
 						<img
