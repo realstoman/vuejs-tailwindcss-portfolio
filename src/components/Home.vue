@@ -36,16 +36,16 @@
 		<section class="pt-12 sm:pt-40">
 			<div class="text-center">
 				<p
-					class="text-2xl sm:text-4xl font-semibold mb-3 text-gray-600"
+					class="text-2xl sm:text-5xl font-semibold mb-3 text-gray-600"
 				>
 					Projects Portfolio
 				</p>
-				<p class="text-md sm:text-lg text-gray-500">
+				<p class="text-md sm:text-xl text-gray-500">
 					Some of the projects I have successfully completed
 				</p>
 			</div>
 
-			<div class="sm:grid sm:grid-cols-3 mt-10 sm:gap-10">
+			<div class="grid grid-cols-1 sm:grid-cols-3 mt-16 sm:gap-10">
 				<a
 					href="#"
 					class="rounded-3xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0"
@@ -162,6 +162,14 @@
 						>
 					</div>
 				</a>
+			</div>
+			<div class="mt-20 flex justify-center">
+				<button
+					class="flex items-center px-6 py-3 rounded-xl shadow-sm bg-indigo-500 hover:bg-indigo-600 text-white text-xl font-medium"
+				>
+					<i data-feather="refresh-cw" class="w-5 mr-3"></i>
+					<span>Load More</span>
+				</button>
 			</div>
 		</section>
 		<!-- Home Poject Section End -->
