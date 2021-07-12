@@ -16,7 +16,7 @@
 				<div class="flex justify-center sm:block">
 					<a
 						href="#"
-						class="flex justify-center items-center w-36 sm:w-48 mt-10 mb-6 sm:mb-0 text-lg border border-indigo-500 py-2.5 sm:py-3 shadow-sm rounded-xl bg-indigo-50 hover:bg-indigo-500 hover:text-white"
+						class="flex justify-center items-center w-36 sm:w-48 mt-10 mb-6 sm:mb-0 text-lg border border-indigo-200 py-2.5 sm:py-3 shadow-lg rounded-xl bg-indigo-50 hover:bg-indigo-500 hover:text-white"
 					>
 						<i
 							data-feather="arrow-down-circle"
@@ -163,9 +163,9 @@
 					</div>
 				</a>
 			</div>
-			<div class="mt-20 flex justify-center">
+			<div class="mt-10 sm:mt-20 flex justify-center">
 				<button
-					class="flex items-center px-6 py-3 rounded-xl shadow-sm bg-indigo-500 hover:bg-indigo-600 text-white text-xl font-medium"
+					class="flex items-center px-6 py-3 rounded-xl shadow-lg hover:shadow-xl bg-indigo-500 hover:bg-indigo-600 text-white text-lg sm:text-xl font-medium"
 				>
 					<i data-feather="refresh-cw" class="w-5 mr-3"></i>
 					<span>Load More</span>

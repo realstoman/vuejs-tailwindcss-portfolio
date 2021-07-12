@@ -6,17 +6,17 @@
 			</p>
 			<ul class="flex gap-4 sm:gap-8">
 				<li
-					class="text-gray-400 hover:text-indigo-500 cursor-pointer rounded-lg bg-gray-50 hover:bg-gray-100 shadow-sm p-4"
+					class="text-gray-400 hover:text-indigo-500 cursor-pointer rounded-lg bg-gray-50 hover:bg-gray-100 shadow-sm∫ p-4"
 				>
 					<i data-feather="github" class="w-6 sm:w-8 h-6 sm:h-8"></i>
 				</li>
 				<li
-					class="text-gray-400 hover:text-indigo-500 cursor-pointer rounded-lg bg-gray-50 hover:bg-gray-100 shadow-sm p-4"
+					class="text-gray-400 hover:text-indigo-500 cursor-pointer rounded-lg bg-gray-50 hover:bg-gray-100 shadow-sm∫ p-4"
 				>
 					<i data-feather="twitter" class="w-6 sm:w-8 h-6 sm:h-8"></i>
 				</li>
 				<li
-					class="text-gray-400 hover:text-indigo-500 cursor-pointer rounded-lg bg-gray-50 hover:bg-gray-100 shadow-sm p-4"
+					class="text-gray-400 hover:text-indigo-500 cursor-pointer rounded-lg bg-gray-50 hover:bg-gray-100 shadow-sm∫ p-4"
 				>
 					<i
 						data-feather="instagram"
@@ -24,7 +24,7 @@
 					></i>
 				</li>
 				<li
-					class="text-gray-400 hover:text-indigo-500 cursor-pointer rounded-lg bg-gray-50 hover:bg-gray-100 shadow-sm p-4"
+					class="text-gray-400 hover:text-indigo-500 cursor-pointer rounded-lg bg-gray-50 hover:bg-gray-100 shadow-sm∫ p-4"
 				>
 					<i
 						data-feather="dribbble"
