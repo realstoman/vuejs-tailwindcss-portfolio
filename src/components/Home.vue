@@ -46,8 +46,8 @@
 			</div>
 
 			<div class="grid grid-cols-1 sm:grid-cols-3 mt-16 sm:gap-10">
-				<a
-					href="#"
+				<router-link
+					to="/projects/single-project"
 					class="rounded-3xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0"
 				>
 					<div>
@@ -65,9 +65,9 @@
 							>Wen Application</span
 						>
 					</div>
-				</a>
-				<a
-					href="#"
+				</router-link>
+				<router-link
+					to="/projects/single-project"
 					class="rounded-3xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0"
 				>
 					<div>
@@ -85,9 +85,9 @@
 							>Mobile Application</span
 						>
 					</div>
-				</a>
-				<a
-					href="#"
+				</router-link>
+				<router-link
+					to="/projects/single-project"
 					class="rounded-3xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0"
 				>
 					<div>
@@ -103,9 +103,9 @@
 						</p>
 						<span class="text-lg text-gray-500">UI / Frontend</span>
 					</div>
-				</a>
-				<a
-					href="#"
+				</router-link>
+				<router-link
+					to="/projects/single-project"
 					class="rounded-3xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0"
 				>
 					<div>
@@ -121,9 +121,9 @@
 						</p>
 						<span class="text-lg text-gray-500">UI / Frontend</span>
 					</div>
-				</a>
-				<a
-					href="#"
+				</router-link>
+				<router-link
+					to="/projects/single-project"
 					class="rounded-3xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0"
 				>
 					<div>
@@ -141,9 +141,9 @@
 							>Mobile Application</span
 						>
 					</div>
-				</a>
-				<a
-					href="#"
+				</router-link>
+				<router-link
+					to="/projects/single-project"
 					class="rounded-3xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0"
 				>
 					<div>
@@ -161,7 +161,7 @@
 							>Web Application</span
 						>
 					</div>
-				</a>
+				</router-link>
 			</div>
 			<div class="mt-10 sm:mt-20 flex justify-center">
 				<button
