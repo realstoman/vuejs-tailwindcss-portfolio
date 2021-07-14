@@ -1,6 +1,6 @@
 <template>
 	<div class="container mx-auto px-4">
-		<p>About Page</p>
+		<p>Single Project</p>
 	</div>
 </template>
 
@@ -8,7 +8,7 @@
 import feather from 'feather-icons';
 
 export default {
-	name: 'About',
+	name: 'Single Project',
 	props: {
 		msg: String,
 	},
