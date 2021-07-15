@@ -94,11 +94,46 @@
 						Share This
 					</p>
 					<div class="flex items-center gap-3 mt-5">
-						<a href="#"><i data-feather="twitter"></i></a>
-						<a href="#"><i data-feather="facebook"></i></a>
-						<a href="#"><i data-feather="instagram"></i></a>
-						<a href="#"><i data-feather="linkedin"></i></a>
-						<a href="#"><i data-feather="youtube"></i></a>
+						<a
+							href="#"
+							class="bg-gray-100 hover:bg-blue-400 hover:text-white p-2 rounded-lg shadow-sm"
+							><i
+								data-feather="twitter"
+								class="w-5 h-5 text-gray-500 hover:text-white"
+							></i
+						></a>
+						<a
+							href="#"
+							class="bg-gray-100 hover:bg-blue-700 hover:text-white p-2 rounded-lg shadow-sm"
+							><i
+								data-feather="facebook"
+								class="w-5 h-5 text-gray-500 hover:text-white"
+							></i
+						></a>
+						<a
+							href="#"
+							class="bg-gray-100 hover:bg-red-400 hover:text-white p-2 rounded-lg shadow-sm"
+							><i
+								data-feather="instagram"
+								class="w-5 h-5 text-gray-500 hover:text-white"
+							></i
+						></a>
+						<a
+							href="#"
+							class="bg-gray-100 hover:bg-blue-500 hover:text-white p-2 rounded-lg shadow-sm"
+							><i
+								data-feather="linkedin"
+								class="w-5 h-5 text-gray-500 hover:text-white"
+							></i
+						></a>
+						<a
+							href="#"
+							class="bg-gray-100 hover:bg-red-700 hover:text-white p-2 rounded-lg shadow-sm"
+							><i
+								data-feather="youtube"
+								class="w-5 h-5 text-gray-500 hover:text-white"
+							></i
+						></a>
 					</div>
 				</div>
 			</div>
