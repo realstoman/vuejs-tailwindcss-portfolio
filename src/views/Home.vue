@@ -1,17 +1,25 @@
 <template>
-	<!-- Banner Start -->
-	<Banner />
-	<!-- Banner End -->
+	<div class="container mx-auto px-4 py-10">
+		<!-- Banner start -->
+		<Banner />
+		<!-- Banner snd -->
+
+		<!-- Projects start -->
+		<ProjectsGrid />
+		<!-- Projects end -->
+	</div>
 </template>
 
 <script>
 import Banner from '@/components/home/Banner';
+import ProjectsGrid from '@/components/project/ProjectsGrid';
 import feather from 'feather-icons';
 
 export default {
 	name: 'Home',
 	components: {
 		Banner,
+		ProjectsGrid,
 	},
 	props: {
 		msg: String,

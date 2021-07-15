@@ -29,9 +29,7 @@ const routes = [
 		// this generates a separate chunk (projects.[hash].js) for this route
 		// which is lazy-loaded when the route is visited.
 		component: () =>
-			import(
-				/* webpackChunkName: "projects" */ '../components/Projects.vue'
-			),
+			import(/* webpackChunkName: "projects" */ '../views/Projects.vue'),
 		meta: {
 			title: 'Stoman - Projects',
 		},
@@ -44,7 +42,7 @@ const routes = [
 		// which is lazy-loaded when the route is visited.
 		component: () =>
 			import(
-				/* webpackChunkName: "projects" */ '../components/SingleProject.vue'
+				/* webpackChunkName: "projects" */ '../views/SingleProject.vue'
 			),
 		meta: {
 			title: 'Stoman - Single Project',
@@ -57,9 +55,7 @@ const routes = [
 		// this generates a separate chunk (projects.[hash].js) for this route
 		// which is lazy-loaded when the route is visited.
 		component: () =>
-			import(
-				/* webpackChunkName: "projects" */ '../components/Contact.vue'
-			),
+			import(/* webpackChunkName: "projects" */ '../views/Contact.vue'),
 		meta: {
 			title: 'Stoman - Contact',
 		},

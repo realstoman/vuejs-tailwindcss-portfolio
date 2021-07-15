@@ -1,5 +1,5 @@
 <template>
-	<!-- Banner Start -->
+	<!-- Banner start -->
 	<section class="flex flex-col items-center sm:flex-row justify-between">
 		<div class="w-full sm:w-1/3 text-left">
 			<h1
@@ -29,7 +29,7 @@
 			<img src="@/assets/images/developer.svg" alt="Developer" />
 		</div>
 	</section>
-	<!-- Banner End -->
+	<!-- Banner end -->
 </template>
 
 <script>
