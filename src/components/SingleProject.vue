@@ -1,7 +1,9 @@
 <template>
 	<div class="container mx-auto px-4">
 		<!-- Project heading and meta info start -->
-		<p class="text-left text-4xl font-bold text-gray-600 mt-20 mb-7">
+		<p
+			class="text-left text-3xl sm:text-4xl font-bold text-gray-600 mt-7 sm:mt-20 mb-7"
+		>
 			Kabul Project Management UI
 		</p>
 		<div class="flex">
@@ -22,24 +24,24 @@
 
 		<!-- Project gallery start -->
 		<div class="grid grid-cols-1 sm:grid-cols-3 sm:gap-10 mt-12">
-			<div>
+			<div class="mb-10 sm:mb-0">
 				<img
-					src="../assets/images/ui-project-2.jpg"
-					class="rounded-2xl cursor-pointer"
+					src="../assets/images/ui-project-1.jpg"
+					class="rounded-2xl cursor-pointer shadow-lg sm:shadow-none"
 					alt="Kabul Project Management UI"
 				/>
 			</div>
-			<div>
+			<div class="mb-10 sm:mb-0">
 				<img
-					src="../assets/images/ui-project-1.jpg"
-					class="rounded-2xl cursor-pointer"
+					src="../assets/images/web-project-2.jpg"
+					class="rounded-2xl cursor-pointer shadow-lg sm:shadow-none"
 					alt="Kabul Project Management UI"
 				/>
 			</div>
 			<div>
 				<img
 					src="../assets/images/mobile-project-2.jpg"
-					class="rounded-2xl cursor-pointer"
+					class="rounded-2xl cursor-pointer shadow-lg sm:shadow-none"
 					alt="Kabul Project Management UI"
 				/>
 			</div>
@@ -47,8 +49,8 @@
 		<!-- Project gallery end -->
 
 		<!-- Project information start -->
-		<div class="flex gap-10 mt-14">
-			<div class="w-1/3 text-left">
+		<div class="block sm:flex gap-0 sm:gap-10 mt-14">
+			<div class="w-full sm:w-1/3 text-left">
 				<div class="mb-7">
 					<p class="text-2xl font-semibold text-gray-600 mb-2">
 						About Client
@@ -137,7 +139,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="w-2/3 text-left">
+			<div class="w-full sm:w-2/3 text-left mt-10 sm:mt-0">
 				<p class="text-gray-600 text-2xl font-bold mb-7">Challenge</p>
 				<p class="mb-5 text-lg text-gray-600">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
@@ -179,11 +181,11 @@
 		</div>
 		<!-- Project information end -->
 
-		<hr class="mt-20" />
+		<hr class="mt-10 sm:mt-20" />
 
 		<!-- Related projects start -->
-		<div class="mt-20">
-			<p class="text-gray-600 text-3xl font-bold mb-14">
+		<div class="mt-10 sm:mt-20">
+			<p class="text-gray-600 text-3xl font-bold mb-10 sm:mb-14">
 				Related Projects
 			</p>
 			<div class="grid grid-cols-1 sm:grid-cols-4 gap-10">
@@ -203,7 +205,7 @@
 				</div>
 				<div>
 					<img
-						src="../assets/images/web-project-2.jpg"
+						src="../assets/images/ui-project-2.jpg"
 						class="rounded-2xl"
 						alt="Related Project"
 					/>
