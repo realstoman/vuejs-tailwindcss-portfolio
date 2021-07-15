@@ -3,7 +3,12 @@
 		<div class="md:flex items-center justify-between px-4 py-5">
 			<div class="flex justify-between items-center">
 				<div class="text-2xl font-bold text-gray-800 md:text-3xl">
-					<router-link to="/">Logo</router-link>
+					<router-link to="/"
+						><img
+							src="../../assets/images/logo.svg"
+							class="w-36"
+							alt=""
+					/></router-link>
 				</div>
 				<div class="md:hidden">
 					<button
