@@ -50,6 +50,20 @@ const routes = [
 			title: 'Single Project',
 		},
 	},
+	{
+		path: '/contact',
+		name: 'Contact',
+		// route level code-splitting
+		// this generates a separate chunk (projects.[hash].js) for this route
+		// which is lazy-loaded when the route is visited.
+		component: () =>
+			import(
+				/* webpackChunkName: "projects" */ '../components/Contact.vue'
+			),
+		meta: {
+			title: 'Contact',
+		},
+	},
 ];
 
 const router = createRouter({

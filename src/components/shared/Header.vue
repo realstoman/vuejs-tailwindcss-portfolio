@@ -32,6 +32,11 @@
 						class="text-lg font-medium text-gray-400 uppercase  md:mx-2 mb-2 sm:py-2"
 						>About Me</router-link
 					>
+					<router-link
+						to="/contact"
+						class="text-lg font-medium text-gray-400 uppercase  md:mx-2 mb-2 sm:py-2"
+						>Contact</router-link
+					>
 				</div>
 			</div>
 			<div class="flex justify-between items-center flex-col md:flex-row">
