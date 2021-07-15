@@ -21,10 +21,10 @@
 		<!-- Project heading and meta info end -->
 
 		<!-- Project gallery start -->
-		<div class="grid grid-cols-1 sm:grid-cols-3 sm:gap-10 mt-10">
+		<div class="grid grid-cols-1 sm:grid-cols-3 sm:gap-10 mt-12">
 			<div>
 				<img
-					src="../assets/images/ui-project-1.jpg"
+					src="../assets/images/ui-project-2.jpg"
 					class="rounded-2xl cursor-pointer"
 					alt="Kabul Project Management UI"
 				/>
@@ -38,7 +38,7 @@
 			</div>
 			<div>
 				<img
-					src="../assets/images/ui-project-1.jpg"
+					src="../assets/images/mobile-project-2.jpg"
 					class="rounded-2xl cursor-pointer"
 					alt="Kabul Project Management UI"
 				/>
@@ -47,7 +47,7 @@
 		<!-- Project gallery end -->
 
 		<!-- Project information start -->
-		<div class="flex mt-12">
+		<div class="flex gap-10 mt-14">
 			<div class="w-1/3 text-left">
 				<div class="mb-7">
 					<p class="text-2xl font-semibold text-gray-600 mb-2">
@@ -102,9 +102,87 @@
 					</div>
 				</div>
 			</div>
-			<div class="w-2/3"></div>
+			<div class="w-2/3 text-left">
+				<p class="text-gray-600 text-2xl font-bold mb-7">Challenge</p>
+				<p class="mb-5 text-lg text-gray-600">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+					ipsa, ullam modi esse ea molestiae, non quidem expedita
+					perspiciatis nihil eligendi maxime eum eos exercitationem.
+					Aliquam labore amet odio quisquam? Lorem ipsum dolor sit
+					amet consectetur, adipisicing elit. Velit, consectetur?
+					Soluta, minus, quia tenetur distinctio asperiores aperiam
+					impedit provident at autem omnis odio, atque dicta minima
+					alias voluptatum ullam animi.
+				</p>
+				<p class="mb-5 text-lg text-gray-600">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+					ipsa, ullam modi esse ea molestiae, non quidem expedita
+					perspiciatis nihil eligendi maxime eum eos exercitationem.
+					Aliquam labore amet odio quisquam? Lorem ipsum dolor sit
+					amet consectetur, adipisicing elit. Velit, consectetur?
+					Soluta, minus, quia tenetur distinctio asperiores aperiam
+					impedit provident at autem omnis odio, atque dicta minima
+					alias voluptatum ullam animi.
+				</p>
+				<p class="mb-5 text-lg text-gray-600">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+					ipsa, ullam modi esse ea molestiae, non quidem expedita
+					perspiciatis nihil eligendi maxime eum eos exercitationem.
+					Aliquam labore amet odio quisquam? Lorem ipsum dolor sit
+					amet consectetur, adipisicing elit. Velit, consectetur?
+					Soluta, minus, quia tenetur distinctio asperiores aperiam
+					impedit provident at autem omnis odio, atque dicta minima
+					alias voluptatum ullam animi.
+				</p>
+				<p class="mb-5 text-lg text-gray-600">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+					ipsa, ullam modi esse ea molestiae, non quidem expedita
+					perspiciatis nihil eligendi maxime eum eos exercitationem.
+					Aliquam labore amet odio quisquam?
+				</p>
+			</div>
 		</div>
 		<!-- Project information end -->
+
+		<hr class="mt-20" />
+
+		<!-- Related projects start -->
+		<div class="mt-20">
+			<p class="text-gray-600 text-3xl font-bold mb-14">
+				Related Projects
+			</p>
+			<div class="grid grid-cols-1 sm:grid-cols-4 gap-10">
+				<div>
+					<img
+						src="../assets/images/mobile-project-1.jpg"
+						class="rounded-2xl"
+						alt="Related Project"
+					/>
+				</div>
+				<div>
+					<img
+						src="../assets/images/web-project-1.jpg"
+						class="rounded-2xl"
+						alt="Related Project"
+					/>
+				</div>
+				<div>
+					<img
+						src="../assets/images/web-project-2.jpg"
+						class="rounded-2xl"
+						alt="Related Project"
+					/>
+				</div>
+				<div>
+					<img
+						src="../assets/images/mobile-project-1.jpg"
+						class="rounded-2xl"
+						alt="Related Project"
+					/>
+				</div>
+			</div>
+		</div>
+		<!-- Related projects end -->
 	</div>
 </template>
 
