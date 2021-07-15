@@ -1,18 +1,32 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+	<!-- Banner Start -->
+	<Banner />
+	<!-- Banner End -->
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import Banner from '@/components/home/Banner';
+import feather from 'feather-icons';
 
 export default {
-  name: 'Home',
-  components: {
-    HelloWorld
-  }
-}
+	name: 'Home',
+	components: {
+		Banner,
+	},
+	props: {
+		msg: String,
+	},
+	data: () => {
+		return {};
+	},
+	mounted() {
+		feather.replace();
+	},
+	updated() {
+		feather.replace();
+	},
+	methods: {},
+};
 </script>
+
+<style scoped></style>

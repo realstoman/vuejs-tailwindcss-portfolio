@@ -29,17 +29,17 @@
 				<div class="sm:ml-4 mt-3">
 					<router-link
 						to="/projects"
-						class="text-lg font-medium text-gray-400 uppercase  md:mx-6 mb-2 sm:py-2"
+						class="text-lg font-medium text-gray-500 md:mx-6 mb-2 sm:py-2"
 						>Projects</router-link
 					>
 					<router-link
 						to="/about"
-						class="text-lg font-medium text-gray-400 uppercase  md:mx-2 mb-2 sm:py-2"
+						class="text-lg font-medium text-gray-500 md:mx-2 mb-2 sm:py-2"
 						>About Me</router-link
 					>
 					<router-link
 						to="/contact"
-						class="text-lg font-medium text-gray-400 uppercase  md:mx-2 mb-2 sm:py-2"
+						class="text-lg font-medium text-gray-500 md:mx-2 mb-2 sm:py-2"
 						>Contact</router-link
 					>
 				</div>
@@ -47,7 +47,7 @@
 			<div class="flex justify-between items-center flex-col md:flex-row">
 				<div>
 					<button
-						class="text-md font-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-lg px-5 py-2.5 uppercase"
+						class="text-md font-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-lg px-5 py-2.5"
 					>
 						Hire Me
 					</button>
@@ -81,6 +81,6 @@ export default {
 
 <style scoped>
 #nav a.router-link-exact-active {
-	@apply text-gray-700;
+	@apply text-gray-900;
 }
 </style>
