@@ -79,7 +79,7 @@
 					</div>
 					<div class="text-center px-4 py-4">
 						<p class="text-2xl text-gray-600 font-semibold mb-3">
-							Pheonix Digital Agenncy
+							Pheonix Digital Agency
 						</p>
 						<span class="text-lg text-gray-500"
 							>Mobile Application</span
@@ -99,7 +99,7 @@
 					</div>
 					<div class="text-center px-4 py-4">
 						<p class="text-2xl text-gray-600 font-semibold mb-3">
-							Project Management UI
+							Kabul Project Management UI
 						</p>
 						<span class="text-lg text-gray-500">UI / Frontend</span>
 					</div>
