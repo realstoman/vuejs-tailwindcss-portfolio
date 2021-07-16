@@ -1,7 +1,7 @@
 <template>
 	<div class="mt-10 sm:mt-20 bg-gray-100 shadow-sm">
 		<div
-			class="container mx-auto p-10 block sm:flex sm:justify-between sm:items-center"
+			class="container mx-auto py-20 px-10 block sm:flex sm:justify-between sm:items-center"
 		>
 			<div class="mb-20 sm:mb-0">
 				<p class="text-4xl font-bold text-gray-600 mb-2">12</p>
