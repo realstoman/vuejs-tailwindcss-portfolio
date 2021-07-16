@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import Home from '../components/Home.vue';
+import Home from '../views/Home.vue';
 
 const routes = [
 	{
@@ -7,7 +7,7 @@ const routes = [
 		name: 'Home',
 		component: Home,
 		meta: {
-			title: 'Home',
+			title: 'Stoman - Home',
 		},
 	},
 	{
@@ -17,9 +17,9 @@ const routes = [
 		// this generates a separate chunk (about.[hash].js) for this route
 		// which is lazy-loaded when the route is visited.
 		component: () =>
-			import(/* webpackChunkName: "about" */ '../components/About.vue'),
+			import(/* webpackChunkName: "about" */ '../views/About.vue'),
 		meta: {
-			title: 'About',
+			title: 'Stoman - About',
 		},
 	},
 	{
@@ -29,11 +29,9 @@ const routes = [
 		// this generates a separate chunk (projects.[hash].js) for this route
 		// which is lazy-loaded when the route is visited.
 		component: () =>
-			import(
-				/* webpackChunkName: "projects" */ '../components/Projects.vue'
-			),
+			import(/* webpackChunkName: "projects" */ '../views/Projects.vue'),
 		meta: {
-			title: 'Projects',
+			title: 'Stoman - Projects',
 		},
 	},
 	{
@@ -44,10 +42,22 @@ const routes = [
 		// which is lazy-loaded when the route is visited.
 		component: () =>
 			import(
-				/* webpackChunkName: "projects" */ '../components/SingleProject.vue'
+				/* webpackChunkName: "projects" */ '../views/SingleProject.vue'
 			),
 		meta: {
-			title: 'Single Project',
+			title: 'Stoman - Single Project',
+		},
+	},
+	{
+		path: '/contact',
+		name: 'Contact',
+		// route level code-splitting
+		// this generates a separate chunk (projects.[hash].js) for this route
+		// which is lazy-loaded when the route is visited.
+		component: () =>
+			import(/* webpackChunkName: "projects" */ '../views/Contact.vue'),
+		meta: {
+			title: 'Stoman - Contact',
 		},
 	},
 ];
