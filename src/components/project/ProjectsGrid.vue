@@ -3,7 +3,7 @@
 	<section class="pt-20 sm:pt-28">
 		<div class="text-center">
 			<p
-				class="text-2xl sm:text-5xl font-semibold mb-3 text-primary-dark dark:text-primary-light"
+				class="text-2xl sm:text-5xl font-semibold mb-3 text-ternary-dark dark:text-ternary-light"
 			>
 				Projects Portfolio
 			</p>
