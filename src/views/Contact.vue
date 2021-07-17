@@ -1,181 +1,116 @@
 <template>
-	<div class="container mx-auto flex py-10 mt-10 sm:mt-20">
-		<div class="w-1/2">
+	<div class="container mx-auto sm:flex py-5 sm:py-10 mt-10 sm:mt-20">
+		<div class="w-full sm:w-1/2">
 			<div class="leading-loose">
 				<form
-					class="max-w-xl m-4 p-10 bg-white rounded shadow-xl text-left"
+					class="max-w-xl m-4 p-6 sm:p-10 bg-white rounded-xl shadow-xl text-left"
 				>
 					<p class="text-gray-600 text-2xl font-semibold mb-8">
-						Customer information
+						Contact Form
 					</p>
 					<div class="">
-						<label class="block text-sm text-gray-00" for="cus_name"
-							>Name</label
+						<label
+							class="block text-lg text-gray-00 mb-2"
+							for="name"
+							>Full Name</label
 						>
 						<input
-							class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded"
-							id="cus_name"
-							name="cus_name"
+							class="w-full px-5 py-2 text-gray-700 bg-gray-100 rounded"
+							id="name"
+							name="name"
 							type="text"
 							required=""
 							placeholder="Your Name"
 							aria-label="Name"
 						/>
 					</div>
-					<div class="mt-2">
+					<div class="mt-6">
 						<label
-							class="block text-sm text-gray-600"
-							for="cus_email"
+							class="block text-lg text-gray-00 mb-2"
+							for="email"
 							>Email</label
 						>
 						<input
-							class="w-full px-5  py-4 text-gray-700 bg-gray-200 rounded"
-							id="cus_email"
-							name="cus_email"
+							class="w-full px-5  py-2 text-gray-700 bg-gray-100 rounded"
+							id="email"
+							name="email"
 							type="text"
 							required=""
 							placeholder="Your Email"
 							aria-label="Email"
 						/>
 					</div>
-					<div class="mt-2">
+					<div class="mt-6">
 						<label
-							class=" block text-sm text-gray-600"
-							for="cus_email"
-							>Address</label
+							class="block text-lg text-gray-00 mb-2"
+							for="subject"
+							>Subject</label
 						>
 						<input
-							class="w-full px-2 py-2 text-gray-700 bg-gray-200 rounded"
-							id="cus_email"
-							name="cus_email"
+							class="w-full px-5 py-2 text-gray-700 bg-gray-100 rounded"
+							id="subject"
+							name="subject"
 							type="text"
 							required=""
-							placeholder="Street"
-							aria-label="Email"
+							placeholder="Subject"
+							aria-label="Subject"
 						/>
 					</div>
-					<div class="mt-2">
+
+					<div class="mt-6">
 						<label
-							class="hidden text-sm block text-gray-600"
-							for="cus_email"
-							>City</label
+							class="block text-lg text-gray-00 mb-2"
+							for="message"
+							>Message</label
 						>
-						<input
-							class="w-full px-2 py-2 text-gray-700 bg-gray-200 rounded"
-							id="cus_email"
-							name="cus_email"
-							type="text"
-							required=""
-							placeholder="City"
-							aria-label="Email"
-						/>
+						<textarea
+							class="w-full px-2 py-2 text-gray-700 bg-gray-100 rounded"
+							id="message"
+							name="message"
+							cols="14"
+							rows="6"
+						></textarea>
 					</div>
-					<div class="inline-block mt-2 w-1/2 pr-1">
-						<label
-							class="hidden block text-sm text-gray-600"
-							for="cus_email"
-							>Country</label
-						>
-						<input
-							class="w-full px-2 py-2 text-gray-700 bg-gray-200 rounded"
-							id="cus_email"
-							name="cus_email"
-							type="text"
-							required=""
-							placeholder="Country"
-							aria-label="Email"
-						/>
-					</div>
-					<div class="inline-block mt-2 -mx-1 pl-1 w-1/2">
-						<label
-							class="hidden block text-sm text-gray-600"
-							for="cus_email"
-							>Zip</label
-						>
-						<input
-							class="w-full px-2 py-2 text-gray-700 bg-gray-200 rounded"
-							id="cus_email"
-							name="cus_email"
-							type="text"
-							required=""
-							placeholder="Zip"
-							aria-label="Email"
-						/>
-					</div>
-					<p class="mt-4 text-gray-800 font-medium">
-						Payment information
-					</p>
-					<div class="">
-						<label
-							class="block text-sm text-gray-600"
-							for="cus_name"
-							>Card</label
-						>
-						<input
-							class="w-full px-2 py-2 text-gray-700 bg-gray-200 rounded"
-							id="cus_name"
-							name="cus_name"
-							type="text"
-							required=""
-							placeholder="Card Number MM/YY CVC"
-							aria-label="Name"
-						/>
-					</div>
-					<div class="mt-4">
+
+					<div class="mt-6">
 						<button
-							class="px-4 py-1 text-white font-light tracking-wider bg-gray-900 rounded"
+							class="px-4 py-3 text-white font-medium tracking-wider bg-indigo-500 hover:bg-indigo-600 rounded-lg"
 							type="submit"
 						>
-							$3.00
+							Send Message
 						</button>
 					</div>
 				</form>
 			</div>
 		</div>
-		<div class="w-1/2">
-			<div class="col-lg-4 col-md-4 offset-md-1">
-				<h2 class="h4 pb-3">Contact details</h2>
-				<h3 class="h6 pb-2">North America - New York, NY</h3>
-				<ul class="list-unstyled fs-sm pb-3">
-					<li class="d-flex align-items-top mb-3">
+		<div class="w-full sm:w-1/2">
+			<div class="text-left max-w-xl px-6">
+				<h2 class="text-2xl font-semibold mt-12 mb-8">
+					Contact details
+				</h2>
+				<ul class="">
+					<li class="flex">
 						<i
-							class="ai-map-pin fs-xl text-muted mt-1 me-2 pe-1"
+							data-feather="map-pin"
+							class="w-5 text-gray-500 mr-4"
 						></i>
-						<div>
-							396 Lillian Blvd, Holbrook,<br />NY 11741, USA<br /><a
-								class="fancy-link"
-								href="#map"
-								data-scroll=""
-								>See on the map</a
-							>
-						</div>
+						<p class="text-lg mb-4">
+							Wazir Akbar Khan, Kabul, Afghanistan
+						</p>
 					</li>
-					<li class="d-flex align-items-center mb-3">
-						<i class="ai-mail fs-xl text-muted me-2 pe-1"></i>
-						<div>new.york@example.com</div>
-					</li>
-					<li class="d-flex align-items-center mb-3">
-						<i class="ai-phone fs-xl text-muted me-2 pe-1"></i>
-						<div>+ 1 526 220 0459</div>
-					</li>
-				</ul>
-				<h3 class="h6 pb-2">Europe - Berlin, Germany</h3>
-				<ul class="list-unstyled fs-sm">
-					<li class="d-flex align-items-top mb-3">
+					<li class="flex">
 						<i
-							class="ai-map-pin fs-xl text-muted mt-1 me-2 pe-1"
+							data-feather="mail"
+							class="w-5 text-gray-500 mr-4"
 						></i>
-						<div>
-							Mohrenstrasse 37 10117,<br />Berlin, Germany<br />
-						</div>
+						<p class="text-lg mb-4">email@example.com</p>
 					</li>
-					<li class="d-flex align-items-center mb-3">
-						<i class="ai-mail fs-xl text-muted me-2 pe-1"></i>
-						<div>berlin@example.com</div>
-					</li>
-					<li class="d-flex align-items-center mb-3">
-						<i class="ai-phone fs-xl text-muted me-2 pe-1"></i>
-						<div>030 778 345 26</div>
+					<li class="flex">
+						<i
+							data-feather="phone"
+							class="w-5 text-gray-500 mr-4"
+						></i>
+						<p class="text-lg mb-4">+93 7888 888 88</p>
 					</li>
 				</ul>
 			</div>
@@ -184,7 +119,18 @@
 </template>
 
 <script>
+import feather from 'feather-icons';
+
 export default {
-	setup() {},
+	data: () => {
+		return {};
+	},
+	mounted() {
+		feather.replace();
+	},
+	updated() {
+		feather.replace();
+	},
+	methods: {},
 };
 </script>
