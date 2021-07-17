@@ -53,14 +53,12 @@
 					</button>
 				</div>
 				<div
-					class=" sm:ml-7 bg-gray-50 p-2 rounded-lg shadow-sm cursor-pointer"
+					class="ml-8 bg-gray-50 p-3 shadow-sm rounded-xl cursor-pointer"
 				>
-					<a href="#"
-						><i
-							data-feather="moon"
-							class="text-gray-500 hover:text-gray-400"
-						></i
-					></a>
+					<theme-switcher
+						:theme="theme"
+						@themeChanged="updateTheme"
+					/>
 				</div>
 			</div>
 		</div>
@@ -68,10 +66,31 @@
 </template>
 
 <script>
+import ThemeSwitcher from '../ThemeSwitcher';
 import feather from 'feather-icons';
+
 export default {
+	components: {
+		ThemeSwitcher,
+	},
+	data() {
+		return {
+			isOpen: false,
+			theme: '',
+		};
+	},
+
+	created() {
+		this.theme = localStorage.getItem('theme') || 'light';
+	},
 	mounted() {
 		feather.replace();
+		this.theme = localStorage.getItem('theme') || 'light';
+	},
+	methods: {
+		updateTheme(theme) {
+			this.theme = theme;
+		},
 	},
 	updated() {
 		feather.replace();
