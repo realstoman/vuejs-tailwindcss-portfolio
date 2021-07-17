@@ -13,7 +13,7 @@
 				<div class="md:hidden">
 					<button
 						type="button"
-						class="block text-gray-800 hover:text-gray-700 focus:text-gray-700 focus:outline-none"
+						class="block text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light focus:text-gray-700 dark:focus:text-primary-light focus:outline-none"
 					>
 						<svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
 							<path
@@ -29,17 +29,17 @@
 				<div class="sm:ml-4 mt-3">
 					<router-link
 						to="/projects"
-						class="text-lg font-medium text-gray-500 md:mx-6 mb-2 sm:py-2"
+						class="text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  md:mx-6 mb-2 sm:py-2"
 						>Projects</router-link
 					>
 					<router-link
 						to="/about"
-						class="text-lg font-medium text-gray-500 md:mx-2 mb-2 sm:py-2"
+						class="text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  md:mx-2 mb-2 sm:py-2"
 						>About Me</router-link
 					>
 					<router-link
 						to="/contact"
-						class="text-lg font-medium text-gray-500 md:mx-2 mb-2 sm:py-2"
+						class="text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  md:mx-2 mb-2 sm:py-2"
 						>Contact</router-link
 					>
 				</div>
@@ -53,7 +53,7 @@
 					</button>
 				</div>
 				<div
-					class="ml-8 bg-gray-50 px-3 py-2 shadow-sm rounded-xl cursor-pointer"
+					class="ml-8 bg-primary-light dark:bg-ternary-dark px-3 py-2 shadow-sm rounded-xl cursor-pointer"
 				>
 					<theme-switcher
 						:theme="theme"
@@ -100,6 +100,8 @@ export default {
 
 <style scoped>
 #nav a.router-link-exact-active {
-	@apply text-gray-900;
+	@apply text-indigo-700;
+	@apply dark:text-indigo-400;
+	@apply font-medium;
 }
 </style>
