@@ -23,7 +23,9 @@
 					/>
 				</div>
 				<div class="text-center px-4 py-4">
-					<p class="text-2xl text-gray-600 font-semibold mb-3">
+					<p
+						class="text-2xl text-gray-600 dark:text-primary-light font-semibold mb-3"
+					>
 						King Health Platform
 					</p>
 					<span class="text-lg text-gray-500">Wen Application</span>

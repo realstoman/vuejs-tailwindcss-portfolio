@@ -3,21 +3,3 @@
 @tailwind components;
 
 @tailwind utilities;
-
-.theme-light {
-	/*
-    ** Light Mode: Background Colors Variables
-    */
-	--bg-primary: #f7f8fc;
-	--bg-secondary: #ffffff;
-	--bg-ternary: #f6f7f8;
-}
-
-.theme-dark {
-	/*
-    ** Dark Mode: Background Colors Variables
-    */
-	--bg-primary: #0d2438;
-	--bg-secondary: #102d44;
-	--bg-ternary: #1e3851;
-}

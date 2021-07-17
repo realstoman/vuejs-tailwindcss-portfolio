@@ -53,7 +53,7 @@
 					</button>
 				</div>
 				<div
-					class="ml-8 bg-gray-50 p-3 shadow-sm rounded-xl cursor-pointer"
+					class="ml-8 bg-gray-50 px-3 py-2 shadow-sm rounded-xl cursor-pointer"
 				>
 					<theme-switcher
 						:theme="theme"

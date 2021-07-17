@@ -5,7 +5,7 @@
 	>
 		<div class="w-full sm:w-1/3 text-left">
 			<h1
-				class="text-3xl sm:text-5xl text-center sm:text-left font-semibold text-gray-700 uppercase"
+				class="text-3xl sm:text-5xl text-center sm:text-left font-semibold text-ternary-dark dark:text-primary-light uppercase"
 			>
 				Hi, Iam Stoman
 			</h1>

@@ -5,18 +5,26 @@
 
 .theme-light {
 	/*
-    ** Light Mode: Background Colors Variables
+    ** Light Mode Color Variables
     */
 	--bg-primary: #f7f8fc;
 	--bg-secondary: #ffffff;
 	--bg-ternary: #f6f7f8;
+
+	--text-primary: #f7f8fc;
+	--text-secondary: #ffffff;
+	--text-ternary: #f6f7f8;
 }
 
 .theme-dark {
 	/*
-    ** Dark Mode: Background Colors Variables
+    ** Dark Mode Color Variables
     */
 	--bg-primary: #0d2438;
 	--bg-secondary: #102d44;
 	--bg-ternary: #1e3851;
+
+	--text-primary: #0d2438;
+	--text-secondary: #102d44;
+	--text-ternary: #1e3851;
 }
