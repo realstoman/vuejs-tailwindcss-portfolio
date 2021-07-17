@@ -10,3 +10,14 @@ feather.replace();
 createApp(App)
 	.use(router)
 	.mount('#app');
+
+const appTheme = localStorage.getItem('theme');
+
+if (
+	appTheme === 'dark' &&
+	document.querySelector('body').classList.contains('app-theme')
+) {
+	document.querySelector('body').classList.add('bg-background-primary-dark');
+} else {
+	document.querySelector('body').classList.add('bg-background-primary-light');
+}

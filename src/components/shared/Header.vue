@@ -1,5 +1,5 @@
 <template>
-	<nav id="nav" class="container mx-auto bg-white" :class="theme">
+	<nav id="nav" class="container mx-auto bg-white">
 		<div class="md:flex items-center justify-between my-6">
 			<div class="flex justify-between items-center">
 				<div class="text-2xl font-bold text-gray-800 md:text-3xl">
@@ -52,7 +52,9 @@
 						Hire Me
 					</button>
 				</div>
-				<div>
+				<div
+					class="ml-8 bg-gray-50 p-3 shadow-sm rounded-xl cursor-pointer"
+				>
 					<theme-switcher
 						:theme="theme"
 						@themeChanged="updateTheme"
@@ -64,8 +66,8 @@
 </template>
 
 <script>
+import ThemeSwitcher from '../ThemeSwitcher';
 import feather from 'feather-icons';
-import ThemeSwitcher from '../ThemeSwitcher.vue';
 
 export default {
 	components: {
@@ -77,15 +79,18 @@ export default {
 			theme: '',
 		};
 	},
-	toggle() {
-		this.isOpen = !this.isOpen;
-	},
-	updateTheme(theme) {
-		this.theme = theme;
+
+	created() {
+		this.theme = localStorage.getItem('theme') || 'light';
 	},
 	mounted() {
 		feather.replace();
-		this.theme = localStorage.getItem('theme') || 'theme-light';
+		this.theme = localStorage.getItem('theme') || 'light';
+	},
+	methods: {
+		updateTheme(theme) {
+			this.theme = theme;
+		},
 	},
 	updated() {
 		feather.replace();

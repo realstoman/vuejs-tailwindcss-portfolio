@@ -2,7 +2,18 @@ module.exports = {
 	purge: { content: ['./public/**/*.html', './src/**/*.vue'] },
 	darkMode: false, // or 'media' or 'class'
 	theme: {
-		extend: {},
+		extend: {
+			colors: {
+				background: {
+					'primary-light': '#F7F8FC',
+					'secondary-light': '#FFFFFF',
+					'ternary-light': '#f6f7f8',
+					'primary-dark': '#0D2438',
+					'secondary-dark': '#102D44',
+					'ternary-dark': '#1E3851',
+				},
+			},
+		},
 		container: {
 			padding: {
 				DEFAULT: '1rem',
@@ -14,26 +25,7 @@ module.exports = {
 		},
 	},
 	variants: {
-		extend: {
-			colors: {
-				background: {
-					primary: 'var(--bg-background-primary)',
-					secondary: 'var(--bg-background-secondary)',
-					tertiary: 'var(--bg-background-tertiary)',
-
-					form: 'var(--bg-background-form)',
-				},
-
-				copy: {
-					primary: 'var(--text-copy-primary)',
-					secondary: 'var(--text-copy-hover)',
-				},
-
-				'border-color': {
-					primary: 'var(--border-border-color-primary)',
-				},
-			},
-		},
+		extend: {},
 	},
 	plugins: [
 		require('@tailwindcss/forms')({

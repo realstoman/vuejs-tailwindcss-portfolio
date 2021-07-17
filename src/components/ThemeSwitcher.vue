@@ -3,10 +3,9 @@
 		href="#"
 		class="text-copy-primary hover:text-gray-600"
 		@click.prevent="toggleTheme"
-		data-cypress="switchTheme"
 	>
 		<svg
-			v-if="theme === 'theme-light'"
+			v-if="theme === 'theme'"
 			xmlns="http://www.w3.org/2000/svg"
 			width="24"
 			height="24"
@@ -49,10 +48,10 @@ export default {
 	},
 	methods: {
 		toggleTheme() {
-			const newTheme =
-				this.theme === 'theme-light' ? 'theme-dark' : 'theme-light';
+			const newTheme = this.theme === 'light' ? 'dark' : 'light';
 			localStorage.setItem('theme', newTheme);
 			this.$emit('themeChanged', newTheme);
+			this.$router.go();
 		},
 	},
 };
