@@ -12,7 +12,7 @@
 		<SingleProjectInfo />
 		<!-- Projects end -->
 
-		<hr class="mt-10 sm:mt-20" />
+		<hr class="mt-10 sm:mt-20 text-ternary-dark dark:text-ternary-dark" />
 
 		<!-- Projects start -->
 		<SingleProjectRelatedProjects />
