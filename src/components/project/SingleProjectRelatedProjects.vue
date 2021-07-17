@@ -8,28 +8,28 @@
 			<div>
 				<img
 					src="../../assets/images/mobile-project-1.jpg"
-					class="rounded-2xl"
+					class="rounded-2xl cursor-pointer"
 					alt="Related Project"
 				/>
 			</div>
 			<div>
 				<img
 					src="../../assets/images/web-project-1.jpg"
-					class="rounded-2xl"
+					class="rounded-2xl cursor-pointer"
 					alt="Related Project"
 				/>
 			</div>
 			<div>
 				<img
 					src="../../assets/images/ui-project-2.jpg"
-					class="rounded-2xl"
+					class="rounded-2xl cursor-pointer"
 					alt="Related Project"
 				/>
 			</div>
 			<div>
 				<img
 					src="../../assets/images/mobile-project-1.jpg"
-					class="rounded-2xl"
+					class="rounded-2xl cursor-pointer"
 					alt="Related Project"
 				/>
 			</div>

@@ -1,6 +1,6 @@
 <template>
 	<!-- Projects start -->
-	<section class="pt-12 sm:pt-20">
+	<section class="pt-20 sm:pt-28">
 		<div class="text-center">
 			<p class="text-2xl sm:text-5xl font-semibold mb-3 text-gray-600">
 				Projects Portfolio

@@ -1,8 +1,8 @@
 <template>
-	<div class="block sm:flex sm:gap-10">
+	<div class="block sm:flex sm:gap-10 mt-10 sm:mt-20">
 		<div class="w-full sm:w-1/4 mb-7 sm:mb-0">
 			<img
-				src="../../assets/images/mobile-project-1.jpg"
+				src="../../assets/images/profile.jpeg"
 				class="rounded-xl w-96"
 				alt=""
 			/>
