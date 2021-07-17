@@ -4,59 +4,31 @@
 */
 
 .theme-light {
-	--bg-background-primary: white;
-	--bg-background-secondary: #f7fafc;
-	--bg-background-tertiary: #e2e8f0;
-
-	--bg-background-form: white;
-
-	--text-copy-primary: #2d3748;
-	--text-copy-secondary: #4a5568;
-
-	--border-border-color-primary: white;
-}
-
-.theme-light .search-highlighted {
-	background: #f0fff4;
-}
-
-.theme-light .search-hover:hover {
-	background: #f0fff4;
-}
-
-.theme-dark .markdown-body {
-	color: #24292e;
-}
-
-.theme-dark .search-highlighted {
-	background: #2d3748;
-}
-
-.theme-dark .search-hover:hover {
-	background: #2d3748;
+	/*
+    ** Light Mode: Background Colors Variables
+    */
+	--bg-background-primary: #f7f8fc;
+	--bg-background-secondary: #ffffff;
+	--bg-background-ternary: #f6f7f8;
+	/*
+    ** Light Mode: Body Text Colors Variables
+    */
+	--text-liText-primary: rgba(107, 114, 128, 1);
+	--text-liText-secondary: rgba(75, 85, 99, 1);
+	--text-liText-ternary: rgba(31, 41, 55, 1);
 }
 
 .theme-dark {
+	/*
+    ** Dark Mode: Background Colors Variables
+    */
 	--bg-background-primary: #0d2438;
-	--bg-background-secondary: #102c44;
-	--bg-background-tertiary: #1e3951;
-
-	--bg-background-form: #1a202c;
-
-	--text-copy-primary: #cbd5e0;
-	--text-copy-secondary: #e2e8f0;
-
-	--border-border-color-primary: #1a202c;
-}
-
-.theme-dark .markdown-body {
-	color: #cbd5e0;
-}
-
-.theme-dark nav .active {
-	@apply border-white border-b;
-}
-
-.content-wrapper {
-	transition: background-color 0.25s;
+	--bg-background-secondary: #102d44;
+	--bg-background-ternary: #1e3851;
+	/*
+    ** Dark Mode: Body Text Colors Variables
+    */
+	--text-liText-primary: #ffffff;
+	--text-liText-secondary: #f7f8fc;
+	--text-liText-ternary: #f6f7f8;
 }

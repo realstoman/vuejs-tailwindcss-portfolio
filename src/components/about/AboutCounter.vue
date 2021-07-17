@@ -1,5 +1,5 @@
 <template>
-	<div class="mt-10 sm:mt-20 bg-gray-100 shadow-sm">
+	<div class="mt-10 sm:mt-20 bg-red-100 dark:bg-red-500 shadow-sm">
 		<div
 			class="container mx-auto py-20 block sm:flex sm:justify-between sm:items-center"
 		>

@@ -1,5 +1,5 @@
 <template>
-	<div class="container mx-auto bg-white pt-20 sm:pt-40 pb-8">
+	<div class="container mx-auto pt-20 sm:pt-40 pb-8">
 		<div class="flex flex-col justify-center items-center mb-12 sm:mb-28">
 			<p class="text-3xl sm:text-4xl font-semibold text-gray-500 mb-5">
 				Follow me
