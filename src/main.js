@@ -19,5 +19,5 @@ if (
 ) {
 	document.querySelector('body').classList.add('bg-primary-dark');
 } else {
-	document.querySelector('body').classList.add('bg-primary-light');
+	document.querySelector('body').classList.add('bg-secondary-light');
 }

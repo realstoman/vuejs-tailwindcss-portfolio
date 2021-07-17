@@ -3,7 +3,7 @@
 		<div class="w-full sm:w-1/2">
 			<div class="leading-loose">
 				<form
-					class="max-w-xl m-4 p-6 sm:p-10 bg-white rounded-xl shadow-xl text-left"
+					class="max-w-xl m-4 p-6 sm:p-10 bg-secondary-light dark:bg-secondary-dark rounded-xl shadow-xl text-left"
 				>
 					<p class="text-gray-600 text-2xl font-semibold mb-8">
 						Contact Form
