@@ -8,7 +8,7 @@
 			/>
 		</div>
 		<div class="w-full sm:w-3/4 text-left">
-			<p class="mb-4 text-gray-500 text-lg">
+			<p class="mb-4 text-ternary-dark dark:text-ternary-light text-lg">
 				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil
 				vel illum asperiores dignissimos cumque quibusdam et fugiat
 				voluptatem nobis suscipit explicabo, eaque consequatur nesciunt,
@@ -22,19 +22,19 @@
 				recusandae quas, fuga voluptatibus nesciunt odit libero tenetur
 				neque consequatur ea.
 			</p>
-			<p class="mb-4 text-gray-500 text-lg">
+			<p class="mb-4 text-ternary-dark dark:text-ternary-light text-lg">
 				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil
 				vel illum asperiores dignissimos cumque quibusdam et fugiat
 				voluptatem nobis suscipit explicabo, eaque consequatur nesciunt,
 				fugit eligendi corporis laudantium adipisci soluta?
 			</p>
-			<p class="text-gray-500 text-lg">
+			<p class="text-ternary-dark dark:text-ternary-light text-lg">
 				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil
 				vel illum asperiores dignissimos cumque quibusdam et fugiat
 				voluptatem nobis suscipit explicabo, eaque consequatur nesciunt,
 				fugit eligendi corporis laudantium adipisci soluta?
 			</p>
-			<p class="mb-4 text-gray-500 text-lg">
+			<p class="mb-4 text-ternary-dark dark:text-ternary-light text-lg">
 				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil
 				vel illum asperiores dignissimos cumque quibusdam et fugiat
 				voluptatem nobis suscipit explicabo, eaque consequatur nesciunt,
