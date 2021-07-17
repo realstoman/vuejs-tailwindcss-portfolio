@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<div class="container mx-auto px-4 py-10">
+		<div class="container mx-auto">
 			<!-- About me start -->
 			<AboutMe />
 			<!-- About me end -->
@@ -10,7 +10,7 @@
 		<AboutCounter />
 		<!-- About counter end -->
 
-		<div class="container mx-auto px-4 py-10">
+		<div class="container mx-auto">
 			<!-- About counter start -->
 			<Clients />
 			<!-- About counter end -->

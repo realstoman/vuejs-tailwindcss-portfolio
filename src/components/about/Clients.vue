@@ -1,5 +1,5 @@
 <template>
-	<div class="mt-10">
+	<div class="mt-10 sm:mt-20">
 		<p class="text-4xl text-gray-600 font-sans font-semibold">
 			Some of the best companies I worked with
 		</p>

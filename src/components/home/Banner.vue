@@ -1,6 +1,8 @@
 <template>
 	<!-- Banner start -->
-	<section class="flex flex-col items-center sm:flex-row justify-between">
+	<section
+		class="flex flex-col sm:justify-between items-center sm:flex-row mt-20"
+	>
 		<div class="w-full sm:w-1/3 text-left">
 			<h1
 				class="text-3xl sm:text-5xl text-center sm:text-left font-semibold text-gray-700 uppercase"
@@ -25,7 +27,7 @@
 				>
 			</div>
 		</div>
-		<div class="w-full sm:w-2/3 text-right">
+		<div class="w-full sm:w-2/3 text-right float-right">
 			<img src="@/assets/images/developer.svg" alt="Developer" />
 		</div>
 	</section>
