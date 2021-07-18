@@ -1,50 +1,82 @@
 <template>
 	<nav id="nav" class="container mx-auto">
-		<div class="md:flex items-center justify-between my-6">
+		<div
+			class="z-10 max-w-screen-lg xl:max-w-screen-xl block sm:flex sm:justify-between sm:items-center my-6"
+		>
 			<div class="flex justify-between items-center">
-				<div class="text-2xl font-bold text-gray-800 md:text-3xl">
+				<div>
 					<router-link to="/"
 						><img
-							src="../../assets/images/logo.svg"
+							v-if="theme === 'light'"
+							src="../../assets/images/logo-dark.svg"
 							class="w-36"
 							alt=""
-					/></router-link>
+						/>
+						<img
+							v-else
+							src="../../assets/images/logo-light.svg"
+							class="w-36"
+							alt=""
+						/>
+					</router-link>
 				</div>
-				<div class="md:hidden">
+
+				<theme-switcher
+					:theme="theme"
+					@themeChanged="updateTheme"
+					class="block sm:hidden bg-ternary-light dark:bg-ternary-dark hover:bg-hover-light dark:hover:bg-hover-dark hover:shadow-sm px-2.5 py-2 rounded-lg ml-10"
+				/>
+
+				<div class="sm:hidden">
 					<button
-						type="button"
-						class="block text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light focus:text-gray-700 dark:focus:text-primary-light focus:outline-none"
+						@click="isOpen = !isOpen"
+						type="buttom"
+						class="focus:outline-none"
 					>
-						<svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 24 24"
+							class="h-6 w-6 fill-current text-secondary-dark dark:text-ternary-light"
+						>
 							<path
-								class="hidden"
-								d="M16.24 14.83a1 1 0 0 1-1.41 1.41L12 13.41l-2.83 2.83a1 1 0 0 1-1.41-1.41L10.59 12 7.76 9.17a1 1 0 0 1 1.41-1.41L12 10.59l2.83-2.83a1 1 0 0 1 1.41 1.41L13.41 12l2.83 2.83z"
-							/>
+								v-if="isOpen"
+								fill-rule="evenodd"
+								d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
+								clip-rule="evenodd"
+							></path>
 							<path
+								v-if="!isOpen"
+								fill-rule="evenodd"
 								d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
-							/>
+							></path>
 						</svg>
 					</button>
 				</div>
-				<div class="sm:ml-4 mt-3">
-					<router-link
-						to="/projects"
-						class="text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  md:mx-6 mb-2 sm:py-2"
-						>Projects</router-link
-					>
-					<router-link
-						to="/about"
-						class="text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  md:mx-2 mb-2 sm:py-2"
-						>About Me</router-link
-					>
-					<router-link
-						to="/contact"
-						class="text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  md:mx-2 mb-2 sm:py-2"
-						>Contact</router-link
-					>
-				</div>
 			</div>
-			<div class="flex justify-between items-center flex-col md:flex-row">
+
+			<div
+				:class="isOpen ? 'block' : 'hidden'"
+				class="ml-3 sm:ml-4 mt-5 sm:mt-3 sm:flex justify-center items-center"
+			>
+				<router-link
+					to="/projects"
+					class="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  md:mx-6 mb-2 sm:py-2"
+					>Projects</router-link
+				>
+				<router-link
+					to="/about"
+					class="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  md:mx-2 mb-2 sm:py-2"
+					>About Me</router-link
+				>
+				<router-link
+					to="/contact"
+					class="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  md:mx-2 mb-2 sm:py-2"
+					>Contact</router-link
+				>
+			</div>
+			<div
+				class="hidden sm:flex justify-between items-center flex-col md:flex-row"
+			>
 				<div>
 					<button
 						class="text-md font-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-lg px-5 py-2.5"
