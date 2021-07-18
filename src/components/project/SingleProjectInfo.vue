@@ -58,27 +58,33 @@
 				</p>
 				<div class="flex items-center gap-3 mt-5">
 					<a
-						href="#"
+						href="https://twitter.com/NangialaiStoman"
+						target="__blank"
 						class="bg-ternary-light dark:bg-ternary-dark text-gray-400 hover:text-primary-dark dark:hover:text-primary-light p-2 rounded-lg shadow-sm"
 						><i data-feather="twitter" class="w-5 h-5"></i
 					></a>
 					<a
-						href="#"
-						class="bg-ternary-light dark:bg-ternary-dark text-gray-400 hover:text-primary-dark dark:hover:text-primary-light p-2 rounded-lg shadow-sm"
-						><i data-feather="facebook" class="w-5 h-5"></i
-					></a>
-					<a
-						href="#"
+						href="https://instagram.com/NangialaiStoman"
+						target="__blank"
 						class="bg-ternary-light dark:bg-ternary-dark text-gray-400 hover:text-primary-dark dark:hover:text-primary-light p-2 rounded-lg shadow-sm"
 						><i data-feather="instagram" class="w-5 h-5"></i
 					></a>
 					<a
-						href="#"
+						href="https://facebook.com/nangialai.stoman"
+						target="__blank"
+						class="bg-ternary-light dark:bg-ternary-dark text-gray-400 hover:text-primary-dark dark:hover:text-primary-light p-2 rounded-lg shadow-sm"
+						><i data-feather="facebook" class="w-5 h-5"></i
+					></a>
+
+					<a
+						href="https://linkedin.com/"
+						target="__blank"
 						class="bg-ternary-light dark:bg-ternary-dark text-gray-400 hover:text-primary-dark dark:hover:text-primary-light p-2 rounded-lg shadow-sm"
 						><i data-feather="linkedin" class="w-5 h-5"></i
 					></a>
 					<a
-						href="#"
+						href="https://www.youtube.com/c/StomanStudio"
+						target="__blank"
 						class="bg-ternary-light dark:bg-ternary-dark text-gray-400 hover:text-primary-dark dark:hover:text-primary-light p-2 rounded-lg shadow-sm"
 						><i data-feather="youtube" class="w-5 h-5"></i
 					></a>

@@ -1,7 +1,7 @@
 <template>
 	<!-- Banner start -->
 	<section
-		class="flex flex-col sm:justify-between items-center sm:flex-row mt-8 sm:mt-20"
+		class="flex flex-col sm:justify-between items-center sm:flex-row mt-12 sm:mt-20"
 	>
 		<div class="w-full sm:w-1/3 text-left">
 			<h1
@@ -17,7 +17,7 @@
 			<div class="flex justify-center sm:block">
 				<a
 					href="#"
-					class="flex justify-center items-center w-36 sm:w-48 mt-10 mb-6 sm:mb-0 text-lg border border-indigo-200 dark:border-ternary-dark py-2.5 sm:py-3 shadow-lg rounded-xl bg-indigo-50 hover:bg-indigo-500 text-gray-500 hover:text-white"
+					class="flex justify-center items-center w-36 sm:w-48 mt-12 mb-6 sm:mb-0 text-lg border border-indigo-200 dark:border-ternary-dark py-2.5 sm:py-3 shadow-lg rounded-xl bg-indigo-50 hover:bg-indigo-500 text-gray-500 hover:text-white"
 				>
 					<i
 						data-feather="arrow-down-circle"

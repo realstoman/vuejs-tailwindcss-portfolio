@@ -7,39 +7,44 @@
 				Follow me
 			</p>
 			<ul class="flex gap-4 sm:gap-8">
-				<li
+				<a
+					href="https://github.com/NangialaiStoman"
+					target="__blank"
 					class="text-gray-400 hover:text-indigo-500 dark:hover:text-indigo-400 cursor-pointer rounded-lg bg-gray-50 dark:bg-ternary-dark hover:bg-gray-100 shadow-sm∫ p-4"
 				>
 					<i data-feather="github" class="w-6 sm:w-8 h-6 sm:h-8"></i>
-				</li>
-				<li
+				</a>
+				<a
+					href="https://twitter.com/NangialaiStoman"
+					target="__blank"
 					class="text-gray-400 hover:text-indigo-500 dark:hover:text-indigo-400 cursor-pointer rounded-lg bg-gray-50 dark:bg-ternary-dark hover:bg-gray-100 shadow-sm∫ p-4"
 				>
 					<i data-feather="twitter" class="w-6 sm:w-8 h-6 sm:h-8"></i>
-				</li>
-				<li
+				</a>
+				<a
+					href="https://instagram.com/NangialaiStoman"
+					target="__blank"
 					class="text-gray-400 hover:text-indigo-500 dark:hover:text-indigo-400 cursor-pointer rounded-lg bg-gray-50 dark:bg-ternary-dark hover:bg-gray-100 shadow-sm∫ p-4"
 				>
 					<i
 						data-feather="instagram"
 						class="w-6 sm:w-8 h-6 sm:h-8"
 					></i>
-				</li>
-				<li
+				</a>
+				<a
+					href="https://behance.net/NangialaiStoman"
+					target="__blank"
 					class="text-gray-400 hover:text-indigo-500 dark:hover:text-indigo-400 cursor-pointer rounded-lg bg-gray-50 dark:bg-ternary-dark hover:bg-gray-100 shadow-sm∫ p-4"
 				>
-					<i
-						data-feather="dribbble"
-						class="w-6 sm:w-8 h-6 sm:h-8"
-					></i>
-				</li>
+					<i data-feather="feather" class="w-6 sm:w-8 h-6 sm:h-8"></i>
+				</a>
 			</ul>
 		</div>
 		<div class="flex justify-center items-center text-center">
 			<div class="text-lg text-ternary-dark dark:text-ternary-light">
 				&copy; Copyright 2021.
 				<a
-					href="https://stoman.me"
+					href="http://stoman.me"
 					target="__blank"
 					class="text-secondary-dark dark:text-secondary-light font-medium"
 					>Stoman</a
