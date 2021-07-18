@@ -1,12 +1,14 @@
 <template>
-	<!-- Header Start -->
-	<Header></Header>
+	<div :class="appTheme">
+		<!-- Header Start -->
+		<Header></Header>
 
-	<!-- Render Active Component Contents Start -->
-	<router-view />
+		<!-- Render Active Component Contents Start -->
+		<router-view />
 
-	<!-- Footer Start -->
-	<Footer></Footer>
+		<!-- Footer Start -->
+		<Footer></Footer>
+	</div>
 </template>
 
 <script>
@@ -18,6 +20,11 @@ export default {
 	components: {
 		Header,
 		Footer,
+	},
+	data: () => {
+		return {
+			appTheme: localStorage.getItem('theme'),
+		};
 	},
 	mounted() {
 		feather.replace();
@@ -34,6 +41,5 @@ export default {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	text-align: center;
-	color: #2c3e50;
 }
 </style>
