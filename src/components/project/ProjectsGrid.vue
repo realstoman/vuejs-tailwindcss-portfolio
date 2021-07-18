@@ -28,7 +28,7 @@
 					<p
 						class="text-2xl text-ternary-dark dark:text-ternary-light font-semibold mb-2"
 					>
-						King Health Platform
+						Google Health Platform
 					</p>
 					<span
 						class="text-lg text-ternary-dark dark:text-ternary-light"
