@@ -17,8 +17,8 @@ A simple portfolio starter theme built on the top of Vue.js V3 and TailwindCSS V
 
 ## Installation
 
-1. Make sure you have Node JS installed. If you don't have it: `npm install --global @gridsome/cli`
-1. Make sure you have Vue CLI installed. If you don't have it: `npm install --global @gridsome/cli`
+1. Make sure you have Node JS installed. If you don't have it: `npm install -g npm`
+1. Make sure you have Vue CLI installed. If you don't have it: `npm install -g @vue/cli`
 1. Clone the repo: `git clone https://github.com/NangialaiStoman/vuejs-tailwindcss-portfolio.git`
 1. `cd vuejs-tailwindcss-portfolio`
 1. `npm install`
@@ -26,6 +26,6 @@ A simple portfolio starter theme built on the top of Vue.js V3 and TailwindCSS V
 
 ## Notes
 
--   The dark mode is highly inspired by [Gridsome Portfolio Starter by Andre Madarang](https://github.com/drehimself/gridsome-portfolio-starter). Since the project is based on Gridsome, I wanted to create a pure Vue.js and TailwindCSS version of it
--   Check out a [screencast I did](https://www.youtube.com/) where I go through the process of building this portfolio (Coming Soon).
+-   The dark mode is highly inspired by [Gridsome Portfolio Starter by Andre Madarang](https://github.com/drehimself/gridsome-portfolio-starter). Since that project is based on Gridsome, I wanted to create a Vue.js and TailwindCSS portfolio with dark mode
+-   Coming Soon [I'll be doing a screencast](https://www.youtube.com/c/StomanStudio). Soon I'll be uploading a video to my YouTube channel where I'll be going through the process of creating this portoflio
 -   Illustrations from [unDraw](https://undraw.co)
