@@ -31,9 +31,6 @@ export default {
 		AboutCounter,
 		Clients,
 	},
-	props: {
-		msg: String,
-	},
 	data: () => {
 		return {};
 	},

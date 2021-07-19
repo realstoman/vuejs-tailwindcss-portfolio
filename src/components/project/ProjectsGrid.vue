@@ -169,9 +169,6 @@ import feather from 'feather-icons';
 
 export default {
 	name: 'Projects',
-	props: {
-		msg: String,
-	},
 	mounted() {
 		feather.replace();
 	},

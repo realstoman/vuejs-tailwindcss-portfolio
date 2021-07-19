@@ -35,9 +35,6 @@ export default {
 		SingleProjectInfo,
 		SingleProjectRelatedProjects,
 	},
-	props: {
-		msg: String,
-	},
 	data: () => {
 		return {};
 	},

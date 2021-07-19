@@ -15,9 +15,6 @@ export default {
 	components: {
 		ProjectsGrid,
 	},
-	props: {
-		msg: String,
-	},
 	data: () => {
 		return {};
 	},
