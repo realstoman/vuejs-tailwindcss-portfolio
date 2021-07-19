@@ -21,9 +21,6 @@ export default {
 		Banner,
 		ProjectsGrid,
 	},
-	props: {
-		msg: String,
-	},
 	data: () => {
 		return {};
 	},

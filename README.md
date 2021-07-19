@@ -28,6 +28,8 @@ A simple portfolio starter theme built on the top of Vue.js V3 and TailwindCSS V
 
 -   The dark mode is highly inspired by [Gridsome Portfolio Starter by Andre Madarang](https://github.com/drehimself/gridsome-portfolio-starter). Since that project is based on Gridsome, I wanted to create a Vue.js and TailwindCSS portfolio with dark mode
 -   Coming Soon [I'll be doing a screencast](https://www.youtube.com/c/StomanStudio). Soon I'll be uploading a video to my YouTube channel where I'll be going through the process of creating this portoflio
--   Illustrations from [unDraw](https://undraw.co)
+-   Illustrations from [unDraw](https://undraw.co) and [Freepik](https://freepik.com)
 -   Images from [Unsplash](https://unsplash.com)
+-   I'll be constantly updating this repo as I'll be adding more sections to it
+-   Feel free to use it as your own portfolio
 -   Contributions are welcome
