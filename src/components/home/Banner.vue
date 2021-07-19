@@ -28,7 +28,16 @@
 			</div>
 		</div>
 		<div class="w-full sm:w-2/3 text-right float-right mt-8 sm:mt-0">
-			<img src="@/assets/images/developer.svg" alt="Developer" />
+			<img
+				v-if="theme === 'light'"
+				src="@/assets/images/developer.svg"
+				alt="Developer"
+			/>
+			<img
+				else
+				src="@/assets/images/developer-dark.svg"
+				alt="Developer"
+			/>
 		</div>
 	</section>
 	<!-- Banner end -->
@@ -39,11 +48,10 @@ import feather from 'feather-icons';
 
 export default {
 	name: 'Home',
-	props: {
-		msg: String,
-	},
 	data: () => {
-		return {};
+		return {
+			theme: localStorage.getItem('theme'),
+		};
 	},
 	mounted() {
 		feather.replace();
