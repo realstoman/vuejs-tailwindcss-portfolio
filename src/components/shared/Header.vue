@@ -80,6 +80,7 @@
 				<div>
 					<button
 						class="text-md font-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-lg px-5 py-2.5"
+						@click="showModal()"
 					>
 						Hire Me
 					</button>
@@ -97,12 +98,12 @@
 
 		<!-- Hire me modal start -->
 		<transition name="fade">
-			<div v-show="show_modal" class="fixed inset-0 z-30">
+			<div v-show="modal" class="fixed inset-0 z-30">
 				<!-- background -->
 				<div
-					v-show="show_modal"
+					v-show="modal"
 					@click="showModal()"
-					class="bg-filter bg-white opacity-25 fixed inset-0 w-full h-full z-20"
+					class="bg-filter bg-black bg-opacity-70 fixed inset-0 w-full h-full z-20"
 				></div>
 				<!--          -->
 				<main
@@ -110,8 +111,8 @@
 				>
 					<transition name="fade-up-down">
 						<div
-							v-show="show_modal"
-							class="modal-wrapper inline-block flex items-center z-30"
+							v-show="modal"
+							class="modal-wrapper flex items-center z-30"
 						>
 							<div
 								class="modal max-w-md mx-auto xl:max-w-5xl lg:max-w-5xl md:max-w-2xl bg-white max-h-screen shadow-lg flex-row rounded relative"
@@ -170,7 +171,7 @@ export default {
 		return {
 			isOpen: false,
 			theme: '',
-			modal: true,
+			modal: false,
 		};
 	},
 
@@ -186,17 +187,17 @@ export default {
 			this.theme = theme;
 		},
 		showModal() {
-			if (this.show_modal) {
+			if (this.modal) {
 				//stop screen scrolling
 				document
 					.getElementsByTagName('html')[0]
 					.classList.remove('overflow-y-hidden');
-				this.show_modal = false;
+				this.modal = false;
 			} else {
 				document
 					.getElementsByTagName('html')[0]
 					.classList.add('overflow-y-hidden');
-				this.show_modal = true;
+				this.modal = true;
 			}
 		},
 	},
