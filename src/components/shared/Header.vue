@@ -115,14 +115,22 @@
 							class="modal-wrapper flex items-center z-30"
 						>
 							<div
-								class="modal max-w-md mx-auto xl:max-w-5xl lg:max-w-5xl md:max-w-2xl bg-white max-h-screen shadow-lg flex-row rounded relative"
+								class="modal max-w-md mx-auto xl:max-w-xl lg:max-w-xl md:max-w-xl bg-secondary-light dark:bg-primary-dark max-h-screen shadow-lg flex-row rounded-xl relative"
 							>
 								<div
-									class="modal-header p-5 bg-gray-900 text-gray-900 rounded-t"
+									class="modal-header flex justify-between p-5 border-b border-ternary-light dark:border-ternary-dark"
 								>
-									<h5 class="text-white text-2xl uppercase">
-										this is header
+									<h5
+										class=" text-primary-dark dark:text-primary-light text-2xl"
+									>
+										What project are you looking for?
 									</h5>
+									<button
+										class="px-4 font-bold text-primary-dark dark:text-primary-light"
+										@click="showModal()"
+									>
+										X
+									</button>
 								</div>
 								<div
 									class="modal-body p-5 w-full h-full overflow-y-auto "
@@ -141,14 +149,7 @@
 								</div>
 								<div
 									class="modal-footer py-3 px-5 border0-t text-right"
-								>
-									<button
-										class="bg-green-500 px-5 py-2 text-white"
-										@click="showModal()"
-									>
-										OK
-									</button>
-								</div>
+								></div>
 							</div>
 						</div>
 					</transition>
