@@ -103,7 +103,7 @@
 				<div
 					v-show="modal"
 					@click="showModal()"
-					class="bg-filter bg-black bg-opacity-70 fixed inset-0 w-full h-full z-20"
+					class="bg-filter bg-black bg-opacity-50 fixed inset-0 w-full h-full z-20"
 				></div>
 				<!--          -->
 				<main
@@ -115,10 +115,10 @@
 							class="modal-wrapper flex items-center z-30"
 						>
 							<div
-								class="modal max-w-md mx-auto xl:max-w-xl lg:max-w-xl md:max-w-xl bg-secondary-light dark:bg-primary-dark max-h-screen shadow-lg flex-row rounded-xl relative"
+								class="modal max-w-md mx-5 xl:max-w-xl lg:max-w-xl md:max-w-xl bg-secondary-light dark:bg-primary-dark max-h-screen shadow-lg flex-row rounded-xl relative"
 							>
 								<div
-									class="modal-header flex justify-between p-5 border-b border-ternary-light dark:border-ternary-dark"
+									class="modal-header flex justify-between gap-10 p-5 border-b border-ternary-light dark:border-ternary-dark"
 								>
 									<h5
 										class=" text-primary-dark dark:text-primary-light text-2xl"
@@ -135,21 +135,87 @@
 								<div
 									class="modal-body p-5 w-full h-full overflow-y-auto "
 								>
-									<p class="text-justify">
-										cilis omnis nam illum maiores, porro
-										velit deserunt neque. Lorem ipsum dolor,
-										sit amet consectetur adipisicing elit.
-										Esse, voluptates eveniet labore dolorum
-										molestiae, modi saepe fugiat minima
-										repudiandae repellendus obcaecati
-										voluptatibus ab tenetur recusandae eius
-										quos at maiores atque consectetur
-										facilis! Nisi fuga
-									</p>
+									<form class="max-w-xl m-4 text-left">
+										<div class="">
+											<input
+												class="w-full px-5 py-2 border-1 border-gray-200 dark:border-secondary-dark rounded-lg text-md dark:font-medium bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
+												id="name"
+												name="name"
+												type="text"
+												required=""
+												placeholder="Name"
+												aria-label="Name"
+											/>
+										</div>
+										<div class="mt-6">
+											<input
+												class="w-full px-5 py-2 border-1 border-gray-200 dark:border-secondary-dark rounded-lg text-md dark:font-medium bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
+												id="email"
+												name="email"
+												type="text"
+												required=""
+												placeholder="Email"
+												aria-label="Email"
+											/>
+										</div>
+										<div class="mt-6">
+											<select
+												class="w-full px-5 py-2 border-1 border-gray-200 dark:border-secondary-dark rounded-lg text-md dark:font-medium bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
+												id="subject"
+												name="subject"
+												type="text"
+												required=""
+												aria-label="Subject"
+											>
+												<option selected disabled
+													>Select Project Type</option
+												>
+												<option value="web"
+													>Web Application</option
+												>
+												<option value="mobile"
+													>Mobile Applicaiton</option
+												>
+												<option value="design"
+													>UI/UX Design</option
+												>
+												<option value="graphic"
+													>Branding</option
+												>
+											</select>
+										</div>
+
+										<div class="mt-6">
+											<textarea
+												class="w-full px-5 py-2 border-1 border-gray-200 dark:border-secondary-dark rounded-lg text-md dark:font-medium bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
+												id="message"
+												name="message"
+												cols="14"
+												rows="6"
+												placeholder="Project description"
+											></textarea>
+										</div>
+
+										<div class="mt-6">
+											<button
+												class="px-6 py-2.5 text-white font-medium tracking-wider bg-indigo-500 hover:bg-indigo-600 rounded-lg"
+												type="submit"
+											>
+												Send Request
+											</button>
+										</div>
+									</form>
 								</div>
 								<div
 									class="modal-footer py-3 px-5 border0-t text-right"
-								></div>
+								>
+									<button
+										class="px-4 font-bold text-primary-dark dark:text-primary-light"
+										@click="showModal()"
+									>
+										Close
+									</button>
+								</div>
 							</div>
 						</div>
 					</transition>
