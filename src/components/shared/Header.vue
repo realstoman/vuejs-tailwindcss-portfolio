@@ -95,9 +95,10 @@
 			</div>
 		</div>
 
+		<!-- Hire me modal start -->
 		<transition name="fade">
 			<div v-show="show_modal" class="fixed inset-0 z-30">
-				<!--       background -->
+				<!-- background -->
 				<div
 					v-show="show_modal"
 					@click="showModal()"
@@ -153,6 +154,7 @@
 				</main>
 			</div>
 		</transition>
+		<!-- Hire me modal end -->
 	</nav>
 </template>
 
@@ -168,6 +170,7 @@ export default {
 		return {
 			isOpen: false,
 			theme: '',
+			modal: true,
 		};
 	},
 
@@ -181,6 +184,20 @@ export default {
 	methods: {
 		updateTheme(theme) {
 			this.theme = theme;
+		},
+		showModal() {
+			if (this.show_modal) {
+				//stop screen scrolling
+				document
+					.getElementsByTagName('html')[0]
+					.classList.remove('overflow-y-hidden');
+				this.show_modal = false;
+			} else {
+				document
+					.getElementsByTagName('html')[0]
+					.classList.add('overflow-y-hidden');
+				this.show_modal = true;
+			}
 		},
 	},
 	updated() {
