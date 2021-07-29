@@ -213,4 +213,43 @@ export default {
 	@apply dark:text-indigo-400;
 	@apply font-medium;
 }
+
+.modal-body {
+	max-height: 500px;
+}
+.bg-gray-800-opacity {
+	background-color: #2d374850;
+}
+@media screen and (max-width: 768px) {
+	.modal-body {
+		max-height: 400px;
+	}
+}
+.fade-up-down-enter-active {
+	transition: all 0.3s ease;
+}
+.fade-up-down-leave-active {
+	transition: all 0.3s ease;
+}
+.fade-up-down-enter {
+	transform: translateY(10%);
+	opacity: 0;
+}
+.fade-up-down-leave-to {
+	transform: translateY(10%);
+	opacity: 0;
+}
+
+.fade-enter-active {
+	-webkit-transition: opacity 2s;
+	transition: opacity 0.3s;
+}
+.fade-leave-active {
+	transition: opacity 0.3s;
+}
+
+.fade-enter,
+.fade-leave-to {
+	opacity: 0;
+}
 </style>
