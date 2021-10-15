@@ -1,9 +1,12 @@
 <template>
 	<nav id="nav" class="container mx-auto">
+		<!-- Header start -->
 		<div
 			class="z-10 max-w-screen-lg xl:max-w-screen-xl block sm:flex sm:justify-between sm:items-center my-6"
 		>
+			<!-- Header menu links and small screen humberger menu start -->
 			<div class="flex justify-between items-center">
+				<!-- Header logos start -->
 				<div>
 					<router-link to="/"
 						><img
@@ -20,13 +23,17 @@
 						/>
 					</router-link>
 				</div>
+				<!-- Header logos end -->
 
+				<!-- Theme switcher small screen start -->
 				<theme-switcher
 					:theme="theme"
 					@themeChanged="updateTheme"
 					class="block sm:hidden bg-ternary-light dark:bg-ternary-dark hover:bg-hover-light dark:hover:bg-hover-dark hover:shadow-sm px-2.5 py-2 rounded-lg ml-10"
 				/>
+				<!-- Theme switcher small screen end -->
 
+				<!-- Small screen humberger menu start -->
 				<div class="sm:hidden">
 					<button
 						@click="isOpen = !isOpen"
@@ -52,8 +59,11 @@
 						</svg>
 					</button>
 				</div>
+				<!-- Small screen humberger menu end -->
 			</div>
+			<!-- Header menu links and small screen humberger menu end -->
 
+			<!-- Header links start -->
 			<div
 				:class="isOpen ? 'block' : 'hidden'"
 				class="ml-3 sm:ml-4 mt-5 sm:mt-3 sm:flex justify-center items-center"
@@ -74,9 +84,13 @@
 					>Contact</router-link
 				>
 			</div>
+			<!-- Header links end -->
+
+			<!-- Header right section buttons start -->
 			<div
 				class="hidden sm:flex justify-between items-center flex-col md:flex-row"
 			>
+				<!-- Hire me button start -->
 				<div>
 					<button
 						class="text-md font-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-lg px-5 py-2.5"
@@ -85,15 +99,19 @@
 						Hire Me
 					</button>
 				</div>
-				<!-- Theme switcher start -->
+				<!-- Hire me button end -->
+
+				<!-- Theme switcher largr screen start -->
 				<theme-switcher
 					:theme="theme"
 					@themeChanged="updateTheme"
 					class="ml-8 bg-primary-light dark:bg-ternary-dark px-3 py-2 shadow-sm rounded-xl cursor-pointer"
 				/>
-				<!-- Theme switcher end -->
+				<!-- Theme switcher largr screen end -->
 			</div>
+			<!-- Header right section buttons stendart -->
 		</div>
+		<!-- Header end -->
 
 		<!-- Hire me modal start -->
 		<transition name="fade">
@@ -254,7 +272,7 @@ export default {
 		},
 		showModal() {
 			if (this.modal) {
-				//stop screen scrolling
+				// Stop screen scrolling
 				document
 					.getElementsByTagName('html')[0]
 					.classList.remove('overflow-y-hidden');
