@@ -194,20 +194,11 @@
 												required=""
 												aria-label="Subject"
 											>
-												<option selected disabled
-													>Select Project Type</option
-												>
-												<option value="web"
-													>Web Application</option
-												>
-												<option value="mobile"
-													>Mobile Applicaiton</option
-												>
-												<option value="design"
-													>UI/UX Design</option
-												>
-												<option value="graphic"
-													>Branding</option
+												<option
+													v-for="category in categories"
+													:key="category"
+													:value="category.value"
+													>{{ category.name }}</option
 												>
 											</select>
 										</div>
@@ -237,7 +228,7 @@
 									class="modal-footer py-3 px-5 border0-t text-right"
 								>
 									<button
-										class="px-6 py-2 bg-indigo-400 rounded-lg font-bold text-primary-light"
+										class="px-6 py-2 bg-indigo-400 hover:bg-indigo-500 rounded-lg font-bold text-primary-light"
 										@click="showModal()"
 									>
 										Close
@@ -266,6 +257,24 @@ export default {
 			isOpen: false,
 			theme: '',
 			modal: false,
+			categories: [
+				{
+					value: 'web',
+					name: 'Web Application',
+				},
+				{
+					value: 'mobile',
+					name: 'Mobile Applicaiton',
+				},
+				{
+					value: 'ui-ux',
+					name: 'UI/UX Design',
+				},
+				{
+					value: 'branding',
+					name: 'Branding',
+				},
+			],
 		};
 	},
 
