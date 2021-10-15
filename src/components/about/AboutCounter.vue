@@ -22,7 +22,7 @@
 			</div>
 			<!-- About me single counter end -->
 
-			<!-- About me single counter start -->p
+			<!-- About me single counter start -->
 			<div class="mb-20 sm:mb-0">
 				<counter
 					ref="counter"
