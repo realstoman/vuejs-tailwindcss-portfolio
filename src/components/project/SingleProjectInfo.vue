@@ -44,10 +44,10 @@
 				<p
 					class="text-2xl font-semibold text-ternary-dark dark:text-ternary-light mb-2"
 				>
-					Tools & Technologies
+					{{ technlogies[0].title }}
 				</p>
 				<p class="text-primary-dark dark:text-ternary-light">
-					HTML, CSS, JavaScript, Vue.js, TailwindCSS, AdobeXD
+					{{ technlogies[0].techs.join(', ') }}
 				</p>
 			</div>
 			<div>
@@ -58,35 +58,12 @@
 				</p>
 				<div class="flex items-center gap-3 mt-5">
 					<a
-						href="https://twitter.com/NangialaiStoman"
+						v-for="social in socialSharings"
+						:key="social.id"
+						:href="social.url"
 						target="__blank"
 						class="bg-ternary-light dark:bg-ternary-dark text-gray-400 hover:text-primary-dark dark:hover:text-primary-light p-2 rounded-lg shadow-sm"
-						><i data-feather="twitter" class="w-5 h-5"></i
-					></a>
-					<a
-						href="https://instagram.com/NangialaiStoman"
-						target="__blank"
-						class="bg-ternary-light dark:bg-ternary-dark text-gray-400 hover:text-primary-dark dark:hover:text-primary-light p-2 rounded-lg shadow-sm"
-						><i data-feather="instagram" class="w-5 h-5"></i
-					></a>
-					<a
-						href="https://facebook.com/nangialai.stoman"
-						target="__blank"
-						class="bg-ternary-light dark:bg-ternary-dark text-gray-400 hover:text-primary-dark dark:hover:text-primary-light p-2 rounded-lg shadow-sm"
-						><i data-feather="facebook" class="w-5 h-5"></i
-					></a>
-
-					<a
-						href="https://linkedin.com/"
-						target="__blank"
-						class="bg-ternary-light dark:bg-ternary-dark text-gray-400 hover:text-primary-dark dark:hover:text-primary-light p-2 rounded-lg shadow-sm"
-						><i data-feather="linkedin" class="w-5 h-5"></i
-					></a>
-					<a
-						href="https://www.youtube.com/c/StomanStudio"
-						target="__blank"
-						class="bg-ternary-light dark:bg-ternary-dark text-gray-400 hover:text-primary-dark dark:hover:text-primary-light p-2 rounded-lg shadow-sm"
-						><i data-feather="youtube" class="w-5 h-5"></i
+						><i :data-feather="social.icon" class="w-5 h-5"></i
 					></a>
 				</div>
 			</div>
@@ -97,41 +74,12 @@
 			>
 				Challenge
 			</p>
-			<p class="mb-5 text-lg text-ternary-dark dark:text-ternary-light">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
-				ipsa, ullam modi esse ea molestiae, non quidem expedita
-				perspiciatis nihil eligendi maxime eum eos exercitationem.
-				Aliquam labore amet odio quisquam? Lorem ipsum dolor sit amet
-				consectetur, adipisicing elit. Velit, consectetur? Soluta,
-				minus, quia tenetur distinctio asperiores aperiam impedit
-				provident at autem omnis odio, atque dicta minima alias
-				voluptatum ullam animi.
-			</p>
-			<p class="mb-5 text-lg text-ternary-dark dark:text-ternary-light">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
-				ipsa, ullam modi esse ea molestiae, non quidem expedita
-				perspiciatis nihil eligendi maxime eum eos exercitationem.
-				Aliquam labore amet odio quisquam? Lorem ipsum dolor sit amet
-				consectetur, adipisicing elit. Velit, consectetur? Soluta,
-				minus, quia tenetur distinctio asperiores aperiam impedit
-				provident at autem omnis odio, atque dicta minima alias
-				voluptatum ullam animi.
-			</p>
-			<p class="mb-5 text-lg text-ternary-dark dark:text-ternary-light">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
-				ipsa, ullam modi esse ea molestiae, non quidem expedita
-				perspiciatis nihil eligendi maxime eum eos exercitationem.
-				Aliquam labore amet odio quisquam? Lorem ipsum dolor sit amet
-				consectetur, adipisicing elit. Velit, consectetur? Soluta,
-				minus, quia tenetur distinctio asperiores aperiam impedit
-				provident at autem omnis odio, atque dicta minima alias
-				voluptatum ullam animi.
-			</p>
-			<p class="mb-5 text-lg text-ternary-dark dark:text-ternary-light">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
-				ipsa, ullam modi esse ea molestiae, non quidem expedita
-				perspiciatis nihil eligendi maxime eum eos exercitationem.
-				Aliquam labore amet odio quisquam?
+			<p
+				v-for="projectDetail in projectDetails"
+				:key="projectDetail.id"
+				class="mb-5 text-lg text-ternary-dark dark:text-ternary-light"
+			>
+				{{ projectDetail.details }}
 			</p>
 		</div>
 	</div>
@@ -139,7 +87,92 @@
 </template>
 
 <script>
+import feather from 'feather-icons';
+
 export default {
-	setup() {},
+	data() {
+		return {
+			technlogies: [
+				{
+					title: 'Tools & Technologies',
+					techs: [
+						'HTML',
+						'CSS',
+						'JavaScript',
+						'Vue.js',
+						'TailwindCSS',
+						'AdobeXD',
+					],
+				},
+			],
+			projectDetails: [
+				{
+					id: 1,
+					details:
+						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.',
+				},
+				{
+					id: 2,
+					details:
+						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?',
+				},
+				{
+					id: 3,
+					details:
+						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?',
+				},
+				{
+					id: 4,
+					details:
+						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.',
+				},
+			],
+			socialSharings: [
+				{
+					id: 1,
+					name: 'Twitter',
+					icon: 'twitter',
+					url: 'https://twitter.com/NangialaiStoman',
+				},
+				{
+					id: 2,
+					name: 'Instagram',
+					icon: 'instagram',
+					url: 'https://instagram.com/NangialaiStoman',
+				},
+				{
+					id: 3,
+					name: 'Facebook',
+					icon: 'facebook',
+					url: 'https://facebook.com/',
+				},
+				{
+					id: 4,
+					name: 'LinkedIn',
+					icon: 'linkedin',
+					url: 'https://linkedin.com/',
+				},
+				{
+					id: 5,
+					name: 'Youtube',
+					icon: 'youtube',
+					url: 'https://www.youtube.com/c/StomanStudio',
+				},
+				{
+					id: 5,
+					name: 'Dribbble',
+					icon: 'dribbble',
+					url: 'https://www.dribbble.com/',
+				},
+			],
+		};
+	},
+	mounted() {
+		feather.replace();
+	},
+	methods: {},
+	updated() {
+		feather.replace();
+	},
 };
 </script>

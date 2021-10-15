@@ -1,25 +1,15 @@
 <template>
 	<!-- Project gallery start -->
 	<div class="grid grid-cols-1 sm:grid-cols-3 sm:gap-10 mt-12">
-		<div class="mb-10 sm:mb-0">
+		<div
+			class="mb-10 sm:mb-0"
+			v-for="projectImage in projectImages"
+			:key="projectImage.id"
+		>
 			<img
-				src="../../assets/images/ui-project-1.jpg"
+				:src="projectImage.img"
 				class="rounded-2xl cursor-pointer shadow-lg sm:shadow-none"
-				alt="Kabul Project Management UI"
-			/>
-		</div>
-		<div class="mb-10 sm:mb-0">
-			<img
-				src="../../assets/images/web-project-2.jpg"
-				class="rounded-2xl cursor-pointer shadow-lg sm:shadow-none"
-				alt="Kabul Project Management UI"
-			/>
-		</div>
-		<div>
-			<img
-				src="../../assets/images/mobile-project-2.jpg"
-				class="rounded-2xl cursor-pointer shadow-lg sm:shadow-none"
-				alt="Kabul Project Management UI"
+				alt="{{ projectImage.title }}"
 			/>
 		</div>
 	</div>
@@ -28,6 +18,26 @@
 
 <script>
 export default {
-	setup() {},
+	data() {
+		return {
+			projectImages: [
+				{
+					id: 1,
+					title: 'Kabul Project Management UI',
+					img: require('../../assets/images/ui-project-1.jpg'),
+				},
+				{
+					id: 2,
+					title: 'Kabul Project Management UI',
+					img: require('../../assets/images/web-project-2.jpg'),
+				},
+				{
+					id: 3,
+					title: 'Kabul Project Management UI',
+					img: require('../../assets/images/mobile-project-2.jpg'),
+				},
+			],
+		};
+	},
 };
 </script>
