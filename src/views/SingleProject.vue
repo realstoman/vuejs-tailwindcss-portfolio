@@ -9,8 +9,6 @@
 		<!-- Project information -->
 		<SingleProjectInfo />
 
-		<hr class="mt-10 sm:mt-20 text-ternary-dark dark:text-ternary-dark" />
-
 		<!-- Project related projects -->
 		<SingleProjectRelatedProjects />
 	</div>
