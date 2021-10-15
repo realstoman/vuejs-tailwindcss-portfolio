@@ -1,11 +1,11 @@
 <template>
-	<nav id="nav" class="container mx-auto">
+	<nav id="nav" class="sm:container sm:mx-auto">
 		<!-- Header start -->
 		<div
 			class="z-10 max-w-screen-lg xl:max-w-screen-xl block sm:flex sm:justify-between sm:items-center my-6"
 		>
 			<!-- Header menu links and small screen humberger menu start -->
-			<div class="flex justify-between items-center">
+			<div class="flex justify-between items-center px-4 sm:px-0">
 				<!-- Header logos start -->
 				<div>
 					<router-link to="/"
@@ -43,7 +43,7 @@
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							viewBox="0 0 24 24"
-							class="h-6 w-6 fill-current text-secondary-dark dark:text-ternary-light"
+							class="h-7 w-7 fill-current text-secondary-dark dark:text-ternary-light"
 						>
 							<path
 								v-if="isOpen"
@@ -66,7 +66,7 @@
 			<!-- Header links start -->
 			<div
 				:class="isOpen ? 'block' : 'hidden'"
-				class="ml-3 sm:ml-4 mt-5 sm:mt-3 sm:flex justify-center items-center"
+				class="m-0 sm:ml-4 mt-5 sm:mt-3 sm:flex p-5 sm:p-0 justify-center items-center shadow-lg sm:shadow-none"
 			>
 				<router-link
 					to="/projects"
@@ -75,14 +75,24 @@
 				>
 				<router-link
 					to="/about"
-					class="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  md:mx-2 mb-2 sm:py-2"
+					class="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  md:mx-2 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-0 sm:border-t-0 border-primary-light dark:border-secondary-dark"
 					>About Me</router-link
 				>
 				<router-link
 					to="/contact"
-					class="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  md:mx-2 mb-2 sm:py-2"
+					class="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  md:mx-2 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-0 sm:border-t-0 border-primary-light dark:border-secondary-dark"
 					>Contact</router-link
 				>
+				<div
+					class="border-t-2 pt-3 sm:pt-0 sm:border-t-0 border-primary-light dark:border-secondary-dark"
+				>
+					<button
+						class="sm:hidden block text-left text-md font-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-md px-4 py-2 mt-2"
+						@click="showModal()"
+					>
+						Hire Me
+					</button>
+				</div>
 			</div>
 			<!-- Header links end -->
 
