@@ -1,8 +1,10 @@
 <template>
 	<div class="mt-10 sm:mt-20 bg-primary-light dark:bg-ternary-dark shadow-sm">
+		<!-- About me counters start -->
 		<div
 			class="container mx-auto py-20 block sm:flex sm:justify-between sm:items-center"
 		>
+			<!-- About me single counter start -->
 			<div class="mb-20 sm:mb-0">
 				<counter
 					ref="counter"
@@ -18,7 +20,9 @@
 					>Years of experience</span
 				>
 			</div>
+			<!-- About me single counter end -->
 
+			<!-- About me single counter start -->p
 			<div class="mb-20 sm:mb-0">
 				<counter
 					ref="counter"
@@ -35,7 +39,9 @@
 					>Stars on GitHub</span
 				>
 			</div>
+			<!-- About me single counter end -->
 
+			<!-- About me single counter start -->
 			<div class="mb-20 sm:mb-0">
 				<counter
 					ref="counter"
@@ -52,7 +58,9 @@
 					>Positive feedback</span
 				>
 			</div>
+			<!-- About me single counter end -->
 
+			<!-- About me single counter start -->
 			<div class="mb-20 sm:mb-0">
 				<counter
 					ref="counter"
@@ -68,7 +76,9 @@
 					>Projects completed</span
 				>
 			</div>
+			<!-- About me single counter end -->
 		</div>
+		<!-- About me counters end -->
 	</div>
 </template>
 

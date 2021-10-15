@@ -1,14 +1,14 @@
 <template>
 	<div :class="appTheme">
-		<!-- Header Start -->
+		<!-- App header -->
 		<Header></Header>
 
-		<!-- Render Active Component Contents Start -->
+		<!-- Render active component contents with transition -->
 		<transition name="fade" mode="out-in">
 			<router-view :theme="appTheme" />
 		</transition>
 
-		<!-- Footer Start -->
+		<!-- App footer -->
 		<Footer></Footer>
 	</div>
 </template>

@@ -1,22 +1,18 @@
 <template>
 	<div class="container mx-auto mt-10 sm:mt-20">
-		<!-- Projects start -->
+		<!-- Project header -->
 		<SingleProjectHeader />
-		<!-- Projects end -->
 
-		<!-- Projects start -->
+		<!-- Project gallery -->
 		<SingleProjectGallery />
-		<!-- Projects end -->
 
-		<!-- Projects start -->
+		<!-- Project information -->
 		<SingleProjectInfo />
-		<!-- Projects end -->
 
 		<hr class="mt-10 sm:mt-20 text-ternary-dark dark:text-ternary-dark" />
 
-		<!-- Projects start -->
+		<!-- Project related projects -->
 		<SingleProjectRelatedProjects />
-		<!-- Projects end -->
 	</div>
 </template>
 

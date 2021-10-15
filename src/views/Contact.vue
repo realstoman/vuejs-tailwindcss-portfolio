@@ -1,5 +1,6 @@
 <template>
 	<div class="container mx-auto sm:flex py-5 sm:py-10 mt-10 sm:mt-20">
+		<!-- Contact form start -->
 		<div class="w-full sm:w-1/2">
 			<div class="leading-loose">
 				<form
@@ -85,6 +86,9 @@
 				</form>
 			</div>
 		</div>
+		<!-- Contact form end -->
+
+		<!-- Contact details start -->
 		<div class="w-full sm:w-1/2">
 			<div class="text-left max-w-xl px-6">
 				<h2
@@ -111,6 +115,7 @@
 				</ul>
 			</div>
 		</div>
+		<!-- Contact details end -->
 	</div>
 </template>
 

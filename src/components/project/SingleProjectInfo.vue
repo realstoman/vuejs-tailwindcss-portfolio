@@ -1,7 +1,9 @@
 <template>
 	<!-- Project information start -->
 	<div class="block sm:flex gap-0 sm:gap-10 mt-14">
+		<!-- Single project left section details start -->
 		<div class="w-full sm:w-1/3 text-left">
+			<!-- Single project client details start -->
 			<div class="mb-7">
 				<p
 					class="text-2xl font-semibold text-secondary-dark dark:text-secondary-light mb-2"
@@ -27,6 +29,9 @@
 					</li>
 				</ul>
 			</div>
+			<!-- Single project client details end -->
+
+			<!-- Single project objectives start -->
 			<div class="mb-7">
 				<p
 					class="text-2xl font-semibold text-ternary-dark dark:text-ternary-light mb-2"
@@ -40,6 +45,9 @@
 					cumque vero voluptate, reiciendis amet non!
 				</p>
 			</div>
+			<!-- Single project objectives end -->
+
+			<!-- Single project technologies start -->
 			<div class="mb-7">
 				<p
 					class="text-2xl font-semibold text-ternary-dark dark:text-ternary-light mb-2"
@@ -50,6 +58,9 @@
 					{{ technlogies[0].techs.join(', ') }}
 				</p>
 			</div>
+			<!-- Single project technologies end -->
+
+			<!-- Single project social sharing start -->
 			<div>
 				<p
 					class="text-2xl font-semibold text-ternary-dark dark:text-ternary-light mb-2"
@@ -67,7 +78,11 @@
 					></a>
 				</div>
 			</div>
+			<!-- Single project social sharing end -->
 		</div>
+		<!-- Single project left section details end -->
+
+		<!-- Single project right section details start -->
 		<div class="w-full sm:w-2/3 text-left mt-10 sm:mt-0">
 			<p
 				class="text-primary-dark dark:text-primary-light text-2xl font-bold mb-7"
@@ -82,6 +97,7 @@
 				{{ projectDetail.details }}
 			</p>
 		</div>
+		<!-- Single project right section details end -->
 	</div>
 	<!-- Project information end -->
 </template>
