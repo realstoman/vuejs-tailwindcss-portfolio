@@ -1,12 +1,14 @@
 <template>
 	<div :class="appTheme">
-		<!-- Header Start -->
+		<!-- App header -->
 		<Header></Header>
 
-		<!-- Render Active Component Contents Start -->
-		<router-view />
+		<!-- Render active component contents with transition -->
+		<transition name="fade" mode="out-in">
+			<router-view :theme="appTheme" />
+		</transition>
 
-		<!-- Footer Start -->
+		<!-- App footer -->
 		<Footer></Footer>
 	</div>
 </template>
@@ -41,5 +43,38 @@ export default {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	text-align: center;
+}
+
+.fade-enter-active {
+	animation: coming 0.4s;
+	animation-delay: 0.2s;
+	opacity: 0;
+}
+
+.fade-leave-active {
+	animation: going 0.4s;
+}
+
+@keyframes going {
+	from {
+		transform: translateX(0);
+	}
+
+	to {
+		transform: translateX(-10px);
+		opacity: 0;
+	}
+}
+
+@keyframes coming {
+	from {
+		transform: translateX(-10px);
+		opacity: 0;
+	}
+
+	to {
+		transform: translateX(0px);
+		opacity: 1;
+	}
 }
 </style>

@@ -1,9 +1,12 @@
 <template>
-	<nav id="nav" class="container mx-auto">
+	<nav id="nav" class="sm:container sm:mx-auto">
+		<!-- Header start -->
 		<div
 			class="z-10 max-w-screen-lg xl:max-w-screen-xl block sm:flex sm:justify-between sm:items-center my-6"
 		>
-			<div class="flex justify-between items-center">
+			<!-- Header menu links and small screen humberger menu start -->
+			<div class="flex justify-between items-center px-4 sm:px-0">
+				<!-- Header logos start -->
 				<div>
 					<router-link to="/"
 						><img
@@ -20,13 +23,17 @@
 						/>
 					</router-link>
 				</div>
+				<!-- Header logos end -->
 
+				<!-- Theme switcher small screen start -->
 				<theme-switcher
 					:theme="theme"
 					@themeChanged="updateTheme"
 					class="block sm:hidden bg-ternary-light dark:bg-ternary-dark hover:bg-hover-light dark:hover:bg-hover-dark hover:shadow-sm px-2.5 py-2 rounded-lg ml-10"
 				/>
+				<!-- Theme switcher small screen end -->
 
+				<!-- Small screen humberger menu start -->
 				<div class="sm:hidden">
 					<button
 						@click="isOpen = !isOpen"
@@ -36,7 +43,7 @@
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							viewBox="0 0 24 24"
-							class="h-6 w-6 fill-current text-secondary-dark dark:text-ternary-light"
+							class="h-7 w-7 fill-current text-secondary-dark dark:text-ternary-light"
 						>
 							<path
 								v-if="isOpen"
@@ -52,31 +59,48 @@
 						</svg>
 					</button>
 				</div>
+				<!-- Small screen humberger menu end -->
 			</div>
+			<!-- Header menu links and small screen humberger menu end -->
 
+			<!-- Header links start -->
 			<div
 				:class="isOpen ? 'block' : 'hidden'"
-				class="ml-3 sm:ml-4 mt-5 sm:mt-3 sm:flex justify-center items-center"
+				class="m-0 sm:ml-4 mt-5 sm:mt-3 sm:flex p-5 sm:p-0 justify-center items-center shadow-lg sm:shadow-none"
 			>
 				<router-link
 					to="/projects"
-					class="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  md:mx-6 mb-2 sm:py-2"
+					class="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
 					>Projects</router-link
 				>
 				<router-link
 					to="/about"
-					class="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  md:mx-2 mb-2 sm:py-2"
+					class="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark"
 					>About Me</router-link
 				>
 				<router-link
 					to="/contact"
-					class="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  md:mx-2 mb-2 sm:py-2"
+					class="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark"
 					>Contact</router-link
 				>
+				<div
+					class="border-t-2 pt-3 sm:pt-0 sm:border-t-0 border-primary-light dark:border-secondary-dark"
+				>
+					<button
+						class="sm:hidden block text-left text-md font-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-md px-4 py-2 mt-2"
+						@click="showModal()"
+					>
+						Hire Me
+					</button>
+				</div>
 			</div>
+			<!-- Header links end -->
+
+			<!-- Header right section buttons start -->
 			<div
 				class="hidden sm:flex justify-between items-center flex-col md:flex-row"
 			>
+				<!-- Hire me button start -->
 				<div>
 					<button
 						class="text-md font-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-lg px-5 py-2.5"
@@ -85,16 +109,19 @@
 						Hire Me
 					</button>
 				</div>
-				<div
+				<!-- Hire me button end -->
+
+				<!-- Theme switcher largr screen start -->
+				<theme-switcher
+					:theme="theme"
+					@themeChanged="updateTheme"
 					class="ml-8 bg-primary-light dark:bg-ternary-dark px-3 py-2 shadow-sm rounded-xl cursor-pointer"
-				>
-					<theme-switcher
-						:theme="theme"
-						@themeChanged="updateTheme"
-					/>
-				</div>
+				/>
+				<!-- Theme switcher largr screen end -->
 			</div>
+			<!-- Header right section buttons stendart -->
 		</div>
+		<!-- Header end -->
 
 		<!-- Hire me modal start -->
 		<transition name="fade">
@@ -167,20 +194,11 @@
 												required=""
 												aria-label="Subject"
 											>
-												<option selected disabled
-													>Select Project Type</option
-												>
-												<option value="web"
-													>Web Application</option
-												>
-												<option value="mobile"
-													>Mobile Applicaiton</option
-												>
-												<option value="design"
-													>UI/UX Design</option
-												>
-												<option value="graphic"
-													>Branding</option
+												<option
+													v-for="category in categories"
+													:key="category.id"
+													:value="category.value"
+													>{{ category.name }}</option
 												>
 											</select>
 										</div>
@@ -210,7 +228,7 @@
 									class="modal-footer py-3 px-5 border0-t text-right"
 								>
 									<button
-										class="px-6 py-2 bg-indigo-400 rounded-lg font-bold text-primary-light"
+										class="px-6 py-2 bg-indigo-400 hover:bg-indigo-500 rounded-lg font-bold text-primary-light"
 										@click="showModal()"
 									>
 										Close
@@ -239,6 +257,28 @@ export default {
 			isOpen: false,
 			theme: '',
 			modal: false,
+			categories: [
+				{
+					id: 1,
+					value: 'web',
+					name: 'Web Application',
+				},
+				{
+					id: 2,
+					value: 'mobile',
+					name: 'Mobile Applicaiton',
+				},
+				{
+					id: 3,
+					value: 'ui-ux',
+					name: 'UI/UX Design',
+				},
+				{
+					id: 4,
+					value: 'branding',
+					name: 'Branding',
+				},
+			],
 		};
 	},
 
@@ -255,7 +295,7 @@ export default {
 		},
 		showModal() {
 			if (this.modal) {
-				//stop screen scrolling
+				// Stop screen scrolling
 				document
 					.getElementsByTagName('html')[0]
 					.classList.remove('overflow-y-hidden');

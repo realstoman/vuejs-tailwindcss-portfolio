@@ -1,5 +1,6 @@
 <template>
 	<div class="container mx-auto sm:flex py-5 sm:py-10 mt-10 sm:mt-20">
+		<!-- Contact form start -->
 		<div class="w-full sm:w-1/2">
 			<div class="leading-loose">
 				<form
@@ -85,6 +86,9 @@
 				</form>
 			</div>
 		</div>
+		<!-- Contact form end -->
+
+		<!-- Contact details start -->
 		<div class="w-full sm:w-1/2">
 			<div class="text-left max-w-xl px-6">
 				<h2
@@ -93,42 +97,25 @@
 					Contact details
 				</h2>
 				<ul class="">
-					<li class="flex">
+					<li
+						class="flex"
+						v-for="contact in contacts"
+						:key="contact.id"
+					>
 						<i
-							data-feather="map-pin"
+							:data-feather="contact.icon"
 							class="w-5 text-gray-500 dark:text-gray-400 mr-4"
 						></i>
 						<p
 							class="text-lg mb-4 text-ternary-dark dark:text-ternary-light"
 						>
-							Wazir Akbar Khan, Kabul, Afghanistan
-						</p>
-					</li>
-					<li class="flex">
-						<i
-							data-feather="mail"
-							class="w-5 text-gray-500 dark:text-gray-400 mr-4"
-						></i>
-						<p
-							class="text-lg mb-4 text-ternary-dark dark:text-ternary-light"
-						>
-							email@example.com
-						</p>
-					</li>
-					<li class="flex">
-						<i
-							data-feather="phone"
-							class="w-5 text-gray-500 dark:text-gray-400 mr-4"
-						></i>
-						<p
-							class="text-lg mb-4 text-ternary-dark dark:text-ternary-light"
-						>
-							+93 7888 888 88
+							{{ contact.name }}
 						</p>
 					</li>
 				</ul>
 			</div>
 		</div>
+		<!-- Contact details end -->
 	</div>
 </template>
 
@@ -137,7 +124,25 @@ import feather from 'feather-icons';
 
 export default {
 	data: () => {
-		return {};
+		return {
+			contacts: [
+				{
+					id: 1,
+					name: 'Wazir Akbar Khan, Kabul, Afghanistan',
+					icon: 'map-pin',
+				},
+				{
+					id: 2,
+					name: 'email@example.com',
+					icon: 'mail',
+				},
+				{
+					id: 3,
+					name: '+93 7888 888 88',
+					icon: 'phone',
+				},
+			],
+		};
 	},
 	mounted() {
 		feather.replace();

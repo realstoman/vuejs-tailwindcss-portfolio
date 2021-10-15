@@ -13,6 +13,7 @@ createApp(App)
 
 const appTheme = localStorage.getItem('theme');
 
+// Check what is the active theme
 if (
 	appTheme === 'dark' &&
 	document.querySelector('body').classList.contains('app-theme')
