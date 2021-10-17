@@ -1,5 +1,5 @@
 <template>
-	<div :class="appTheme">
+	<div :class="appTheme" class="pt-0.5">
 		<!-- App header -->
 		<Header></Header>
 
