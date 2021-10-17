@@ -8,6 +8,15 @@
 			<router-view :theme="appTheme" />
 		</transition>
 
+		<back-to-top
+			visibleoffset="500"
+			right="40px"
+			bottom="40px"
+			class="shadow-lg"
+		>
+			<i data-feather="arrow-up"></i>
+		</back-to-top>
+
 		<!-- App footer -->
 		<Footer></Footer>
 	</div>
@@ -43,6 +52,13 @@ export default {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	text-align: center;
+}
+
+.vue-back-to-top {
+	@apply p-2 sm:p-4 bg-indigo-500 hover:bg-indigo-600 text-white;
+	border-radius: 50%;
+	font-size: 22px;
+	line-height: 22px;
 }
 
 .fade-enter-active {
