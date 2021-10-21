@@ -108,6 +108,11 @@
 						></i>
 						<p
 							class="text-lg mb-4 text-ternary-dark dark:text-ternary-light"
+							:class="
+								contact.icon === 'mail'
+									? 'hover:underline cursor-pointer'
+									: ''
+							"
 						>
 							{{ contact.name }}
 						</p>
@@ -128,17 +133,17 @@ export default {
 			contacts: [
 				{
 					id: 1,
-					name: 'Wazir Akbar Khan, Kabul, Afghanistan',
+					name: 'Your Address, Your City, Your Country',
 					icon: 'map-pin',
 				},
 				{
 					id: 2,
-					name: 'email@example.com',
+					name: 'email@domain.com',
 					icon: 'mail',
 				},
 				{
 					id: 3,
-					name: '+93 7888 888 88',
+					name: '555 8888 888',
 					icon: 'phone',
 				},
 			],

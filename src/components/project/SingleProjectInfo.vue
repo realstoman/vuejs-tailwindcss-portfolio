@@ -21,11 +21,13 @@
 					</li>
 					<li class="text-ternary-dark dark:text-ternary-light">
 						<span>Website: </span>
-						<a href="#">https://kabul.com</a>
+						<a href="#" class="hover:underline"
+							>https://company.com</a
+						>
 					</li>
 					<li class="text-ternary-dark dark:text-ternary-light">
 						<span>Phone: </span>
-						+93 7888 888 88
+						555 8888 888
 					</li>
 				</ul>
 			</div>
