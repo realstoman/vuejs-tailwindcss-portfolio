@@ -17,13 +17,15 @@
 						class="text-ternary-dark dark:text-ternary-light"
 					>
 						<span>{{ info.title }}: </span>
-						<span
+						<a
+							href="#"
 							:class="
 								info.title == 'Website' || info.title == 'Phone'
 									? 'hover:underline cursor-pointer'
 									: ''
 							"
-							>{{ info.details }}</span
+							aria-label="Project Webiste and Phone"
+							>{{ info.details }}</a
 						>
 					</li>
 				</ul>
@@ -72,6 +74,7 @@
 						:key="social.id"
 						:href="social.url"
 						target="__blank"
+						aria-label="Share Project"
 						class="bg-ternary-light dark:bg-ternary-dark text-gray-400 hover:text-primary-dark dark:hover:text-primary-light p-2 rounded-lg shadow-sm"
 						><i :data-feather="social.icon" class="w-5 h-5"></i
 					></a>

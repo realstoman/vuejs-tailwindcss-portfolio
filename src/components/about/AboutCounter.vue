@@ -14,6 +14,7 @@
 					:autoinit="true"
 					@finished="alert(`Counting finished!`)"
 					class="text-4xl font-bold text-secondary-dark dark:text-secondary-light mb-2"
+					aria-label="About Status Counter"
 				/>
 				<span
 					class="block text-md text-ternary-dark dark:text-ternary-light"
