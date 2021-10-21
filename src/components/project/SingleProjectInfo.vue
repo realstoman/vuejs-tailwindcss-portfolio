@@ -11,23 +11,20 @@
 					About Client
 				</p>
 				<ul class="leading-loose">
-					<li class="text-ternary-dark dark:text-ternary-light">
-						<span>Name: </span>
-						Kabul Company Ltd
-					</li>
-					<li class="text-ternary-dark dark:text-ternary-light">
-						<span>Services: </span>
-						UI Design & Frontend Development
-					</li>
-					<li class="text-ternary-dark dark:text-ternary-light">
-						<span>Website: </span>
-						<a href="#" class="hover:underline"
-							>https://company.com</a
+					<li
+						v-for="info in companyInfos"
+						:key="info"
+						class="text-ternary-dark dark:text-ternary-light"
+					>
+						<span>{{ info.title }}: </span>
+						<span
+							:class="
+								info.title == 'Website' || info.title == 'Phone'
+									? 'hover:underline cursor-pointer'
+									: ''
+							"
+							>{{ info.details }}</span
 						>
-					</li>
-					<li class="text-ternary-dark dark:text-ternary-light">
-						<span>Phone: </span>
-						555 8888 888
 					</li>
 				</ul>
 			</div>
@@ -110,6 +107,28 @@ import feather from 'feather-icons';
 export default {
 	data() {
 		return {
+			companyInfos: [
+				{
+					id: 1,
+					title: 'Name',
+					details: 'Company Ltd',
+				},
+				{
+					id: 2,
+					title: 'Services',
+					details: 'UI Design & Frontend Development',
+				},
+				{
+					id: 3,
+					title: 'Website',
+					details: 'https://company.com',
+				},
+				{
+					id: 4,
+					title: 'Phone',
+					details: '555 8888 888',
+				},
+			],
 			technlogies: [
 				{
 					title: 'Tools & Technologies',
