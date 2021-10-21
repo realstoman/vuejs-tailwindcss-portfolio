@@ -37,7 +37,7 @@
 					<a
 						href="https://stoman.me"
 						target="__blank"
-						class="text-secondary-dark dark:text-secondary-light font-medium uppercase"
+						class="text-secondary-dark dark:text-secondary-light font-medium uppercase hover:underline"
 						>Stoman</a
 					>
 				</div>

@@ -72,13 +72,15 @@
 							name="message"
 							cols="14"
 							rows="6"
+							aria-label="Message"
 						></textarea>
 					</div>
 
 					<div class="mt-6">
 						<button
-							class="px-4 py-2.5 text-white font-medium tracking-wider bg-indigo-500 hover:bg-indigo-600 rounded-lg"
+							class="px-4 py-2.5 text-white font-medium tracking-wider bg-indigo-500 hover:bg-indigo-600 focus:ring-1 focus:ring-indigo-900 rounded-lg"
 							type="submit"
+							aria-label="Send Message"
 						>
 							Send Message
 						</button>
@@ -106,11 +108,19 @@
 							:data-feather="contact.icon"
 							class="w-5 text-gray-500 dark:text-gray-400 mr-4"
 						></i>
-						<p
+						<a
+							href="#"
 							class="text-lg mb-4 text-ternary-dark dark:text-ternary-light"
+							:class="
+								contact.icon === 'mail' ||
+								contact.icon === 'phone'
+									? 'hover:underline cursor-pointer'
+									: ''
+							"
+							aria-label="Website and Phone"
 						>
 							{{ contact.name }}
-						</p>
+						</a>
 					</li>
 				</ul>
 			</div>
@@ -128,17 +138,17 @@ export default {
 			contacts: [
 				{
 					id: 1,
-					name: 'Wazir Akbar Khan, Kabul, Afghanistan',
+					name: 'Your Address, Your City, Your Country',
 					icon: 'map-pin',
 				},
 				{
 					id: 2,
-					name: 'email@example.com',
+					name: 'email@domain.com',
 					icon: 'mail',
 				},
 				{
 					id: 3,
-					name: '+93 7888 888 88',
+					name: '555 8888 888',
 					icon: 'phone',
 				},
 			],

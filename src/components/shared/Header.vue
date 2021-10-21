@@ -13,13 +13,13 @@
 							v-if="theme === 'light'"
 							src="../../assets/images/logo-dark.svg"
 							class="w-36"
-							alt=""
+							alt="Dark Logo"
 						/>
 						<img
 							v-else
 							src="../../assets/images/logo-light.svg"
 							class="w-36"
-							alt=""
+							alt="Light Logo"
 						/>
 					</router-link>
 				</div>
@@ -39,6 +39,7 @@
 						@click="isOpen = !isOpen"
 						type="buttom"
 						class="focus:outline-none"
+						aria-label="Humberger Menu"
 					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -71,16 +72,19 @@
 				<router-link
 					to="/projects"
 					class="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
+					aria-label="Projects"
 					>Projects</router-link
 				>
 				<router-link
 					to="/about"
 					class="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark"
+					aria-label="About Me"
 					>About Me</router-link
 				>
 				<router-link
 					to="/contact"
 					class="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark"
+					aria-label="Contact"
 					>Contact</router-link
 				>
 				<div
@@ -89,6 +93,7 @@
 					<button
 						class="sm:hidden block text-left text-md font-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-md px-4 py-2 mt-2"
 						@click="showModal()"
+						aria-label="Hire Me Button"
 					>
 						Hire Me
 					</button>
@@ -105,6 +110,7 @@
 					<button
 						class="text-md font-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-lg px-5 py-2.5"
 						@click="showModal()"
+						aria-label="Hire Me Button"
 					>
 						Hire Me
 					</button>
@@ -192,7 +198,7 @@
 												name="subject"
 												type="text"
 												required=""
-												aria-label="Subject"
+												aria-label="Project Category"
 											>
 												<option
 													v-for="category in categories"
@@ -210,14 +216,16 @@
 												name="message"
 												cols="14"
 												rows="6"
+												aria-label="Details"
 												placeholder="Project description"
 											></textarea>
 										</div>
 
 										<div class="mt-6">
 											<button
-												class="px-6 py-2.5 text-white font-medium tracking-wider bg-indigo-500 hover:bg-indigo-600 rounded-lg"
+												class="px-6 py-2.5 text-white font-medium tracking-wider bg-indigo-500 hover:bg-indigo-600 rounded-lg focus:ring-1 focus:ring-indigo-900"
 												type="submit"
+												aria-label="Submit Request"
 											>
 												Send Request
 											</button>
@@ -228,8 +236,9 @@
 									class="modal-footer py-3 px-5 border0-t text-right"
 								>
 									<button
-										class="px-6 py-2 bg-indigo-400 hover:bg-indigo-500 rounded-lg font-bold text-primary-light"
+										class="px-6 py-2 bg-indigo-400 hover:bg-indigo-500 rounded-lg font-bold text-primary-light focus:ring-1 focus:ring-indigo-900"
 										@click="showModal()"
+										aria-label="Close Modal"
 									>
 										Close
 									</button>

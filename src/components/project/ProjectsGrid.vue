@@ -21,6 +21,7 @@
 				:key="project.id"
 				to="/projects/single-project"
 				class="rounded-3xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark"
+				aria-label="Single Project"
 			>
 				<div>
 					<img
@@ -46,12 +47,12 @@
 
 		<!-- Load more projects button start -->
 		<div class="mt-10 sm:mt-20 flex justify-center">
-			<button
-				class="flex items-center px-6 py-3 rounded-xl shadow-lg hover:shadow-xl bg-indigo-500 hover:bg-indigo-600 text-white text-lg sm:text-xl font-medium"
+			<router-link
+				to="/projects"
+				class="flex items-center px-6 py-3 rounded-xl shadow-lg hover:shadow-xl bg-indigo-500 hover:bg-indigo-600 focus:ring-1 focus:ring-indigo-900 text-white text-lg sm:text-xl font-medium"
+				aria-label="More Projects"
+				>More Projects</router-link
 			>
-				<i data-feather="refresh-cw" class="w-5 mr-3"></i>
-				<span>Load More</span>
-			</button>
 		</div>
 		<!-- Load more projects button end -->
 	</section>

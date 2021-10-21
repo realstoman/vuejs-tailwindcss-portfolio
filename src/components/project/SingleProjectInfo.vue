@@ -11,21 +11,22 @@
 					About Client
 				</p>
 				<ul class="leading-loose">
-					<li class="text-ternary-dark dark:text-ternary-light">
-						<span>Name: </span>
-						Kabul Company Ltd
-					</li>
-					<li class="text-ternary-dark dark:text-ternary-light">
-						<span>Services: </span>
-						UI Design & Frontend Development
-					</li>
-					<li class="text-ternary-dark dark:text-ternary-light">
-						<span>Website: </span>
-						<a href="#">https://kabul.com</a>
-					</li>
-					<li class="text-ternary-dark dark:text-ternary-light">
-						<span>Phone: </span>
-						+93 7888 888 88
+					<li
+						v-for="info in companyInfos"
+						:key="info"
+						class="text-ternary-dark dark:text-ternary-light"
+					>
+						<span>{{ info.title }}: </span>
+						<a
+							href="#"
+							:class="
+								info.title == 'Website' || info.title == 'Phone'
+									? 'hover:underline cursor-pointer'
+									: ''
+							"
+							aria-label="Project Webiste and Phone"
+							>{{ info.details }}</a
+						>
 					</li>
 				</ul>
 			</div>
@@ -73,6 +74,7 @@
 						:key="social.id"
 						:href="social.url"
 						target="__blank"
+						aria-label="Share Project"
 						class="bg-ternary-light dark:bg-ternary-dark text-gray-400 hover:text-primary-dark dark:hover:text-primary-light p-2 rounded-lg shadow-sm"
 						><i :data-feather="social.icon" class="w-5 h-5"></i
 					></a>
@@ -108,6 +110,28 @@ import feather from 'feather-icons';
 export default {
 	data() {
 		return {
+			companyInfos: [
+				{
+					id: 1,
+					title: 'Name',
+					details: 'Company Ltd',
+				},
+				{
+					id: 2,
+					title: 'Services',
+					details: 'UI Design & Frontend Development',
+				},
+				{
+					id: 3,
+					title: 'Website',
+					details: 'https://company.com',
+				},
+				{
+					id: 4,
+					title: 'Phone',
+					details: '555 8888 888',
+				},
+			],
 			technlogies: [
 				{
 					title: 'Tools & Technologies',
