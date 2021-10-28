@@ -32,25 +32,25 @@ A simple portfolio starter theme built with Vue.js v3 and TailwindCSS v2. This i
 npm install -g npm
 ```
 
-1. ##### Clone the repo:
+2. ##### Clone the repo:
 
 ```
 git clone https://github.com/NangialaiStoman/vuejs-tailwindcss-portfolio.git
 ```
 
-1. ##### Open the project folder:
+3. ##### Open the project folder:
 
 ```
 cd vuejs-tailwindcss-portfolio
 ```
 
-1. ##### Install packages and dependencies:
+4. ##### Install packages and dependencies:
 
 ```
 npm install
 ```
 
-1. ##### Start a local dev server at `http://localhost:8080`:
+5. ##### Start a local dev server at `http://localhost:8080`:
 
 ```
 npm run serve

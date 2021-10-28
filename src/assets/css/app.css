@@ -2,3 +2,15 @@
  * Vuejs & TailwindCSS Portfolio Main Styling CSS File
  * Powered by: @NangialaiStoman
 */
+
+body {
+	font-family: 'Poppins', sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'Poppins', sans-serif !important;
+	font-weight: 500 !important;
+}
