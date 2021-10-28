@@ -11,8 +11,8 @@ A simple portfolio starter theme built with Vue.js v3 and TailwindCSS v2. This i
 ## Features
 
 -   Simple and responsive design
--   [Tailwind CSS v2](https://tailwindcss.com)
 -   [Vue.js v3](https://vuejs.org) with [Vue Router](https://router.vuejs.org)
+-   [Tailwind CSS v2](https://tailwindcss.com)
 -   Theme Switcher with Dark Mode
 -   Composition API
 -   Vue transitions
@@ -22,14 +22,39 @@ A simple portfolio starter theme built with Vue.js v3 and TailwindCSS v2. This i
 -   Vue.js smooth scroll
 -   Dynamic forms
 -   Back to top button
+-   Download file button
 
 ## Installation
 
-1. Make sure you have Node JS installed. If you don't have it: `npm install -g npm`
-1. Clone the repo: `git clone https://github.com/NangialaiStoman/vuejs-tailwindcss-portfolio.git`
-1. `cd vuejs-tailwindcss-portfolio`
-1. `npm install`
-1. `npm run serve` to start a local dev server at `http://localhost:8080`
+1. ##### Make sure you have Node JS installed. If you don't have it:
+
+```
+npm install -g npm
+```
+
+1. ##### Clone the repo:
+
+```
+git clone https://github.com/NangialaiStoman/vuejs-tailwindcss-portfolio.git
+```
+
+1. ##### Open the project folder:
+
+```
+cd vuejs-tailwindcss-portfolio
+```
+
+1. ##### Install packages and dependencies:
+
+```
+npm install
+```
+
+1. ##### Start a local dev server at `http://localhost:8080`:
+
+```
+npm run serve
+```
 
 ## Notes
 
