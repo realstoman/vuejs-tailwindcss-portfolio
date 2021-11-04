@@ -1,7 +1,7 @@
 <template>
 	<div :class="appTheme" class="pt-0.5">
 		<!-- App header -->
-		<Header></Header>
+		<AppHeader />
 
 		<!-- Render active component contents with transition -->
 		<transition name="fade" mode="out-in">
@@ -18,19 +18,19 @@
 		</back-to-top>
 
 		<!-- App footer -->
-		<Footer></Footer>
+		<AppFooter />
 	</div>
 </template>
 
 <script>
 import feather from 'feather-icons';
-import Header from './components/shared/Header';
-import Footer from './components/shared/Footer';
+import AppHeader from './components/AppHeader';
+import AppFooter from './components/AppFooter';
 
 export default {
 	components: {
-		Header,
-		Footer,
+		AppHeader,
+		AppFooter,
 	},
 	data: () => {
 		return {

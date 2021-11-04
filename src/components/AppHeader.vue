@@ -11,13 +11,13 @@
 					<router-link to="/"
 						><img
 							v-if="theme === 'light'"
-							src="../../assets/images/logo-dark.svg"
+							src="@/assets/images/logo-dark.svg"
 							class="w-36"
 							alt="Dark Logo"
 						/>
 						<img
 							v-else
-							src="../../assets/images/logo-light.svg"
+							src="@/assets/images/logo-light.svg"
 							class="w-36"
 							alt="Light Logo"
 						/>
@@ -254,7 +254,7 @@
 </template>
 
 <script>
-import ThemeSwitcher from '../ThemeSwitcher';
+import ThemeSwitcher from '@/components/ThemeSwitcher';
 import feather from 'feather-icons';
 
 export default {
