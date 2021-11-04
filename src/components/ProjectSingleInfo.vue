@@ -8,11 +8,11 @@
 				<p
 					class="text-2xl font-semibold text-secondary-dark dark:text-secondary-light mb-2"
 				>
-					About Client
+					{{ projectInfo.clientHeading }}
 				</p>
 				<ul class="leading-loose">
 					<li
-						v-for="info in companyInfos"
+						v-for="info in projectInfo.companyInfos"
 						:key="info"
 						class="text-ternary-dark dark:text-ternary-light"
 					>
@@ -37,13 +37,10 @@
 				<p
 					class="text-2xl font-semibold text-ternary-dark dark:text-ternary-light mb-2"
 				>
-					Objective
+					{{ projectInfo.objectivesHeading }}
 				</p>
 				<p class="text-primary-dark dark:text-ternary-light">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Optio, natus! Quibusdam enim quod in esse, mollitia
-					molestias incidunt quas ipsa accusamus veniam, quis odit
-					cumque vero voluptate, reiciendis amet non!
+					{{ projectInfo.objectivesDetails }}
 				</p>
 			</div>
 			<!-- Single project objectives end -->
@@ -53,10 +50,10 @@
 				<p
 					class="text-2xl font-semibold text-ternary-dark dark:text-ternary-light mb-2"
 				>
-					{{ technlogies[0].title }}
+					{{ projectInfo.technlogies[0].title }}
 				</p>
 				<p class="text-primary-dark dark:text-ternary-light">
-					{{ technlogies[0].techs.join(', ') }}
+					{{ projectInfo.technlogies[0].techs.join(', ') }}
 				</p>
 			</div>
 			<!-- Single project technologies end -->
@@ -66,11 +63,11 @@
 				<p
 					class="text-2xl font-semibold text-ternary-dark dark:text-ternary-light mb-2"
 				>
-					Share This
+					{{ projectInfo.socialSharingsHeading }}
 				</p>
 				<div class="flex items-center gap-3 mt-5">
 					<a
-						v-for="social in socialSharings"
+						v-for="social in projectInfo.socialSharings"
 						:key="social.id"
 						:href="social.url"
 						target="__blank"
@@ -89,10 +86,10 @@
 			<p
 				class="text-primary-dark dark:text-primary-light text-2xl font-bold mb-7"
 			>
-				Challenge
+				{{ projectInfo.projectDetailsHeading }}
 			</p>
 			<p
-				v-for="projectDetail in projectDetails"
+				v-for="projectDetail in projectInfo.projectDetails"
 				:key="projectDetail.id"
 				class="mb-5 text-lg text-ternary-dark dark:text-ternary-light"
 			>
@@ -108,109 +105,11 @@
 import feather from 'feather-icons';
 
 export default {
-	data() {
-		return {
-			companyInfos: [
-				{
-					id: 1,
-					title: 'Name',
-					details: 'Company Ltd',
-				},
-				{
-					id: 2,
-					title: 'Services',
-					details: 'UI Design & Frontend Development',
-				},
-				{
-					id: 3,
-					title: 'Website',
-					details: 'https://company.com',
-				},
-				{
-					id: 4,
-					title: 'Phone',
-					details: '555 8888 888',
-				},
-			],
-			technlogies: [
-				{
-					title: 'Tools & Technologies',
-					techs: [
-						'HTML',
-						'CSS',
-						'JavaScript',
-						'Vue.js',
-						'TailwindCSS',
-						'AdobeXD',
-					],
-				},
-			],
-			projectDetails: [
-				{
-					id: 1,
-					details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.',
-				},
-				{
-					id: 2,
-					details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?',
-				},
-				{
-					id: 3,
-					details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?',
-				},
-				{
-					id: 4,
-					details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.',
-				},
-			],
-			socialSharings: [
-				{
-					id: 1,
-					name: 'Twitter',
-					icon: 'twitter',
-					url: 'https://twitter.com/NangialaiStoman',
-				},
-				{
-					id: 2,
-					name: 'Instagram',
-					icon: 'instagram',
-					url: 'https://instagram.com/NangialaiStoman',
-				},
-				{
-					id: 3,
-					name: 'Facebook',
-					icon: 'facebook',
-					url: 'https://facebook.com/',
-				},
-				{
-					id: 4,
-					name: 'LinkedIn',
-					icon: 'linkedin',
-					url: 'https://linkedin.com/',
-				},
-				{
-					id: 5,
-					name: 'Youtube',
-					icon: 'youtube',
-					url: 'https://www.youtube.com/c/StomanStudio',
-				},
-				{
-					id: 5,
-					name: 'Dribbble',
-					icon: 'dribbble',
-					url: 'https://www.dribbble.com/',
-				},
-			],
-		};
-	},
+	props: ['projectInfo'],
+
 	mounted() {
 		feather.replace();
 	},
-	methods: {},
 	updated() {
 		feather.replace();
 	},

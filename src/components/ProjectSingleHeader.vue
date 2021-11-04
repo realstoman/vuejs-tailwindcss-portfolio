@@ -4,7 +4,7 @@
 		<p
 			class="text-left text-3xl sm:text-4xl font-bold text-primary-dark dark:text-primary-light mt-7 sm:mt-20 mb-7"
 		>
-			Kabul Project Management UI
+			{{ singleProjectHeader.singleProjectTitle }}
 		</p>
 		<div class="flex">
 			<div class="flex items-center mr-10">
@@ -14,7 +14,7 @@
 				></i>
 				<span
 					class="ml-2 leading-none text-primary-dark dark:text-primary-light"
-					>Jul 26, 2021</span
+					>{{ singleProjectHeader.singleProjectDate }}</span
 				>
 			</div>
 			<div class="flex items-center">
@@ -24,7 +24,7 @@
 				></i>
 				<span
 					class="ml-2 leading-none text-primary-dark dark:text-primary-light"
-					>UI / Frontend</span
+					>{{ singleProjectHeader.singleProjectTag }}</span
 				>
 			</div>
 		</div>
@@ -34,6 +34,6 @@
 
 <script>
 export default {
-	setup() {},
+	props: ['singleProjectHeader'],
 };
 </script>

@@ -6,18 +6,15 @@
 		<p
 			class="text-primary-dark dark:text-primary-light text-3xl font-bold mb-10 sm:mb-14 text-left"
 		>
-			{{ relatedProjectsHeading }}
+			{{ relatedProject.relatedProjectsHeading }}
 		</p>
 
 		<div class="grid grid-cols-1 sm:grid-cols-4 gap-10">
-			<div
-				v-for="relatedProject in relatedProjects"
-				:key="relatedProject"
-			>
+			<div v-for="item in relatedProject.relatedProjects" :key="item.id">
 				<img
-					:src="relatedProject.img"
+					:src="item.img"
 					class="rounded-2xl cursor-pointer"
-					:alt="relatedProject.title"
+					:alt="item.title"
 				/>
 			</div>
 		</div>
@@ -27,32 +24,6 @@
 
 <script>
 export default {
-	data: () => {
-		return {
-			relatedProjectsHeading: 'Related Projects',
-			relatedProjects: [
-				{
-					id: 1,
-					title: 'Mobile UI',
-					img: require('@/assets/images/mobile-project-1.jpg'),
-				},
-				{
-					id: 2,
-					title: 'Web Application',
-					img: require('@/assets/images/web-project-1.jpg'),
-				},
-				{
-					id: 3,
-					title: 'UI Design',
-					img: require('@/assets/images/ui-project-2.jpg'),
-				},
-				{
-					id: 4,
-					title: 'Kabul Mobile App UI',
-					img: require('@/assets/images/mobile-project-2.jpg'),
-				},
-			],
-		};
-	},
+	props: ['relatedProject'],
 };
 </script>
