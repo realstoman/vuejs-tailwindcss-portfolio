@@ -1,7 +1,7 @@
 <template>
 	<div class="container mx-auto">
 		<!-- Banner start -->
-		<Banner />
+		<AppBanner />
 		<!-- Banner snd -->
 
 		<!-- Projects start -->
@@ -11,26 +11,15 @@
 </template>
 
 <script>
-import Banner from '@/components/home/Banner';
-import ProjectsGrid from '@/components/project/ProjectsGrid';
-import feather from 'feather-icons';
+import AppBanner from '@/components/AppBanner';
+import ProjectsGrid from '../components/ProjectsGrid.vue';
 
 export default {
 	name: 'Home',
 	components: {
-		Banner,
+		AppBanner,
 		ProjectsGrid,
 	},
-	data: () => {
-		return {};
-	},
-	mounted() {
-		feather.replace();
-	},
-	updated() {
-		feather.replace();
-	},
-	methods: {},
 };
 </script>
 

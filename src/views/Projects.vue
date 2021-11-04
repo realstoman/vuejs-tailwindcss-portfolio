@@ -2,29 +2,18 @@
 	<div class="container mx-auto">
 		<!-- Projects start -->
 		<ProjectsGrid />
-		<!-- Projects end -->
+		<!-- ProjectsGrid end -->
 	</div>
 </template>
 
 <script>
-import ProjectsGrid from '@/components/project/ProjectsGrid';
-import feather from 'feather-icons';
+import ProjectsGrid from '../components/ProjectsGrid.vue';
 
 export default {
 	name: 'Projects',
 	components: {
 		ProjectsGrid,
 	},
-	data: () => {
-		return {};
-	},
-	mounted() {
-		feather.replace();
-	},
-	updated() {
-		feather.replace();
-	},
-	methods: {},
 };
 </script>
 
