@@ -28,8 +28,12 @@ A simple portfolio starter theme built with Vue.js v3 and TailwindCSS v2. This i
 
 1. ##### Make sure you have Node JS installed. If you don't have it:
 
+-   [Download it from nodejs.org](https://nodejs.org)
+-   [Install it using NVM ](https://github.com/nvm-sh/nvm)
+-   If you're on Mac, install it with Homebrew:
+
 ```
-npm install -g npm
+brew install node
 ```
 
 2. ##### Clone the repo:
