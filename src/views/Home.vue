@@ -1,7 +1,7 @@
 <template>
 	<div class="container mx-auto">
 		<!-- Banner start -->
-		<Banner />
+		<AppBanner />
 		<!-- Banner snd -->
 
 		<!-- Projects start -->
@@ -11,14 +11,14 @@
 </template>
 
 <script>
-import Banner from '@/components/home/Banner';
+import AppBanner from '@/components/AppBanner';
 import ProjectsGrid from '@/components/project/ProjectsGrid';
 import feather from 'feather-icons';
 
 export default {
 	name: 'Home',
 	components: {
-		Banner,
+		AppBanner,
 		ProjectsGrid,
 	},
 	data: () => {
