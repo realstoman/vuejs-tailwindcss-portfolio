@@ -5,32 +5,21 @@
 		<!-- Banner snd -->
 
 		<!-- Projects start -->
-		<Projects />
+		<ProjectsGrid />
 		<!-- Projects end -->
 	</div>
 </template>
 
 <script>
-import feather from 'feather-icons';
 import AppBanner from '@/components/AppBanner';
-import Projects from '../components/Projects.vue';
+import ProjectsGrid from '../components/ProjectsGrid.vue';
 
 export default {
 	name: 'Home',
 	components: {
 		AppBanner,
-		Projects,
+		ProjectsGrid,
 	},
-	data: () => {
-		return {};
-	},
-	mounted() {
-		feather.replace();
-	},
-	updated() {
-		feather.replace();
-	},
-	methods: {},
 };
 </script>
 
