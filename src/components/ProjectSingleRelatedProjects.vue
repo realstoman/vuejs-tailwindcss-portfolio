@@ -12,28 +12,28 @@
 		<div class="grid grid-cols-1 sm:grid-cols-4 gap-10">
 			<div>
 				<img
-					src="../../assets/images/mobile-project-1.jpg"
+					src="@/assets/images/mobile-project-1.jpg"
 					class="rounded-2xl cursor-pointer"
 					alt="Related Project"
 				/>
 			</div>
 			<div>
 				<img
-					src="../../assets/images/web-project-1.jpg"
+					src="@/assets/images/web-project-1.jpg"
 					class="rounded-2xl cursor-pointer"
 					alt="Related Project"
 				/>
 			</div>
 			<div>
 				<img
-					src="../../assets/images/ui-project-2.jpg"
+					src="@/assets/images/ui-project-2.jpg"
 					class="rounded-2xl cursor-pointer"
 					alt="Related Project"
 				/>
 			</div>
 			<div>
 				<img
-					src="../../assets/images/mobile-project-1.jpg"
+					src="@/assets/images/mobile-project-1.jpg"
 					class="rounded-2xl cursor-pointer"
 					alt="Related Project"
 				/>
