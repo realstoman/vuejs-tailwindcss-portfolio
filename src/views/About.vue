@@ -12,16 +12,16 @@
 
 		<div class="container mx-auto">
 			<!-- About counter start -->
-			<Clients />
+			<AboutClients />
 			<!-- About counter end -->
 		</div>
 	</div>
 </template>
 
 <script>
-import AboutMe from '@/components/about/AboutMe';
-import AboutCounter from '@/components/about/AboutCounter';
-import Clients from '@/components/about/Clients';
+import AboutMe from '@/components/AboutMe';
+import AboutCounter from '@/components/AboutCounter';
+import AboutClients from '@/components/AboutClients';
 import feather from 'feather-icons';
 
 export default {
@@ -29,7 +29,7 @@ export default {
 	components: {
 		AboutMe,
 		AboutCounter,
-		Clients,
+		AboutClients,
 	},
 	data: () => {
 		return {};
