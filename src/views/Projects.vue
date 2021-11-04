@@ -1,19 +1,19 @@
 <template>
 	<div class="container mx-auto">
 		<!-- Projects start -->
-		<ProjectsGrid />
+		<Projects />
 		<!-- Projects end -->
 	</div>
 </template>
 
 <script>
-import ProjectsGrid from '@/components/project/ProjectsGrid';
 import feather from 'feather-icons';
+import Projects from '../components/Projects.vue';
 
 export default {
 	name: 'Projects',
 	components: {
-		ProjectsGrid,
+		Projects,
 	},
 	data: () => {
 		return {};
