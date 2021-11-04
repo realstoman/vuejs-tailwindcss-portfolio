@@ -3,73 +3,71 @@
 		<p
 			class="text-2xl sm:text-4xl text-primary-dark dark:text-primary-light font-sans font-semibold"
 		>
-			Some of the brands I worked with
+			{{ clientsHeading }}
 		</p>
 		<div class="grid grid-cols-2 sm:grid-cols-4 mt-10 sm:mt-20 gap-2">
-			<div>
-				<img
-					src="@/assets/images/brands/amazon_gray.png"
-					alt="Amazon"
-					class="w-64 py-5 px-10 border border-ternary-light dark:border-ternary-dark shadow-sm rounded-xl mb-8 cursor-pointer"
-				/>
-			</div>
-			<div>
-				<img
-					src="@/assets/images/brands/sony_gray.png"
-					alt="SONY"
-					class="w-64 py-5 px-10 border border-ternary-light dark:border-ternary-dark shadow-sm rounded-xl mb-8 cursor-pointer"
-				/>
-			</div>
-			<div>
-				<img
-					src="@/assets/images/brands/adidas_gray.png"
-					alt="Adidas"
-					class="w-64 py-5 px-10 border border-ternary-light dark:border-ternary-dark shadow-sm rounded-xl mb-8 cursor-pointer"
-				/>
-			</div>
-			<div>
-				<img
-					src="@/assets/images/brands/fila_gray.png"
-					alt="FILA"
-					class="w-64 py-5 px-10 border border-ternary-light dark:border-ternary-dark shadow-sm rounded-xl mb-8 cursor-pointer"
-				/>
-			</div>
-			<div>
-				<img
-					src="@/assets/images/brands/nb_gray.png"
-					alt="NB"
-					class="w-64 py-5 px-10 border border-ternary-light dark:border-ternary-dark shadow-sm rounded-xl mb-8 cursor-pointer"
-				/>
-			</div>
-			<div>
-				<img
-					src="@/assets/images/brands/samsung_gray.png"
-					alt="Samsung"
-					class="w-64 py-5 px-10 border border-ternary-light dark:border-ternary-dark shadow-sm rounded-xl mb-8 cursor-pointer"
-				/>
-			</div>
-			<div>
-				<img
-					src="@/assets/images/brands/canon_gray.png"
-					alt="Canon"
-					class="w-64 py-5 px-10 border border-ternary-light dark:border-ternary-dark shadow-sm rounded-xl mb-8 cursor-pointer"
-				/>
-			</div>
-			<div>
-				<img
-					src="@/assets/images/brands/puma_gray.png"
-					alt="Puma"
-					class="w-64 py-5 px-10 border border-ternary-light dark:border-ternary-dark shadow-sm rounded-xl mb-8 cursor-pointer"
-				/>
-			</div>
+			<AboutClientSingle
+				v-for="client in clients"
+				:key="client.id"
+				:client="client"
+			/>
 		</div>
 	</div>
 </template>
 
 <script>
+import AboutClientSingle from './AboutClientSingle.vue';
+
 export default {
+	components: {
+		AboutClientSingle,
+	},
 	data: () => {
-		return {};
+		return {
+			clientsHeading: 'Some of the brands I worked with',
+			clients: [
+				{
+					id: 1,
+					title: 'Amazon',
+					img: require('@/assets/images/brands/amazon_gray.png'),
+				},
+				{
+					id: 2,
+					title: 'Sony',
+					img: require('@/assets/images/brands/sony_gray.png'),
+				},
+				{
+					id: 3,
+					title: 'Adidas',
+					img: require('@/assets/images/brands/adidas_gray.png'),
+				},
+				{
+					id: 4,
+					title: 'FILA',
+					img: require('@/assets/images/brands/fila_gray.png'),
+				},
+				{
+					id: 5,
+					title: 'NB',
+					img: require('@/assets/images/brands/nb_gray.png'),
+				},
+				{
+					id: 6,
+					title: 'SAMSUNG',
+					img: require('@/assets/images/brands/samsung_gray.png'),
+				},
+				{
+					id: 7,
+					title: 'CANON',
+					img: require('@/assets/images/brands/canon_gray.png'),
+				},
+				{
+					id: 7,
+					title: 'PUMA',
+					img: require('@/assets/images/brands/puma_gray.png'),
+				},
+			],
+		};
 	},
 };
 </script>
