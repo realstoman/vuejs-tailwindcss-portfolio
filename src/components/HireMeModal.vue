@@ -34,9 +34,7 @@
 									X
 								</button>
 							</div>
-							<div
-								class="modal-body p-5 w-full h-full overflow-y-auto "
-							>
+							<div class="modal-body p-5 w-full h-full">
 								<form class="max-w-xl m-4 text-left">
 									<div class="">
 										<input
@@ -90,9 +88,20 @@
 										></textarea>
 									</div>
 
-									<div class="mt-6">
+									<div class="mt-6 pb-4 sm:pb-1">
 										<button
-											class="px-6 py-2.5 text-white font-medium tracking-wider bg-indigo-500 hover:bg-indigo-600 rounded-lg focus:ring-1 focus:ring-indigo-900"
+											class="px-4
+											sm:px-6
+											py-2
+											sm:py-2.5
+											text-white
+											font-normal
+											sm:font-medium
+											bg-indigo-500
+											hover:bg-indigo-600
+											rounded-md
+											sm:rounded-lg
+											focus:ring-1 focus:ring-indigo-900"
 											type="submit"
 											aria-label="Submit Request"
 										>
@@ -102,10 +111,20 @@
 								</form>
 							</div>
 							<div
-								class="modal-footer py-3 px-5 border0-t text-right"
+								class="modal-footer mt-2 sm:mt-0 py-5 px-8 border0-t text-right"
 							>
 								<button
-									class="px-6 py-2 bg-indigo-400 hover:bg-indigo-500 rounded-lg font-bold text-primary-light focus:ring-1 focus:ring-indigo-900"
+									class=" px-4
+									sm:px-6
+									py-2
+									bg-indigo-400
+									hover:bg-indigo-500
+									rounded-md
+									sm:rounded-lg
+									font-normal
+									sm:font-bold
+									text-primary-light
+									focus:ring-1 focus:ring-indigo-900"
 									@click="showModal()"
 									aria-label="Close Modal"
 								>
