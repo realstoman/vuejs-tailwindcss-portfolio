@@ -2,7 +2,7 @@
 
 A simple portfolio starter theme built with Vue.js v3 and TailwindCSS v2. This is a simple portfolio theme and its geared towards beginners. For sure there's room for improvements and if there's anything missing or to be corrected or you have a better idea for it, please fork this repo and make a PR.
 
-![Vuejs-TailwindCSS-Portfolio](https://user-images.githubusercontent.com/16396664/137613185-4e94cf76-002b-4f7e-8d9b-f452c97cadf2.PNG)
+![Vuejs-TailwindCSS-Portfolio](https://user-images.githubusercontent.com/16396664/140909796-815239e4-a986-46ad-bbd0-4b166127bbb8.JPG)
 
 ## Demo URL
 
@@ -18,6 +18,7 @@ A simple portfolio starter theme built with Vue.js v3 and TailwindCSS v2. This i
 -   Vue transitions
 -   Counter
 -   Projects filter by category
+-   Projects filter by search
 -   Projects carousel
 -   Vue.js smooth scroll
 -   Dynamic forms
