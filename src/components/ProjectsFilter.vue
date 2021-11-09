@@ -18,7 +18,7 @@
         dark:bg-ternary-dark
         text-primary-dark
         dark:text-ternary-light
-      "
+    "
 		>
 			<option value class="text-sm sm:text-md">All Projects</option>
 			<option

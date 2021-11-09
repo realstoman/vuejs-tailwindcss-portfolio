@@ -101,19 +101,18 @@
 
 <script>
 import feather from 'feather-icons';
-import ProjectSingle from './ProjectSingle.vue';
 import ProjectsFilter from './ProjectsFilter.vue';
+import ProjectSingle from './ProjectSingle.vue';
 
 export default {
-	name: 'Projects',
 	components: { ProjectSingle, ProjectsFilter },
-	data() {
+	data: () => {
 		return {
-			selectedProject: '',
-			searchProject: '',
 			projectsHeading: 'Projects Portfolio',
 			projectsDescription:
 				'Some of the projects I have successfully completed',
+			selectedProject: '',
+			searchProject: '',
 			projects: [
 				{
 					id: 1,
@@ -130,13 +129,13 @@ export default {
 				{
 					id: 3,
 					title: 'Project Management UI',
-					category: 'UI / Frontend',
+					category: 'UI/UX Design',
 					img: require('@/assets/images/ui-project-1.jpg'),
 				},
 				{
 					id: 4,
 					title: 'Cloud Storage Platform',
-					category: 'UI / Frontend',
+					category: 'UI/UX Design',
 					img: require('@/assets/images/ui-project-2.jpg'),
 				},
 				{
@@ -180,9 +179,6 @@ export default {
 		},
 	},
 	mounted() {
-		feather.replace();
-	},
-	updated() {
 		feather.replace();
 	},
 };
