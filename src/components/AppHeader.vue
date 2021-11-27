@@ -150,10 +150,6 @@ export default {
 		ThemeSwitcher,
 		HireMeModal,
 	},
-	mounted() {
-		this.theme = localStorage.getItem('theme') || 'light';
-		feather.replace();
-	},
 	data() {
 		return {
 			isOpen: false,
@@ -182,6 +178,14 @@ export default {
 				},
 			],
 		};
+	},
+
+	created() {
+		this.theme = localStorage.getItem('theme') || 'light';
+	},
+	mounted() {
+		feather.replace();
+		this.theme = localStorage.getItem('theme') || 'light';
 	},
 	methods: {
 		updateTheme(theme) {
