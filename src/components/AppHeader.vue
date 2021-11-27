@@ -4,7 +4,7 @@
 		<div
 			class="z-10 max-w-screen-lg xl:max-w-screen-xl block sm:flex sm:justify-between sm:items-center my-6"
 		>
-			<!-- Header menu links and small screen humberger menu start -->
+			<!-- Header menu links and small screen hamburger menu start -->
 			<div class="flex justify-between items-center px-4 sm:px-0">
 				<!-- Header logos start -->
 				<div>
@@ -33,13 +33,13 @@
 				/>
 				<!-- Theme switcher small screen end -->
 
-				<!-- Small screen humberger menu start -->
+				<!-- Small screen hamburger menu start -->
 				<div class="sm:hidden">
 					<button
 						@click="isOpen = !isOpen"
-						type="buttom"
+						type="button"
 						class="focus:outline-none"
-						aria-label="Humberger Menu"
+						aria-label="Hamburger Menu"
 					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -60,9 +60,9 @@
 						</svg>
 					</button>
 				</div>
-				<!-- Small screen humberger menu end -->
+				<!-- Small screen hamburger menu end -->
 			</div>
-			<!-- Header menu links and small screen humberger menu end -->
+			<!-- Header menu links and small screen hamburger menu end -->
 
 			<!-- Header links start -->
 			<div
@@ -117,15 +117,15 @@
 				</div>
 				<!-- Hire me button end -->
 
-				<!-- Theme switcher largr screen start -->
+				<!-- Theme switcher large screen start -->
 				<theme-switcher
 					:theme="theme"
 					@themeChanged="updateTheme"
 					class="ml-8 bg-primary-light dark:bg-ternary-dark px-3 py-2 shadow-sm rounded-xl cursor-pointer"
 				/>
-				<!-- Theme switcher largr screen end -->
+				<!-- Theme switcher large screen end -->
 			</div>
-			<!-- Header right section buttons stendart -->
+			<!-- Header right section buttons end -->
 		</div>
 		<!-- Header end -->
 
@@ -164,7 +164,7 @@ export default {
 				{
 					id: 2,
 					value: 'mobile',
-					name: 'Mobile Applicaiton',
+					name: 'Mobile Application',
 				},
 				{
 					id: 3,
