@@ -59,20 +59,20 @@
 					<input
 						v-model="searchProject"
 						class="
-              pl-3
-              pr-1
-              sm:px-4
-              py-2
-              border-1 border-gray-200
-              dark:border-secondary-dark
-              rounded-lg
-              text-sm
-              sm:text-md
-              bg-secondary-light
-              dark:bg-ternary-dark
-              text-primary-dark
-              dark:text-ternary-light
-            "
+						pl-3
+						pr-1
+						sm:px-4
+						py-2
+						border-1 border-gray-200
+						dark:border-secondary-dark
+						rounded-lg
+						text-sm
+						sm:text-md
+						bg-secondary-light
+						dark:bg-ternary-dark
+						text-primary-dark
+						dark:text-ternary-light
+						"
 						id="name"
 						name="name"
 						type="search"
@@ -122,7 +122,7 @@ export default {
 				},
 				{
 					id: 2,
-					title: 'Pheonix Digital Agenncy',
+					title: 'Phoenix Digital Agency',
 					category: 'Mobile Application',
 					img: require('@/assets/images/mobile-project-2.jpg'),
 				},
@@ -167,10 +167,10 @@ export default {
 	methods: {
 		filterProjectsByCategory() {
 			return this.projects.filter((item) => {
-				let category =
+				let filterProject =
 					item.category.charAt(0).toUpperCase() +
 					item.category.slice(1);
-				return category.includes(this.selectedProject);
+				return filterProject.includes(this.selectedProject);
 			});
 		},
 		filterProjectsBySearch() {

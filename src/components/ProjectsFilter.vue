@@ -5,20 +5,20 @@
 			:name="select"
 			:id="select"
 			class="
-        px-4
-        sm:px-6
-        py-2
-        border-1 border-gray-200
-        dark:border-secondary-dark
-        rounded-lg
-        text-sm
-        sm:text-md
-        dark:font-medium
-        bg-secondary-light
-        dark:bg-ternary-dark
-        text-primary-dark
-        dark:text-ternary-light
-    "
+				px-4
+				sm:px-6
+				py-2
+				border-1 border-gray-200
+				dark:border-secondary-dark
+				rounded-lg
+				text-sm
+				sm:text-md
+				dark:font-medium
+				bg-secondary-light
+				dark:bg-ternary-dark
+				text-primary-dark
+				dark:text-ternary-light
+			"
 		>
 			<option value class="text-sm sm:text-md">All Projects</option>
 			<option
@@ -46,7 +46,7 @@ export default {
 				'Web Application',
 				'Mobile Application',
 				'UI/UX Design',
-				'Branding',
+				'Branding & Animations',
 			],
 		},
 	},
