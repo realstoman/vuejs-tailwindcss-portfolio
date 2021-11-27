@@ -1,5 +1,5 @@
 <template>
-	<a href="#" @click="toggleTheme" aria-label="Theme Switcher">
+	<a href="#" @click.prevent="toggleTheme" aria-label="Theme Switcher">
 		<i
 			v-if="theme === 'light'"
 			data-feather="moon"
@@ -26,7 +26,7 @@ export default {
 			const newTheme = this.theme === 'light' ? 'dark' : 'light';
 			localStorage.setItem('theme', newTheme);
 			this.$emit('themeChanged', newTheme);
-			this.$router.go();
+			// this.$router.go();
 		},
 	},
 };
