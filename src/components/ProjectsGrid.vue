@@ -151,10 +151,10 @@ export default {
 					img: require('@/assets/images/web-project-1.jpg'),
 				},
 			],
-			// publicPath: process.env.BASE_URL,
 		};
 	},
 	computed: {
+		// Get the filtered projects
 		filteredProjects() {
 			if (this.selectedProject) {
 				return this.filterProjectsByCategory();
@@ -165,14 +165,16 @@ export default {
 		},
 	},
 	methods: {
+		// Filter projects by category
 		filterProjectsByCategory() {
 			return this.projects.filter((item) => {
-				let filterProject =
+				let category =
 					item.category.charAt(0).toUpperCase() +
 					item.category.slice(1);
-				return filterProject.includes(this.selectedProject);
+				return category.includes(this.selectedProject);
 			});
 		},
+		// Filter projects by title search
 		filterProjectsBySearch() {
 			let project = new RegExp(this.searchProject, 'i');
 			return this.projects.filter((el) => el.title.match(project));
