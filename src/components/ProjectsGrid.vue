@@ -87,7 +87,9 @@
 		<!-- Filter and search projects end -->
 
 		<!-- Projects grid start -->
-		<div class="grid grid-cols-1 sm:grid-cols-3 mt-6 sm:gap-10">
+		<div
+			class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:gap-10"
+		>
 			<ProjectSingle
 				v-for="project in filteredProjects"
 				:key="project.id"
