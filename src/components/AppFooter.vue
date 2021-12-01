@@ -74,16 +74,16 @@ export default {
 					url: 'https://twitter.com/NangialaiStoman',
 				},
 				{
-					id: 2,
-					name: 'Twitter',
-					icon: 'twitter',
-					url: 'https://twitter.com/NangialaiStoman',
-				},
-				{
-					id: 4,
+					id: 3,
 					name: 'Medium',
 					icon: 'book',
 					url: 'https://stoman.medium.com',
+				},
+				{
+					id: 4,
+					name: 'Instagram',
+					icon: 'instagram',
+					url: 'https://instagram.com/nangialaistoman',
 				},
 				{
 					id: 5,
