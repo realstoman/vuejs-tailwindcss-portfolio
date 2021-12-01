@@ -8,9 +8,10 @@
 			>
 				{{ projectsHeading }}
 			</p>
-			<p class="text-md sm:text-xl text-gray-500 dark:text-ternary-light">
+			<!-- Note: This description is commented, if you want to, you can uncomment this -->
+			<!-- <p class="text-md sm:text-xl text-gray-500 dark:text-ternary-light">
 				{{ projectsDescription }}
-			</p>
+			</p> -->
 		</div>
 		<!-- Projects grid title end -->
 

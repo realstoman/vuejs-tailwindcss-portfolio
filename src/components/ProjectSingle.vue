@@ -8,7 +8,7 @@
 			<img
 				:src="project.img"
 				:alt="project.title"
-				class="rounded-t-3xl border-none"
+				class="rounded-t-xl border-none"
 			/>
 		</div>
 		<div class="text-center px-4 py-6">

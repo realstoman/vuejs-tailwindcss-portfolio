@@ -22,7 +22,7 @@
 					>
 						<i
 							:data-feather="social.icon"
-							class="w-6 sm:w-8 h-6 sm:h-8"
+							class="w-5 sm:w-8 h-5 sm:h-8"
 						></i>
 					</a>
 				</ul>
@@ -74,13 +74,19 @@ export default {
 					url: 'https://twitter.com/NangialaiStoman',
 				},
 				{
-					id: 3,
-					name: 'Instagram',
-					icon: 'instagram',
-					url: 'https://instagram.com/NangialaiStoman',
+					id: 2,
+					name: 'Twitter',
+					icon: 'twitter',
+					url: 'https://twitter.com/NangialaiStoman',
 				},
 				{
 					id: 4,
+					name: 'Medium',
+					icon: 'book',
+					url: 'https://stoman.medium.com',
+				},
+				{
+					id: 5,
 					name: 'Behance',
 					icon: 'feather',
 					url: 'https://behance.net/NangialaiStoman',
