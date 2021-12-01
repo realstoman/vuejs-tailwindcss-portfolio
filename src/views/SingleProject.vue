@@ -32,7 +32,7 @@ export default {
 	data: () => {
 		return {
 			singleProjectHeader: {
-				singleProjectTitle: 'Kabul Project Management UI',
+				singleProjectTitle: 'Project Management UI',
 				singleProjectDate: 'Jul 26, 2021',
 				singleProjectTag: 'UI / Frontend',
 			},
@@ -80,7 +80,7 @@ export default {
 				objectivesHeading: 'Objective',
 				objectivesDetails:
 					'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam, quis odit cumque vero voluptate, reiciendis amet non!',
-				technlogies: [
+				technologies: [
 					{
 						title: 'Tools & Technologies',
 						techs: [
@@ -147,12 +147,6 @@ export default {
 						name: 'Youtube',
 						icon: 'youtube',
 						url: 'https://www.youtube.com/c/StomanStudio',
-					},
-					{
-						id: 5,
-						name: 'Dribbble',
-						icon: 'dribbble',
-						url: 'https://www.dribbble.com/',
 					},
 				],
 			},

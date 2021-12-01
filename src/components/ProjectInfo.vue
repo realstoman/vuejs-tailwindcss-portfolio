@@ -24,7 +24,7 @@
 									? 'hover:underline cursor-pointer'
 									: ''
 							"
-							aria-label="Project Webiste and Phone"
+							aria-label="Project Website and Phone"
 							>{{ info.details }}</a
 						>
 					</li>
@@ -50,10 +50,10 @@
 				<p
 					class="text-2xl font-semibold text-ternary-dark dark:text-ternary-light mb-2"
 				>
-					{{ projectInfo.technlogies[0].title }}
+					{{ projectInfo.technologies[0].title }}
 				</p>
 				<p class="text-primary-dark dark:text-ternary-light">
-					{{ projectInfo.technlogies[0].techs.join(', ') }}
+					{{ projectInfo.technologies[0].techs.join(', ') }}
 				</p>
 			</div>
 			<!-- Single project technologies end -->

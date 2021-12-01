@@ -124,7 +124,7 @@ export default {
 				},
 				{
 					id: 2,
-					title: 'Pheonix Digital Agenncy',
+					title: 'Phoenix Digital Agency',
 					category: 'Mobile Application',
 					img: require('@/assets/images/mobile-project-2.jpg'),
 				},
@@ -142,7 +142,7 @@ export default {
 				},
 				{
 					id: 5,
-					title: 'Kabul Social App',
+					title: 'React Social App',
 					category: 'Mobile Application',
 					img: require('@/assets/images/mobile-project-1.jpg'),
 				},
