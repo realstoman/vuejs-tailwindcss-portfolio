@@ -1,6 +1,6 @@
 <template>
 	<!-- Projects start -->
-	<section class="pt-20 sm:pt-28">
+	<section class="pt-10 sm:pt-14">
 		<!-- Projects grid title start -->
 		<div class="text-center">
 			<p
@@ -8,9 +8,10 @@
 			>
 				{{ projectsHeading }}
 			</p>
-			<p class="text-md sm:text-xl text-gray-500 dark:text-ternary-light">
+			<!-- Note: This description is commented, if you want to, you can uncomment this -->
+			<!-- <p class="text-md sm:text-xl text-gray-500 dark:text-ternary-light">
 				{{ projectsDescription }}
-			</p>
+			</p> -->
 		</div>
 		<!-- Projects grid title end -->
 
@@ -87,7 +88,9 @@
 		<!-- Filter and search projects end -->
 
 		<!-- Projects grid start -->
-		<div class="grid grid-cols-1 sm:grid-cols-3 mt-6 sm:gap-10">
+		<div
+			class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:gap-10"
+		>
 			<ProjectSingle
 				v-for="project in filteredProjects"
 				:key="project.id"
@@ -140,7 +143,7 @@ export default {
 				},
 				{
 					id: 5,
-					title: 'Kabul Social App',
+					title: 'React Social App',
 					category: 'Mobile Application',
 					img: require('@/assets/images/mobile-project-1.jpg'),
 				},

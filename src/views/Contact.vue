@@ -1,5 +1,5 @@
 <template>
-	<div class="container mx-auto sm:flex py-5 sm:py-10 mt-10 sm:mt-20">
+	<div class="container mx-auto sm:flex py-5 sm:py-10 mt-5 sm:mt-10">
 		<!-- Contact form start -->
 		<ContactForm />
 		<!-- Contact form end -->

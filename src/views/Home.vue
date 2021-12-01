@@ -1,7 +1,7 @@
 <template>
 	<div class="container mx-auto">
 		<!-- Banner start -->
-		<AppBanner />
+		<AppBanner class="mb-5 sm:mb-8" />
 		<!-- Banner snd -->
 
 		<!-- Projects start -->

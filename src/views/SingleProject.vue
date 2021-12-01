@@ -1,38 +1,38 @@
 <template>
 	<div class="container mx-auto mt-10 sm:mt-20">
 		<!-- Project header -->
-		<ProjectSingleHeader :singleProjectHeader="singleProjectHeader" />
+		<ProjectHeader :singleProjectHeader="singleProjectHeader" />
 
 		<!-- Project gallery -->
-		<ProjectSingleGallery :projectImages="projectImages" />
+		<ProjectGallery :projectImages="projectImages" />
 
 		<!-- Project information -->
-		<ProjectSingleInfo :projectInfo="projectInfo" />
+		<ProjectInfo :projectInfo="projectInfo" />
 
 		<!-- Project related projects -->
-		<ProjectSingleRelatedProjects :relatedProject="relatedProject" />
+		<ProjectRelatedProjects :relatedProject="relatedProject" />
 	</div>
 </template>
 
 <script>
 import feather from 'feather-icons';
-import ProjectSingleHeader from '../components/ProjectSingleHeader.vue';
-import ProjectSingleGallery from '../components/ProjectSingleGallery.vue';
-import ProjectSingleInfo from '../components/ProjectSingleInfo.vue';
-import ProjectSingleRelatedProjects from '../components/ProjectSingleRelatedProjects.vue';
+import ProjectHeader from '../components/ProjectHeader.vue';
+import ProjectGallery from '../components/ProjectGallery.vue';
+import ProjectInfo from '../components/ProjectInfo.vue';
+import ProjectRelatedProjects from '../components/ProjectRelatedProjects.vue';
 
 export default {
 	name: 'Projects',
 	components: {
-		ProjectSingleHeader,
-		ProjectSingleGallery,
-		ProjectSingleInfo,
-		ProjectSingleRelatedProjects,
+		ProjectHeader,
+		ProjectGallery,
+		ProjectInfo,
+		ProjectRelatedProjects,
 	},
 	data: () => {
 		return {
 			singleProjectHeader: {
-				singleProjectTitle: 'Kabul Project Management UI',
+				singleProjectTitle: 'Project Management UI',
 				singleProjectDate: 'Jul 26, 2021',
 				singleProjectTag: 'UI / Frontend',
 			},
@@ -79,8 +79,8 @@ export default {
 				],
 				objectivesHeading: 'Objective',
 				objectivesDetails:
-					'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam, quis odit cumque vero voluptate, reiciendis amet non!',
-				technlogies: [
+					'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.',
+				technologies: [
 					{
 						title: 'Tools & Technologies',
 						techs: [
@@ -147,12 +147,6 @@ export default {
 						name: 'Youtube',
 						icon: 'youtube',
 						url: 'https://www.youtube.com/c/StomanStudio',
-					},
-					{
-						id: 5,
-						name: 'Dribbble',
-						icon: 'dribbble',
-						url: 'https://www.dribbble.com/',
 					},
 				],
 			},

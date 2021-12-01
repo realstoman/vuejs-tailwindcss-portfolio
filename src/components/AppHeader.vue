@@ -29,7 +29,7 @@
 				<theme-switcher
 					:theme="theme"
 					@themeChanged="updateTheme"
-					class="block sm:hidden bg-ternary-light dark:bg-ternary-dark hover:bg-hover-light dark:hover:bg-hover-dark hover:shadow-sm px-2.5 py-2 rounded-lg ml-10"
+					class="block sm:hidden bg-ternary-light dark:bg-ternary-dark hover:bg-hover-light dark:hover:bg-hover-dark hover:shadow-sm px-2.5 py-2 rounded-lg"
 				/>
 				<!-- Theme switcher small screen end -->
 
@@ -91,7 +91,7 @@
 					class="border-t-2 pt-3 sm:pt-0 sm:border-t-0 border-primary-light dark:border-secondary-dark"
 				>
 					<button
-						class="sm:hidden block text-left text-md font-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-md px-4 py-2 mt-2"
+						class="sm:hidden block text-left text-md font-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-sm px-4 py-2 mt-2"
 						@click="showModal()"
 						aria-label="Hire Me Button"
 					>
@@ -108,7 +108,7 @@
 				<!-- Hire me button start -->
 				<div>
 					<button
-						class="text-md font-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-lg px-5 py-2.5"
+						class="text-md font-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-md px-5 py-2.5"
 						@click="showModal()"
 						aria-label="Hire Me Button"
 					>

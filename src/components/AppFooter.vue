@@ -1,7 +1,7 @@
 <template>
 	<div class="container mx-auto ">
 		<div
-			class="innercontent pt-20 sm:pt-30 pb-8 mt-20 border-t-2 border-primary-light dark:border-secondary-dark"
+			class="pt-20 sm:pt-30 pb-8 mt-20 border-t-2 border-primary-light dark:border-secondary-dark"
 		>
 			<!-- Footer social links start -->
 			<div
@@ -22,7 +22,7 @@
 					>
 						<i
 							:data-feather="social.icon"
-							class="w-6 sm:w-8 h-6 sm:h-8"
+							class="w-5 sm:w-8 h-5 sm:h-8"
 						></i>
 					</a>
 				</ul>
@@ -31,9 +31,16 @@
 
 			<!-- Footer copyright start -->
 			<div class="flex justify-center items-center text-center">
-				<div class="text-lg text-ternary-dark dark:text-ternary-light">
-					&copy; Copyright {{ copyrightDate }}. Vue.js & TailwindCSS
-					Portfolio.
+				<div class="text-lg text-ternary-dark dark:text-ternary-light ">
+					&copy; {{ copyrightDate }}.
+					<a
+						href="https://github.com/NangialaiStoman/vuejs-tailwindcss-portfolio"
+						target="__blank"
+						class="hover:underline"
+					>
+						Vue.js & TailwindCSS Portfolio
+					</a>
+					.
 					<a
 						href="https://stoman.me"
 						target="__blank"
@@ -67,13 +74,19 @@ export default {
 					url: 'https://twitter.com/NangialaiStoman',
 				},
 				{
-					id: 3,
-					name: 'Instagram',
-					icon: 'instagram',
-					url: 'https://instagram.com/NangialaiStoman',
+					id: 2,
+					name: 'Twitter',
+					icon: 'twitter',
+					url: 'https://twitter.com/NangialaiStoman',
 				},
 				{
 					id: 4,
+					name: 'Medium',
+					icon: 'book',
+					url: 'https://stoman.medium.com',
+				},
+				{
+					id: 5,
 					name: 'Behance',
 					icon: 'feather',
 					url: 'https://behance.net/NangialaiStoman',
