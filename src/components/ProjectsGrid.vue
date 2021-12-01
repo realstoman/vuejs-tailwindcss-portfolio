@@ -1,6 +1,6 @@
 <template>
 	<!-- Projects start -->
-	<section class="pt-20 sm:pt-28">
+	<section class="pt-10 sm:pt-14">
 		<!-- Projects grid title start -->
 		<div class="text-center">
 			<p
