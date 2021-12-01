@@ -8,7 +8,7 @@
 		>
 			<img
 				:src="projectImage.img"
-				class="rounded-2xl cursor-pointer shadow-lg sm:shadow-none"
+				class="rounded-xl cursor-pointer shadow-lg sm:shadow-none"
 				alt="{{ projectImage.title }}"
 			/>
 		</div>

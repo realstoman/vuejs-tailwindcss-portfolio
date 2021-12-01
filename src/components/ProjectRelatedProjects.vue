@@ -13,7 +13,7 @@
 			<div v-for="item in relatedProject.relatedProjects" :key="item.id">
 				<img
 					:src="item.img"
-					class="rounded-2xl cursor-pointer"
+					class="rounded-xl cursor-pointer"
 					:alt="item.title"
 				/>
 			</div>
