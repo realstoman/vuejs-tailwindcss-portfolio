@@ -1,7 +1,7 @@
 <template>
 	<div class="container mx-auto ">
 		<div
-			class="innercontent pt-20 sm:pt-30 pb-8 mt-20 border-t-2 border-primary-light dark:border-secondary-dark"
+			class="pt-20 sm:pt-30 pb-8 mt-20 border-t-2 border-primary-light dark:border-secondary-dark"
 		>
 			<!-- Footer social links start -->
 			<div
@@ -31,9 +31,16 @@
 
 			<!-- Footer copyright start -->
 			<div class="flex justify-center items-center text-center">
-				<div class="text-lg text-ternary-dark dark:text-ternary-light">
-					&copy; Copyright {{ copyrightDate }}. Vue.js & TailwindCSS
-					Portfolio.
+				<div class="text-lg text-ternary-dark dark:text-ternary-light ">
+					&copy; {{ copyrightDate }}.
+					<a
+						href="https://github.com/NangialaiStoman/vuejs-tailwindcss-portfolio"
+						target="__blank"
+						class="hover:underline"
+					>
+						Vue.js & TailwindCSS Portfolio
+					</a>
+					.
 					<a
 						href="https://stoman.me"
 						target="__blank"
