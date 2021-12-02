@@ -31,7 +31,7 @@ A simple portfolio starter theme built with Vue.js v3 and TailwindCSS v2. This i
 
 -   [Download it from nodejs.org](https://nodejs.org)
 -   [Install it using NVM ](https://github.com/nvm-sh/nvm)
--   If you're on Mac, install it with Homebrew:
+-   If you're on Mac, Homebrew is a good option too:
 
 ```
 brew install node
