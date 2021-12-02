@@ -17,7 +17,7 @@
 						class="modal-wrapper flex items-center z-30"
 					>
 						<div
-							class="modal max-w-md mx-5 xl:max-w-xl lg:max-w-xl md:max-w-xl bg-secondary-light dark:bg-primary-dark max-h-screen shadow-lg flex-row rounded-xl relative"
+							class="modal max-w-md mx-5 xl:max-w-xl lg:max-w-xl md:max-w-xl bg-secondary-light dark:bg-primary-dark max-h-screen shadow-lg flex-row rounded-lg relative"
 						>
 							<div
 								class="modal-header flex justify-between gap-10 p-5 border-b border-ternary-light dark:border-ternary-dark"
@@ -31,14 +31,14 @@
 									class="px-4 font-bold text-primary-dark dark:text-primary-light"
 									@click="showModal()"
 								>
-									X
+									<i data-feather="x"></i>
 								</button>
 							</div>
 							<div class="modal-body p-5 w-full h-full">
 								<form class="max-w-xl m-4 text-left">
-									<div class="">
+									<div class="mt-0">
 										<input
-											class="w-full px-5 py-2 border-1 border-gray-200 dark:border-secondary-dark rounded-lg text-md dark:font-medium bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
+											class="w-full px-5 py-2 border-1 border-gray-200 dark:border-secondary-dark rounded-md text-md dark:font-medium bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
 											id="name"
 											name="name"
 											type="text"
@@ -49,7 +49,7 @@
 									</div>
 									<div class="mt-6">
 										<input
-											class="w-full px-5 py-2 border-1 border-gray-200 dark:border-secondary-dark rounded-lg text-md dark:font-medium bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
+											class="w-full px-5 py-2 border-1 border-gray-200 dark:border-secondary-dark rounded-md text-md dark:font-medium bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
 											id="email"
 											name="email"
 											type="text"
@@ -60,7 +60,7 @@
 									</div>
 									<div class="mt-6">
 										<select
-											class="w-full px-5 py-2 border-1 border-gray-200 dark:border-secondary-dark rounded-lg text-md dark:font-medium bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
+											class="w-full px-5 py-2 border-1 border-gray-200 dark:border-secondary-dark rounded-md text-md dark:font-medium bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
 											id="subject"
 											name="subject"
 											type="text"
@@ -78,7 +78,7 @@
 
 									<div class="mt-6">
 										<textarea
-											class="w-full px-5 py-2 border-1 border-gray-200 dark:border-secondary-dark rounded-lg text-md dark:font-medium bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
+											class="w-full px-5 py-2 border-1 border-gray-200 dark:border-secondary-dark rounded-md text-md dark:font-medium bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
 											id="message"
 											name="message"
 											cols="14"
@@ -100,7 +100,6 @@
 											bg-indigo-500
 											hover:bg-indigo-600
 											rounded-md
-											sm:rounded-lg
 											focus:ring-1 focus:ring-indigo-900"
 											type="submit"
 											aria-label="Submit Request"
@@ -116,14 +115,10 @@
 								<button
 									class=" px-4
 									sm:px-6
-									py-2
-									bg-indigo-400
-									hover:bg-indigo-500
+									py-2 bg-gray-600 text-primary-light hover:bg-ternary-dark dark:bg-gray-200 dark:text-secondary-dark dark:hover:bg-primary-light
 									rounded-md
-									sm:rounded-lg
 									font-normal
 									sm:font-bold
-									text-primary-light
 									focus:ring-1 focus:ring-indigo-900"
 									@click="showModal()"
 									aria-label="Close Modal"
@@ -140,10 +135,17 @@
 </template>
 
 <script>
+import feather from 'feather-icons';
 export default {
 	props: ['showModal', 'modal', 'categories'],
 	data() {
 		return {};
+	},
+	mounted() {
+		feather.replace();
+	},
+	updated() {
+		feather.replace();
 	},
 	methods: {},
 };
