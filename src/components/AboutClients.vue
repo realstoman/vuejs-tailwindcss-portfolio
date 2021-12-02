@@ -1,4 +1,5 @@
 <template>
+	<!-- About page clients section -->
 	<div class="mt-10 sm:mt-20">
 		<p
 			class="text-2xl sm:text-4xl text-primary-dark dark:text-primary-light font-sans font-semibold"

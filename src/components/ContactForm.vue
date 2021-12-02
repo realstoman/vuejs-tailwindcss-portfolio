@@ -1,4 +1,5 @@
 <template>
+	<!-- Contact form -->
 	<div class="w-full sm:w-1/2">
 		<div class="leading-loose">
 			<form

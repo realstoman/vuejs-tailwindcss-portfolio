@@ -4,9 +4,9 @@
 		<div
 			class="z-10 max-w-screen-lg xl:max-w-screen-xl block sm:flex sm:justify-between sm:items-center my-6"
 		>
-			<!-- Header menu links and small screen hamburger menu start -->
+			<!-- Header menu links and small screen hamburger menu -->
 			<div class="flex justify-between items-center px-4 sm:px-0">
-				<!-- Header logos start -->
+				<!-- Header logos -->
 				<div>
 					<router-link to="/"
 						><img
@@ -23,17 +23,15 @@
 						/>
 					</router-link>
 				</div>
-				<!-- Header logos end -->
 
-				<!-- Theme switcher small screen start -->
+				<!-- Theme switcher small screen -->
 				<theme-switcher
 					:theme="theme"
 					@themeChanged="updateTheme"
 					class="block sm:hidden bg-ternary-light dark:bg-ternary-dark hover:bg-hover-light dark:hover:bg-hover-dark hover:shadow-sm px-2.5 py-2 rounded-lg"
 				/>
-				<!-- Theme switcher small screen end -->
 
-				<!-- Small screen hamburger menu start -->
+				<!-- Small screen hamburger menu -->
 				<div class="sm:hidden">
 					<button
 						@click="isOpen = !isOpen"
@@ -60,19 +58,16 @@
 						</svg>
 					</button>
 				</div>
-				<!-- Small screen hamburger menu end -->
 			</div>
-			<!-- Header menu links and small screen hamburger menu end -->
 
-			<!-- Header links start -->
+			<!-- Header links -->
 			<AppHeaderLinks :showModal="showModal" :isOpen="isOpen" />
-			<!-- Header links end -->
 
-			<!-- Header right section buttons start -->
+			<!-- Header right section buttons -->
 			<div
 				class="hidden sm:flex justify-between items-center flex-col md:flex-row"
 			>
-				<!-- Hire me button start -->
+				<!-- Hire me button -->
 				<div>
 					<button
 						class="text-md font-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-md px-5 py-2.5"
@@ -82,28 +77,23 @@
 						Hire Me
 					</button>
 				</div>
-				<!-- Hire me button end -->
 
-				<!-- Theme switcher large screen start -->
+				<!-- Theme switcher large screen -->
 				<theme-switcher
 					:theme="theme"
 					@themeChanged="updateTheme"
 					class="ml-8 bg-primary-light dark:bg-ternary-dark px-3 py-2 shadow-sm rounded-xl cursor-pointer"
 				/>
-				<!-- Theme switcher large screen end -->
 			</div>
-			<!-- Header right section buttons end -->
 		</div>
-		<!-- Header end -->
 
-		<!-- Hire me modal start -->
+		<!-- Hire me modal -->
 		<HireMeModal
 			:showModal="showModal"
 			:modal="modal"
 			:categories="categories"
 			aria-modal="Hire Me Modal"
 		/>
-		<!-- Hire me modal end -->
 	</nav>
 </template>
 

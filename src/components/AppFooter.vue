@@ -1,9 +1,10 @@
 <template>
+	<!-- App footer -->
 	<div class="container mx-auto ">
 		<div
 			class="pt-20 sm:pt-30 pb-8 mt-20 border-t-2 border-primary-light dark:border-secondary-dark"
 		>
-			<!-- Footer social links start -->
+			<!-- Footer social links -->
 			<div
 				class="flex flex-col justify-center items-center mb-12 sm:mb-28"
 			>
@@ -27,9 +28,8 @@
 					</a>
 				</ul>
 			</div>
-			<!-- Footer social links end -->
 
-			<!-- Footer copyright start -->
+			<!-- Footer copyright -->
 			<div class="flex justify-center items-center text-center">
 				<div class="text-lg text-ternary-dark dark:text-ternary-light ">
 					&copy; {{ copyrightDate }}.
@@ -49,7 +49,6 @@
 					>
 				</div>
 			</div>
-			<!-- Footer copyright end -->
 		</div>
 	</div>
 </template>

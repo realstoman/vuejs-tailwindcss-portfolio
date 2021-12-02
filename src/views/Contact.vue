@@ -1,12 +1,10 @@
 <template>
 	<div class="container mx-auto sm:flex py-5 sm:py-10 mt-5 sm:mt-10">
-		<!-- Contact form start -->
+		<!-- Contact form -->
 		<ContactForm />
-		<!-- Contact form end -->
 
-		<!-- Contact details start -->
+		<!-- Contact details -->
 		<ContactDetails :contacts="contacts" />
-		<!-- Contact details end -->
 	</div>
 </template>
 

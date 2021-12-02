@@ -1,8 +1,9 @@
 <template>
-	<!-- Banner start -->
+	<!-- App Banner -->
 	<section
 		class="flex flex-col sm:justify-between items-center sm:flex-row mt-12 sm:mt-10"
 	>
+		<!-- Banner left contents -->
 		<div class="w-full sm:w-1/3 text-left">
 			<h1
 				class="text-3xl sm:text-4xl xl:text-5xl text-center sm:text-left font-semibold text-ternary-dark dark:text-primary-light uppercase"
@@ -29,6 +30,8 @@
 				>
 			</div>
 		</div>
+
+		<!-- Banner right illustration -->
 		<div class="w-full sm:w-2/3 text-right float-right">
 			<img
 				v-if="theme === 'light'"
@@ -42,7 +45,6 @@
 			/>
 		</div>
 	</section>
-	<!-- Banner end -->
 </template>
 
 <script>

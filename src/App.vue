@@ -8,6 +8,7 @@
 			<router-view :theme="appTheme" />
 		</transition>
 
+		<!-- Scroll to top -->
 		<back-to-top
 			visibleoffset="500"
 			right="40px"

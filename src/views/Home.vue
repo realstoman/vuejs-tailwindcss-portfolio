@@ -1,14 +1,12 @@
 <template>
 	<div class="container mx-auto">
-		<!-- Banner start -->
+		<!-- Banner -->
 		<AppBanner class="mb-5 sm:mb-8" />
-		<!-- Banner snd -->
 
-		<!-- Projects start -->
+		<!-- Projects -->
 		<ProjectsGrid />
-		<!-- Projects end -->
 
-		<!-- Load more projects button start -->
+		<!-- Load more projects button -->
 		<div class="mt-10 sm:mt-20 flex justify-center">
 			<router-link
 				to="/projects"
@@ -17,7 +15,6 @@
 				>More Projects</router-link
 			>
 		</div>
-		<!-- Load more projects button end -->
 	</div>
 </template>
 

@@ -1,13 +1,14 @@
 <template>
+	<!-- Hire me modal -->
 	<transition name="fade">
 		<div v-show="modal" class="fixed inset-0 z-30">
-			<!-- background -->
+			<!-- Modal body background as backdrop -->
 			<div
 				v-show="modal"
 				@click="showModal()"
 				class="bg-filter bg-black bg-opacity-50 fixed inset-0 w-full h-full z-20"
 			></div>
-			<!--          -->
+			<!-- Modal content -->
 			<main
 				class="flex flex-col items-center justify-center h-full w-full"
 			>
