@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<!-- Project heading and meta info start -->
+		<!-- Project heading and meta info -->
 		<p
 			class="text-left text-3xl sm:text-4xl font-bold text-primary-dark dark:text-primary-light mt-14 sm:mt-20 mb-7"
 		>
@@ -28,7 +28,6 @@
 				>
 			</div>
 		</div>
-		<!-- Project heading and meta info end -->
 	</div>
 </template>
 

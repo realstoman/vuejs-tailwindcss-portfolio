@@ -4,9 +4,9 @@
 		<div
 			class="z-10 max-w-screen-lg xl:max-w-screen-xl block sm:flex sm:justify-between sm:items-center my-6"
 		>
-			<!-- Header menu links and small screen hamburger menu start -->
+			<!-- Header menu links and small screen hamburger menu -->
 			<div class="flex justify-between items-center px-4 sm:px-0">
-				<!-- Header logos start -->
+				<!-- Header logos -->
 				<div>
 					<router-link to="/"
 						><img
@@ -23,17 +23,15 @@
 						/>
 					</router-link>
 				</div>
-				<!-- Header logos end -->
 
-				<!-- Theme switcher small screen start -->
+				<!-- Theme switcher small screen -->
 				<theme-switcher
 					:theme="theme"
 					@themeChanged="updateTheme"
 					class="block sm:hidden bg-ternary-light dark:bg-ternary-dark hover:bg-hover-light dark:hover:bg-hover-dark hover:shadow-sm px-2.5 py-2 rounded-lg"
 				/>
-				<!-- Theme switcher small screen end -->
 
-				<!-- Small screen hamburger menu start -->
+				<!-- Small screen hamburger menu -->
 				<div class="sm:hidden">
 					<button
 						@click="isOpen = !isOpen"
@@ -60,52 +58,16 @@
 						</svg>
 					</button>
 				</div>
-				<!-- Small screen hamburger menu end -->
 			</div>
-			<!-- Header menu links and small screen hamburger menu end -->
 
-			<!-- Header links start -->
-			<div
-				:class="isOpen ? 'block' : 'hidden'"
-				class="m-0 sm:ml-4 mt-5 sm:mt-3 sm:flex p-5 sm:p-0 justify-center items-center shadow-lg sm:shadow-none"
-			>
-				<router-link
-					to="/projects"
-					class="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
-					aria-label="Projects"
-					>Projects</router-link
-				>
-				<router-link
-					to="/about"
-					class="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark"
-					aria-label="About Me"
-					>About Me</router-link
-				>
-				<router-link
-					to="/contact"
-					class="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark"
-					aria-label="Contact"
-					>Contact</router-link
-				>
-				<div
-					class="border-t-2 pt-3 sm:pt-0 sm:border-t-0 border-primary-light dark:border-secondary-dark"
-				>
-					<button
-						class="sm:hidden block text-left text-md font-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-sm px-4 py-2 mt-2"
-						@click="showModal()"
-						aria-label="Hire Me Button"
-					>
-						Hire Me
-					</button>
-				</div>
-			</div>
-			<!-- Header links end -->
+			<!-- Header links -->
+			<AppHeaderLinks :showModal="showModal" :isOpen="isOpen" />
 
-			<!-- Header right section buttons start -->
+			<!-- Header right section buttons -->
 			<div
 				class="hidden sm:flex justify-between items-center flex-col md:flex-row"
 			>
-				<!-- Hire me button start -->
+				<!-- Hire me button -->
 				<div>
 					<button
 						class="text-md font-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-md px-5 py-2.5"
@@ -115,28 +77,23 @@
 						Hire Me
 					</button>
 				</div>
-				<!-- Hire me button end -->
 
-				<!-- Theme switcher large screen start -->
+				<!-- Theme switcher large screen -->
 				<theme-switcher
 					:theme="theme"
 					@themeChanged="updateTheme"
 					class="ml-8 bg-primary-light dark:bg-ternary-dark px-3 py-2 shadow-sm rounded-xl cursor-pointer"
 				/>
-				<!-- Theme switcher large screen end -->
 			</div>
-			<!-- Header right section buttons end -->
 		</div>
-		<!-- Header end -->
 
-		<!-- Hire me modal start -->
+		<!-- Hire me modal -->
 		<HireMeModal
 			:showModal="showModal"
 			:modal="modal"
 			:categories="categories"
 			aria-modal="Hire Me Modal"
 		/>
-		<!-- Hire me modal end -->
 	</nav>
 </template>
 
@@ -144,11 +101,13 @@
 import ThemeSwitcher from './ThemeSwitcher';
 import HireMeModal from './HireMeModal.vue';
 import feather from 'feather-icons';
+import AppHeaderLinks from './AppHeaderLinks.vue';
 
 export default {
 	components: {
 		ThemeSwitcher,
 		HireMeModal,
+		AppHeaderLinks,
 	},
 	data() {
 		return {

@@ -1,7 +1,7 @@
 <template>
-	<!-- Projects start -->
+	<!-- Projects grid -->
 	<section class="pt-10 sm:pt-14">
-		<!-- Projects grid title start -->
+		<!-- Projects grid title -->
 		<div class="text-center">
 			<p
 				class="text-2xl sm:text-5xl font-semibold mb-3 text-ternary-dark dark:text-ternary-light"
@@ -13,44 +13,43 @@
 				{{ projectsDescription }}
 			</p> -->
 		</div>
-		<!-- Projects grid title end -->
 
-		<!-- Filter and search projects start -->
+		<!-- Filter and search projects -->
 		<div class="mt-10 sm:mt-16">
 			<h3
 				class="
-          text-center text-secondary-dark
-          dark:text-ternary-light
-          text-md
-          sm:text-xl
-          font-normal
-          mb-3
-        "
+					text-center text-secondary-dark
+					dark:text-ternary-light
+					text-md
+					sm:text-xl
+					font-normal
+					mb-3
+				"
 			>
 				Search projects by title or filter by category
 			</h3>
 			<div
 				class="
-          flex
-          justify-between
-          border-b border-primary-light
-          dark:border-secondary-dark
-          pb-3
-          gap-3
-        "
+					flex
+					justify-between
+					border-b border-primary-light
+					dark:border-secondary-dark
+					pb-3
+					gap-3
+				"
 			>
 				<div class="flex justify-between gap-2">
 					<span
 						class="
-              hidden
-              sm:block
-              bg-primary-light
-              dark:bg-ternary-dark
-              p-2.5
-              shadow-sm
-              rounded-xl
-              cursor-pointer
-            "
+							hidden
+							sm:block
+							bg-primary-light
+							dark:bg-ternary-dark
+							p-2.5
+							shadow-sm
+							rounded-xl
+							cursor-pointer
+							"
 					>
 						<i
 							data-feather="search"
@@ -85,9 +84,8 @@
 				<ProjectsFilter @change="selectedProject = $event" />
 			</div>
 		</div>
-		<!-- Filter and search projects end -->
 
-		<!-- Projects grid start -->
+		<!-- Projects grid -->
 		<div
 			class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:gap-10"
 		>
@@ -97,9 +95,7 @@
 				:project="project"
 			/>
 		</div>
-		<!-- Projects grid end -->
 	</section>
-	<!-- Projects end -->
 </template>
 
 <script>

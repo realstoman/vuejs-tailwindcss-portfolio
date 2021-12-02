@@ -1,19 +1,16 @@
 <template>
 	<div>
+		<!-- About me -->
 		<div class="container mx-auto">
-			<!-- About me start -->
 			<AboutMe />
-			<!-- About me end -->
 		</div>
 
-		<!-- About counter start -->
+		<!-- About counter -->
 		<AboutCounter />
-		<!-- About counter end -->
 
+		<!-- About counter -->
 		<div class="container mx-auto">
-			<!-- About counter start -->
 			<AboutClients />
-			<!-- About counter end -->
 		</div>
 	</div>
 </template>

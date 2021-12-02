@@ -8,13 +8,14 @@
 			<router-view :theme="appTheme" />
 		</transition>
 
+		<!-- Scroll to top -->
 		<back-to-top
 			visibleoffset="500"
-			right="40px"
-			bottom="40px"
+			right="30px"
+			bottom="20px"
 			class="shadow-lg"
 		>
-			<i data-feather="arrow-up"></i>
+			<i data-feather="chevron-up"></i>
 		</back-to-top>
 
 		<!-- App footer -->
@@ -55,7 +56,11 @@ export default {
 }
 
 .vue-back-to-top {
-	@apply p-2 sm:p-4 bg-indigo-500 hover:bg-indigo-600 text-white;
+	@apply p-2 bg-indigo-500 hover:bg-indigo-600 text-white transition
+        duration-500
+        ease-in-out
+        transform
+        hover:-translate-y-1 hover:scale-110;
 	border-radius: 50%;
 	font-size: 22px;
 	line-height: 22px;

@@ -1,6 +1,6 @@
 # Vuejs & TailwindCSS Portfolio - With Dark Mode
 
-A simple portfolio starter theme built with Vue.js v3 and TailwindCSS v2. This is a simple portfolio theme and its geared towards beginners. For sure there's room for improvements and if there's anything missing or to be corrected or you have a better idea for it, please fork this repo and make a PR.
+A simple portfolio starter theme built with Vue.js v3 and TailwindCSS v2. This is a simple portfolio theme and its geared towards beginners. If there's anything missing or to be corrected or you have a better idea for it, please fork this repo and make a PR.
 
 ![Vuejs-TailwindCSS-Portfolio](https://user-images.githubusercontent.com/16396664/140909796-815239e4-a986-46ad-bbd0-4b166127bbb8.JPG)
 
@@ -31,7 +31,7 @@ A simple portfolio starter theme built with Vue.js v3 and TailwindCSS v2. This i
 
 -   [Download it from nodejs.org](https://nodejs.org)
 -   [Install it using NVM ](https://github.com/nvm-sh/nvm)
--   If you're on Mac, install it with Homebrew:
+-   If you're on Mac, Homebrew is a good option too:
 
 ```
 brew install node

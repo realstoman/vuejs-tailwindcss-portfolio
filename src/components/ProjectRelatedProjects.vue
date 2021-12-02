@@ -1,5 +1,5 @@
 <template>
-	<!-- Related projects start -->
+	<!-- Related projects -->
 	<div
 		class="mt-10 pt-10 sm:pt-14 sm:mt-20 border-t-2 border-primary-light dark:border-secondary-dark"
 	>
@@ -19,7 +19,6 @@
 			</div>
 		</div>
 	</div>
-	<!-- Related projects end -->
 </template>
 
 <script>

@@ -1,8 +1,7 @@
 <template>
+	<!-- Projects grid -->
 	<div class="container mx-auto">
-		<!-- Projects start -->
 		<ProjectsGrid />
-		<!-- ProjectsGrid end -->
 	</div>
 </template>
 
