@@ -64,13 +64,13 @@ export default {
 					id: 1,
 					name: 'GitHub',
 					icon: 'github',
-					url: 'https://github.com/NangialaiStoman',
+					url: 'https://github.com/realstoman',
 				},
 				{
 					id: 2,
 					name: 'Twitter',
 					icon: 'twitter',
-					url: 'https://twitter.com/NangialaiStoman',
+					url: 'https://twitter.com/realstoman',
 				},
 				{
 					id: 3,
@@ -82,13 +82,13 @@ export default {
 					id: 4,
 					name: 'Instagram',
 					icon: 'instagram',
-					url: 'https://instagram.com/nangialaistoman',
+					url: 'https://instagram.com/realstoman',
 				},
 				{
 					id: 5,
 					name: 'Behance',
 					icon: 'feather',
-					url: 'https://behance.net/NangialaiStoman',
+					url: 'https://behance.net/realstoman',
 				},
 			],
 		};

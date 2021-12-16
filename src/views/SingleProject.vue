@@ -122,13 +122,13 @@ export default {
 						id: 1,
 						name: 'Twitter',
 						icon: 'twitter',
-						url: 'https://twitter.com/NangialaiStoman',
+						url: 'https://twitter.com/realstoman',
 					},
 					{
 						id: 2,
 						name: 'Instagram',
 						icon: 'instagram',
-						url: 'https://instagram.com/NangialaiStoman',
+						url: 'https://instagram.com/realstoman',
 					},
 					{
 						id: 3,
