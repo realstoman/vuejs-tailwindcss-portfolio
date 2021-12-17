@@ -34,7 +34,7 @@
 				<div class="text-lg text-ternary-dark dark:text-ternary-light ">
 					&copy; {{ copyrightDate }}.
 					<a
-						href="https://github.com/NangialaiStoman/vuejs-tailwindcss-portfolio"
+						href="https://github.com/realstoman/vuejs-tailwindcss-portfolio"
 						target="__blank"
 						class="hover:underline"
 					>
