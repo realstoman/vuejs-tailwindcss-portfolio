@@ -1,5 +1,7 @@
 <template>
-	<div class="container mx-auto sm:flex py-5 sm:py-10 mt-5 sm:mt-10">
+	<div
+		class="container mx-auto flex flex-col-reverse md:flex-row py-5 md:py-10 md:mt-10"
+	>
 		<!-- Contact form -->
 		<ContactForm />
 
