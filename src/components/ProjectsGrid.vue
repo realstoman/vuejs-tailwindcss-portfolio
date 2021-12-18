@@ -9,9 +9,9 @@
 				{{ projectsHeading }}
 			</p>
 			<!-- Note: This description is commented, if you want to, you can uncomment this -->
-			<p class="text-md sm:text-xl text-gray-500 dark:text-ternary-light">
+			<!-- <p class="text-md sm:text-xl text-gray-500 dark:text-ternary-light">
 				{{ projectsDescription }}
-			</p>
+			</p> -->
 		</div>
 
 		<!-- Filter and search projects -->
