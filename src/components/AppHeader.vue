@@ -68,7 +68,7 @@
 				class="hidden sm:flex justify-between items-center flex-col md:flex-row"
 			>
 				<!-- Hire me button -->
-				<div>
+				<div class="hidden md:block">
 					<button
 						class="text-md font-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-md px-5 py-2.5"
 						@click="showModal()"

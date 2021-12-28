@@ -4,14 +4,14 @@
 		class="flex flex-col sm:justify-between items-center sm:flex-row mt-12 sm:mt-10"
 	>
 		<!-- Banner left contents -->
-		<div class="w-full sm:w-1/3 text-left">
+		<div class="w-full md:w-1/3 text-left">
 			<h1
-				class="text-3xl sm:text-4xl xl:text-5xl text-center sm:text-left font-semibold text-ternary-dark dark:text-primary-light uppercase"
+				class="text-3xl md:text-4xl xl:text-5xl text-center sm:text-left font-semibold text-ternary-dark dark:text-primary-light uppercase"
 			>
 				Hi, Iam Stoman
 			</h1>
 			<p
-				class="mt-4 text-2xml sm:text-3xl xl:text-4xl text-center sm:text-left font-semibold leading-none text-gray-400"
+				class="mt-4 text-xl md:text-2xl xl:text-4xl text-center sm:text-left font-semibold leading-none text-gray-400"
 			>
 				A Full-Stack Developer & Design Enthusiast
 			</p>
@@ -32,7 +32,7 @@
 		</div>
 
 		<!-- Banner right illustration -->
-		<div class="w-full sm:w-2/3 text-right float-right">
+		<div class="w-full md:w-2/3 text-right float-right">
 			<img
 				v-if="theme === 'light'"
 				src="@/assets/images/developer.svg"
