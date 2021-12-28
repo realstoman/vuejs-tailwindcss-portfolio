@@ -34,7 +34,7 @@
 				<div class="text-lg text-ternary-dark dark:text-ternary-light ">
 					&copy; {{ copyrightDate }}.
 					<a
-						href="https://github.com/NangialaiStoman/vuejs-tailwindcss-portfolio"
+						href="https://github.com/realstoman/vuejs-tailwindcss-portfolio"
 						target="__blank"
 						class="hover:underline"
 					>
@@ -83,12 +83,6 @@ export default {
 					name: 'Instagram',
 					icon: 'instagram',
 					url: 'https://instagram.com/realstoman',
-				},
-				{
-					id: 5,
-					name: 'Behance',
-					icon: 'feather',
-					url: 'https://behance.net/realstoman',
 				},
 			],
 		};
