@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import ProjectsGrid from '../components/ProjectsGrid.vue';
+import ProjectsGrid from '../components/projects/ProjectsGrid.vue';
 
 export default {
 	name: 'Projects',

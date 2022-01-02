@@ -4,18 +4,14 @@
 		<!-- Projects grid title -->
 		<div class="text-center">
 			<p
-				class="text-2xl sm:text-5xl font-semibold mb-3 text-ternary-dark dark:text-ternary-light"
+				class="text-2xl sm:text-5xl font-semibold mb-2 text-ternary-dark dark:text-ternary-light"
 			>
 				{{ projectsHeading }}
 			</p>
-			<!-- Note: This description is commented, if you want to, you can uncomment this -->
-			<!-- <p class="text-md sm:text-xl text-gray-500 dark:text-ternary-light">
-				{{ projectsDescription }}
-			</p> -->
 		</div>
 
 		<!-- Filter and search projects -->
-		<div class="mt-10 sm:mt-16">
+		<div class="mt-10 sm:mt-10">
 			<h3
 				class="
 					text-center text-secondary-dark
@@ -102,54 +98,16 @@
 import feather from 'feather-icons';
 import ProjectsFilter from './ProjectsFilter.vue';
 import ProjectSingle from './ProjectSingle.vue';
+import projects from '../../data/projects';
 
 export default {
 	components: { ProjectSingle, ProjectsFilter },
 	data: () => {
 		return {
+			projects,
 			projectsHeading: 'Projects Portfolio',
-			projectsDescription:
-				'Some of the projects I have successfully completed',
 			selectedProject: '',
 			searchProject: '',
-			projects: [
-				{
-					id: 1,
-					title: 'Google Health Platform',
-					category: 'Web Application',
-					img: require('@/assets/images/web-project-2.jpg'),
-				},
-				{
-					id: 2,
-					title: 'Phoenix Digital Agency',
-					category: 'Mobile Application',
-					img: require('@/assets/images/mobile-project-2.jpg'),
-				},
-				{
-					id: 3,
-					title: 'Project Management UI',
-					category: 'UI/UX Design',
-					img: require('@/assets/images/ui-project-1.jpg'),
-				},
-				{
-					id: 4,
-					title: 'Cloud Storage Platform',
-					category: 'UI/UX Design',
-					img: require('@/assets/images/ui-project-2.jpg'),
-				},
-				{
-					id: 5,
-					title: 'React Social App',
-					category: 'Mobile Application',
-					img: require('@/assets/images/mobile-project-1.jpg'),
-				},
-				{
-					id: 6,
-					title: 'Apple Design System',
-					category: 'Web Application',
-					img: require('@/assets/images/web-project-1.jpg'),
-				},
-			],
 		};
 	},
 	computed: {
@@ -166,10 +124,11 @@ export default {
 	methods: {
 		// Filter projects by category
 		filterProjectsByCategory() {
-			return this.projects.filter((item) => {
+			return this.projects.map((item) => {
 				let category =
 					item.category.charAt(0).toUpperCase() +
 					item.category.slice(1);
+				console.log(category);
 				return category.includes(this.selectedProject);
 			});
 		},
