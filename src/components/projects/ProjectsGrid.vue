@@ -4,18 +4,14 @@
 		<!-- Projects grid title -->
 		<div class="text-center">
 			<p
-				class="text-2xl sm:text-5xl font-semibold mb-3 text-ternary-dark dark:text-ternary-light"
+				class="text-2xl sm:text-5xl font-semibold mb-2 text-ternary-dark dark:text-ternary-light"
 			>
 				{{ projectsHeading }}
 			</p>
-			<!-- Note: This description is commented, if you want to, you can uncomment this -->
-			<!-- <p class="text-md sm:text-xl text-gray-500 dark:text-ternary-light">
-				{{ projectsDescription }}
-			</p> -->
 		</div>
 
 		<!-- Filter and search projects -->
-		<div class="mt-10 sm:mt-16">
+		<div class="mt-10 sm:mt-10">
 			<h3
 				class="
 					text-center text-secondary-dark
@@ -108,8 +104,6 @@ export default {
 	data: () => {
 		return {
 			projectsHeading: 'Projects Portfolio',
-			projectsDescription:
-				'Some of the projects I have successfully completed',
 			selectedProject: '',
 			searchProject: '',
 			projects: [

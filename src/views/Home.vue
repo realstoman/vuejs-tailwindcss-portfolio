@@ -20,7 +20,7 @@
 
 <script>
 import AppBanner from '@/components/AppBanner';
-import ProjectsGrid from '../components/ProjectsGrid.vue';
+import ProjectsGrid from '../components/projects/ProjectsGrid.vue';
 
 export default {
 	name: 'Home',

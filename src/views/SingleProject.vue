@@ -16,10 +16,10 @@
 
 <script>
 import feather from 'feather-icons';
-import ProjectHeader from '../components/ProjectHeader.vue';
-import ProjectGallery from '../components/ProjectGallery.vue';
-import ProjectInfo from '../components/ProjectInfo.vue';
-import ProjectRelatedProjects from '../components/ProjectRelatedProjects.vue';
+import ProjectHeader from '../components/projects/ProjectHeader.vue';
+import ProjectGallery from '../components/projects/ProjectGallery.vue';
+import ProjectInfo from '../components/projects/ProjectInfo.vue';
+import ProjectRelatedProjects from '../components/projects/ProjectRelatedProjects.vue';
 
 export default {
 	name: 'Projects',
