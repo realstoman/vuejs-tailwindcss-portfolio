@@ -40,6 +40,7 @@ export default {
 		select: {
 			type: String,
 			default: 'projects',
+			required: true,
 		},
 		selectOptions: {
 			type: Array,
