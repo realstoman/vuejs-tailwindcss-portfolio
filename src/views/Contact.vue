@@ -12,8 +12,8 @@
 
 <script>
 import feather from 'feather-icons';
-import ContactForm from '@/components/ContactForm.vue';
-import ContactDetails from '@/components/ContactDetails.vue';
+import ContactForm from '@/components/contact/ContactForm.vue';
+import ContactDetails from '@/components/contact/ContactDetails.vue';
 
 export default {
 	components: {
