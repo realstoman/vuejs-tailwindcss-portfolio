@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import AppBanner from '@/components/AppBanner';
+import AppBanner from '@/components/shared/AppBanner';
 import ProjectsGrid from '../components/projects/ProjectsGrid.vue';
 
 export default {

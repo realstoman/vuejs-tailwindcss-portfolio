@@ -16,9 +16,9 @@
 </template>
 
 <script>
-import AboutMe from '@/components/AboutMe';
-import AboutCounter from '@/components/AboutCounter';
-import AboutClients from '@/components/AboutClients';
+import AboutMe from '@/components/about/AboutMe';
+import AboutCounter from '@/components/about/AboutCounter';
+import AboutClients from '@/components/about/AboutClients';
 import feather from 'feather-icons';
 
 export default {
