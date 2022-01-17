@@ -3,11 +3,11 @@
 	<div class="w-full md:w-1/2">
 		<div class="text-left max-w-xl px-6">
 			<h2
-				class="text-2xl text-primary-dark dark:text-primary-light font-semibold mt-12 mb-8"
+				class="font-general-medium text-2xl text-primary-dark dark:text-primary-light mt-12 mb-8"
 			>
 				Contact details
 			</h2>
-			<ul class="">
+			<ul class="font-general-medium">
 				<li class="flex" v-for="contact in contacts" :key="contact.id">
 					<i
 						:data-feather="contact.icon"
