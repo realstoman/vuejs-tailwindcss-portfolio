@@ -14,13 +14,14 @@
 		</div>
 		<div class="text-center px-4 py-6">
 			<p
-				class="text-2xl text-ternary-dark dark:text-ternary-light font-semibold mb-2"
+				class="font-general-medium text-xl text-ternary-dark dark:text-ternary-light font-semibold mb-2"
 			>
 				{{ project.title }}
 			</p>
-			<span class="text-lg text-ternary-dark dark:text-ternary-light">{{
-				project.category
-			}}</span>
+			<span
+				class="font-general-medium text-lg text-ternary-dark dark:text-ternary-light"
+				>{{ project.category }}</span
+			>
 		</div>
 	</router-link>
 </template>

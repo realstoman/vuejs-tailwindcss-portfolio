@@ -5,7 +5,7 @@
 			@change="$emit('change', $event.target.value)"
 			:name="select"
 			:id="select"
-			class="
+			class="font-general-medium
 				px-4
 				sm:px-6
 				py-2
