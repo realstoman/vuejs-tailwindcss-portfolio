@@ -16,13 +16,14 @@ A simple portfolio starter theme built with Vue.js v3 and TailwindCSS v2.
 -   Theme Switcher with Dark Mode
 -   Composition API
 -   Vue transitions
+-   Reusable Components
 -   Auto Counter
 -   Projects filter by category
 -   Projects filter by search
 -   Projects carousel
 -   Vue.js smooth scroll
 -   Dynamic forms
--   Back to top button
+-   Scroll to top button
 -   Download file button
 
 ## Installation
