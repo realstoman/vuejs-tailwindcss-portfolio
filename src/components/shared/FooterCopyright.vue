@@ -7,7 +7,7 @@
 			<a
 				href="https://github.com/realstoman/vuejs-tailwindcss-portfolio"
 				target="__blank"
-				class="hover:underline"
+				class="hover:underline hover:text-indigo-600 dark:hover:text-indigo-300"
 			>
 				Vue.js & TailwindCSS Portfolio
 			</a>
@@ -15,7 +15,7 @@
 			<a
 				href="https://stoman.me"
 				target="__blank"
-				class="text-secondary-dark dark:text-secondary-light font-medium uppercase hover:underline"
+				class="text-secondary-dark dark:text-secondary-light font-medium uppercase hover:underline hover:text-indigo-600 dark:hover:text-indigo-300"
 				>Stoman</a
 			>
 		</div>
