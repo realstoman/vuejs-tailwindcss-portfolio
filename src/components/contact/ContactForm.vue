@@ -76,13 +76,12 @@
 				</div>
 
 				<div class="mt-6">
-					<button
+					<Button
+						title="Send Message"
 						class="font-general-medium px-4 py-2.5 text-white font-medium tracking-wider bg-indigo-500 hover:bg-indigo-600 focus:ring-1 focus:ring-indigo-900 rounded-lg"
 						type="submit"
 						aria-label="Send Message"
-					>
-						Send Message
-					</button>
+					/>
 				</div>
 			</form>
 		</div>
@@ -90,7 +89,8 @@
 </template>
 
 <script>
-export default {};
+import Button from '../reusable/Button.vue';
+export default { components: { Button } };
 </script>
 
 <style lang="scss" scoped></style>
