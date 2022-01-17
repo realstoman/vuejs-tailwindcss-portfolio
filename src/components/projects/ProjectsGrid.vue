@@ -4,7 +4,7 @@
 		<!-- Projects grid title -->
 		<div class="text-center">
 			<p
-				class="text-2xl sm:text-5xl font-semibold mb-2 text-ternary-dark dark:text-ternary-light"
+				class="font-general-semibold text-2xl sm:text-5xl font-semibold mb-2 text-ternary-dark dark:text-ternary-light"
 			>
 				{{ projectsHeading }}
 			</p>
@@ -13,13 +13,13 @@
 		<!-- Filter and search projects -->
 		<div class="mt-10 sm:mt-10">
 			<h3
-				class="
+				class="font-general-regular
 					text-center text-secondary-dark
 					dark:text-ternary-light
 					text-md
 					sm:text-xl
 					font-normal
-					mb-3
+					mb-4
 				"
 			>
 				Search projects by title or filter by category
@@ -54,7 +54,7 @@
 					</span>
 					<input
 						v-model="searchProject"
-						class="
+						class="font-general-medium
 						pl-3
 						pr-1
 						sm:px-4

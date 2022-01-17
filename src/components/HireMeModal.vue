@@ -1,7 +1,7 @@
 <template>
 	<!-- Hire me modal -->
 	<transition name="fade">
-		<div v-show="modal" class="fixed inset-0 z-30">
+		<div v-show="modal" class="font-general-medium fixed inset-0 z-30">
 			<!-- Modal body background as backdrop -->
 			<div
 				v-show="modal"
@@ -24,7 +24,7 @@
 								class="modal-header flex justify-between gap-10 p-5 border-b border-ternary-light dark:border-ternary-dark"
 							>
 								<h5
-									class=" text-primary-dark dark:text-primary-light text-2xl"
+									class=" text-primary-dark dark:text-primary-light text-xl"
 								>
 									What project are you looking for?
 								</h5>
@@ -90,7 +90,8 @@
 									</div>
 
 									<div class="mt-6 pb-4 sm:pb-1">
-										<button
+										<Button
+											title="Send Request"
 											class="px-4
 											sm:px-6
 											py-2
@@ -104,16 +105,15 @@
 											focus:ring-1 focus:ring-indigo-900"
 											type="submit"
 											aria-label="Submit Request"
-										>
-											Send Request
-										</button>
+										/>
 									</div>
 								</form>
 							</div>
 							<div
 								class="modal-footer mt-2 sm:mt-0 py-5 px-8 border0-t text-right"
 							>
-								<button
+								<Button
+									title="Close"
 									class=" px-4
 									sm:px-6
 									py-2 bg-gray-600 text-primary-light hover:bg-ternary-dark dark:bg-gray-200 dark:text-secondary-dark dark:hover:bg-primary-light
@@ -123,9 +123,7 @@
 									focus:ring-1 focus:ring-indigo-900"
 									@click="showModal()"
 									aria-label="Close Modal"
-								>
-									Close
-								</button>
+								/>
 							</div>
 						</div>
 					</div>
@@ -137,8 +135,10 @@
 
 <script>
 import feather from 'feather-icons';
+import Button from './reusable/Button.vue';
 export default {
 	props: ['showModal', 'modal', 'categories'],
+	components: { Button },
 	data() {
 		return {};
 	},

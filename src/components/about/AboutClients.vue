@@ -2,11 +2,11 @@
 	<!-- About page clients section -->
 	<div class="mt-10 sm:mt-20">
 		<p
-			class="text-2xl sm:text-4xl text-primary-dark dark:text-primary-light font-sans font-semibold"
+			class="font-general-medium text-2xl sm:text-3xl text-primary-dark dark:text-primary-light"
 		>
 			{{ clientsHeading }}
 		</p>
-		<div class="grid grid-cols-2 sm:grid-cols-4 mt-10 sm:mt-20 gap-2">
+		<div class="grid grid-cols-2 sm:grid-cols-4 mt-10 sm:mt-14 gap-2">
 			<AboutClientSingle
 				v-for="client in clients"
 				:key="client.id"
@@ -25,7 +25,7 @@ export default {
 	},
 	data: () => {
 		return {
-			clientsHeading: 'Some of the brands I worked with',
+			clientsHeading: 'Some of the brands I have worked with',
 			clients: [
 				{
 					id: 1,

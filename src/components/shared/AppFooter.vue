@@ -6,10 +6,10 @@
 		>
 			<!-- Footer social links -->
 			<div
-				class="flex flex-col justify-center items-center mb-12 sm:mb-28"
+				class="flex flex-col justify-center items-center mb-12 sm:mb-20"
 			>
 				<p
-					class="text-3xl sm:text-4xl font-semibold text-primary-dark dark:text-primary-light mb-5"
+					class="font-general-semibold text-3xl sm:text-4xl font-semibold text-primary-dark dark:text-primary-light mb-5"
 				>
 					Follow me
 				</p>
@@ -30,35 +30,18 @@
 			</div>
 
 			<!-- Footer copyright -->
-			<div class="flex justify-center items-center text-center">
-				<div class="text-lg text-ternary-dark dark:text-ternary-light ">
-					&copy; {{ copyrightDate }}.
-					<a
-						href="https://github.com/realstoman/vuejs-tailwindcss-portfolio"
-						target="__blank"
-						class="hover:underline"
-					>
-						Vue.js & TailwindCSS Portfolio
-					</a>
-					.
-					<a
-						href="https://stoman.me"
-						target="__blank"
-						class="text-secondary-dark dark:text-secondary-light font-medium uppercase hover:underline"
-						>Stoman</a
-					>
-				</div>
-			</div>
+			<FooterCopyright />
 		</div>
 	</div>
 </template>
 
 <script>
 import feather from 'feather-icons';
+import FooterCopyright from './FooterCopyright.vue';
 export default {
+	components: { FooterCopyright },
 	data() {
 		return {
-			copyrightDate: new Date().getFullYear(),
 			socials: [
 				{
 					id: 1,
