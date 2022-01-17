@@ -70,7 +70,7 @@
 				<!-- Hire me button -->
 				<div class="hidden md:block">
 					<button
-						class="text-md font-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-md px-5 py-2.5"
+						class="text-md font-general-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-md px-5 py-2.5"
 						@click="showModal()"
 						aria-label="Hire Me Button"
 					>

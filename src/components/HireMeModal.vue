@@ -1,7 +1,7 @@
 <template>
 	<!-- Hire me modal -->
 	<transition name="fade">
-		<div v-show="modal" class="fixed inset-0 z-30">
+		<div v-show="modal" class="font-general-medium fixed inset-0 z-30">
 			<!-- Modal body background as backdrop -->
 			<div
 				v-show="modal"
@@ -24,7 +24,7 @@
 								class="modal-header flex justify-between gap-10 p-5 border-b border-ternary-light dark:border-ternary-dark"
 							>
 								<h5
-									class=" text-primary-dark dark:text-primary-light text-2xl"
+									class=" text-primary-dark dark:text-primary-light text-xl"
 								>
 									What project are you looking for?
 								</h5>
