@@ -213,3 +213,10 @@ body {
 .font-general-bold-italic {
 	font-family: 'GeneralSans-BoldItalic';
 }
+
+/* Active class for navigation menu */
+.router-link-active,
+.router-link-exact-active {
+	@apply text-indigo-800;
+	@apply text-indigo-600 dark:text-indigo-300;
+}
