@@ -31,7 +31,7 @@
 					border-b border-primary-light
 					dark:border-secondary-dark
 					pb-3
-					gap-3
+					gap-2
 				"
 			>
 				<div class="flex justify-between gap-2">
