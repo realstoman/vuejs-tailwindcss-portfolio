@@ -6,7 +6,7 @@
 			<!-- Single project client details -->
 			<div class="mb-7">
 				<p
-					class="font-general-regular text-2xl font-semibold text-secondary-dark dark:text-secondary-light mb-2"
+					class="font-general-medium text-2xl text-secondary-dark dark:text-secondary-light mb-2"
 				>
 					{{ projectInfo.clientHeading }}
 				</p>
@@ -14,7 +14,7 @@
 					<li
 						v-for="info in projectInfo.companyInfos"
 						:key="info"
-						class="font-general-medium text-ternary-dark dark:text-ternary-light"
+						class="font-general-regular text-ternary-dark dark:text-ternary-light"
 					>
 						<span>{{ info.title }}: </span>
 						<a
@@ -34,12 +34,12 @@
 			<!-- Single project objectives -->
 			<div class="mb-7">
 				<p
-					class="font-general-regular text-2xl font-semibold text-ternary-dark dark:text-ternary-light mb-2"
+					class="font-general-medium text-2xl text-ternary-dark dark:text-ternary-light mb-2"
 				>
 					{{ projectInfo.objectivesHeading }}
 				</p>
 				<p
-					class="font-general-medium text-primary-dark dark:text-ternary-light"
+					class="font-general-regular text-primary-dark dark:text-ternary-light"
 				>
 					{{ projectInfo.objectivesDetails }}
 				</p>
@@ -48,12 +48,12 @@
 			<!-- Single project technologies -->
 			<div class="mb-7">
 				<p
-					class="font-general-regular text-2xl font-semibold text-ternary-dark dark:text-ternary-light mb-2"
+					class="font-general-medium text-2xl text-ternary-dark dark:text-ternary-light mb-2"
 				>
 					{{ projectInfo.technologies[0].title }}
 				</p>
 				<p
-					class="font-general-medium text-primary-dark dark:text-ternary-light"
+					class="font-general-regular text-primary-dark dark:text-ternary-light"
 				>
 					{{ projectInfo.technologies[0].techs.join(', ') }}
 				</p>
@@ -62,7 +62,7 @@
 			<!-- Single project social sharing -->
 			<div>
 				<p
-					class="font-general-regular text-2xl font-semibold text-ternary-dark dark:text-ternary-light mb-2"
+					class="font-general-medium text-2xl text-ternary-dark dark:text-ternary-light mb-2"
 				>
 					{{ projectInfo.socialSharingsHeading }}
 				</p>
@@ -73,7 +73,7 @@
 						:href="social.url"
 						target="__blank"
 						aria-label="Share Project"
-						class="bg-ternary-light dark:bg-ternary-dark text-gray-400 hover:text-primary-dark dark:hover:text-primary-light p-2 rounded-lg shadow-sm"
+						class="bg-ternary-light dark:bg-ternary-dark text-gray-400 hover:text-primary-dark dark:hover:text-primary-light p-2 rounded-lg shadow-sm duration-500"
 						><i
 							:data-feather="social.icon"
 							class="w-4 lg:w-5 h-4 lg:h-5"
@@ -86,14 +86,14 @@
 		<!-- Single project right section details -->
 		<div class="w-full sm:w-2/3 text-left mt-10 sm:mt-0">
 			<p
-				class="font-general-regular text-primary-dark dark:text-primary-light text-2xl font-bold mb-7"
+				class="font-general-medium text-primary-dark dark:text-primary-light text-2xl font-bold mb-7"
 			>
 				{{ projectInfo.projectDetailsHeading }}
 			</p>
 			<p
 				v-for="projectDetail in projectInfo.projectDetails"
 				:key="projectDetail.id"
-				class="font-general-medium mb-5 text-lg text-ternary-dark dark:text-ternary-light"
+				class="font-general-regular mb-5 text-lg text-ternary-dark dark:text-ternary-light"
 			>
 				{{ projectDetail.details }}
 			</p>

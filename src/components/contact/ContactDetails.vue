@@ -7,7 +7,7 @@
 			>
 				Contact details
 			</h2>
-			<ul class="font-general-medium">
+			<ul class="font-general-regular">
 				<li class="flex" v-for="contact in contacts" :key="contact.id">
 					<i
 						:data-feather="contact.icon"

@@ -2,9 +2,9 @@
 	<div class="mt-10 sm:mt-20 bg-primary-light dark:bg-ternary-dark shadow-sm">
 		<!-- About me counters -->
 		<div
-			class="font-general-medium container mx-auto py-20 block sm:flex sm:justify-between sm:items-center"
+			class="font-general-regular container mx-auto py-20 block sm:flex sm:justify-between sm:items-center"
 		>
-			<!-- About me single counter -->
+			<!-- Years of experience counter -->
 			<div class="mb-20 sm:mb-0">
 				<counter
 					ref="counter"
@@ -13,16 +13,17 @@
 					:duration="1"
 					:autoinit="true"
 					@finished="alert(`Counting finished!`)"
-					class="text-4xl font-bold text-secondary-dark dark:text-secondary-light mb-2"
+					class="font-general-medium text-4xl font-bold text-secondary-dark dark:text-secondary-light mb-2"
 					aria-label="About Status Counter"
 				/>
 				<span
 					class="block text-md text-ternary-dark dark:text-ternary-light"
-					>Years of experience</span
 				>
+					{{ experienceTitle }}
+				</span>
 			</div>
 
-			<!-- About me single counter -->
+			<!-- GitHub stars counter -->
 			<div class="mb-20 sm:mb-0">
 				<counter
 					ref="counter"
@@ -32,15 +33,15 @@
 					suffix="k+"
 					:autoinit="true"
 					@finished="alert(`Counting finished!`)"
-					class="text-4xl font-bold text-secondary-dark dark:text-secondary-light mb-2"
+					class="font-general-medium text-4xl font-bold text-secondary-dark dark:text-secondary-light mb-2"
 				/>
 				<span
 					class="block text-md text-ternary-dark dark:text-ternary-light"
-					>Stars on GitHub</span
+					>{{ githubTitle }}</span
 				>
 			</div>
 
-			<!-- About me single counter -->
+			<!-- Positive feedback counter -->
 			<div class="mb-20 sm:mb-0">
 				<counter
 					ref="counter"
@@ -50,15 +51,16 @@
 					suffix="%"
 					:autoinit="true"
 					@finished="alert(`Counting finished!`)"
-					class="text-4xl font-bold text-secondary-dark dark:text-secondary-light mb-2"
+					class="font-general-medium text-4xl font-bold text-secondary-dark dark:text-secondary-light mb-2"
 				/>
 				<span
 					class="block text-md text-ternary-dark dark:text-ternary-light"
-					>Positive feedback</span
 				>
+					{{ feedbackTitle }}
+				</span>
 			</div>
 
-			<!-- About me single counter -->
+			<!-- Projects completed counter -->
 			<div class="mb-20 sm:mb-0">
 				<counter
 					ref="counter"
@@ -67,12 +69,13 @@
 					:duration="1"
 					:autoinit="true"
 					@finished="alert(`Counting finished!`)"
-					class="text-4xl font-bold text-secondary-dark dark:text-secondary-light mb-2"
+					class="font-general-medium text-4xl font-bold text-secondary-dark dark:text-secondary-light mb-2"
 				/>
 				<span
 					class="block text-md text-ternary-dark dark:text-ternary-light"
-					>Projects completed</span
 				>
+					{{ projectsTitle }}
+				</span>
 			</div>
 		</div>
 	</div>
@@ -84,6 +87,13 @@ export default {
 	components: {
 		counter,
 	},
-	setup() {},
+	data: () => {
+		return {
+			experienceTitle: 'Years of experience',
+			githubTitle: 'Stars on GitHub',
+			feedbackTitle: 'Positive feedback',
+			projectsTitle: 'Projects completed',
+		};
+	},
 };
 </script>
