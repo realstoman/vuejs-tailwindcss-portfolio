@@ -1,7 +1,7 @@
 <template>
 	<!-- Hire me modal -->
 	<transition name="fade">
-		<div v-show="modal" class="font-general-medium fixed inset-0 z-30">
+		<div v-show="modal" class="font-general-regular fixed inset-0 z-30">
 			<!-- Modal body background as backdrop -->
 			<div
 				v-show="modal"
@@ -29,7 +29,7 @@
 									What project are you looking for?
 								</h5>
 								<button
-									class="px-4 font-bold text-primary-dark dark:text-primary-light"
+									class="px-4 text-primary-dark dark:text-primary-light"
 									@click="showModal()"
 								>
 									<i data-feather="x"></i>
@@ -39,7 +39,7 @@
 								<form class="max-w-xl m-4 text-left">
 									<div class="mt-0">
 										<input
-											class="w-full px-5 py-2 border-1 border-gray-200 dark:border-secondary-dark rounded-md text-md dark:font-medium bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
+											class="w-full px-5 py-2 border-1 border-gray-200 dark:border-secondary-dark rounded-md text-md bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
 											id="name"
 											name="name"
 											type="text"
@@ -50,7 +50,7 @@
 									</div>
 									<div class="mt-6">
 										<input
-											class="w-full px-5 py-2 border-1 border-gray-200 dark:border-secondary-dark rounded-md text-md dark:font-medium bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
+											class="w-full px-5 py-2 border-1 border-gray-200 dark:border-secondary-dark rounded-md text-md bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
 											id="email"
 											name="email"
 											type="text"
@@ -61,7 +61,7 @@
 									</div>
 									<div class="mt-6">
 										<select
-											class="w-full px-5 py-2 border-1 border-gray-200 dark:border-secondary-dark rounded-md text-md dark:font-medium bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
+											class="w-full px-5 py-2 border-1 border-gray-200 dark:border-secondary-dark rounded-md text-md bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
 											id="subject"
 											name="subject"
 											type="text"
@@ -79,7 +79,7 @@
 
 									<div class="mt-6">
 										<textarea
-											class="w-full px-5 py-2 border-1 border-gray-200 dark:border-secondary-dark rounded-md text-md dark:font-medium bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
+											class="w-full px-5 py-2 border-1 border-gray-200 dark:border-secondary-dark rounded-md text-md bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
 											id="message"
 											name="message"
 											cols="14"
@@ -97,8 +97,6 @@
 											py-2
 											sm:py-2.5
 											text-white
-											font-normal
-											sm:font-medium
 											bg-indigo-500
 											hover:bg-indigo-600
 											rounded-md
@@ -118,8 +116,6 @@
 									sm:px-6
 									py-2 bg-gray-600 text-primary-light hover:bg-ternary-dark dark:bg-gray-200 dark:text-secondary-dark dark:hover:bg-primary-light
 									rounded-md
-									font-normal
-									sm:font-bold
 									focus:ring-1 focus:ring-indigo-900"
 									@click="showModal()"
 									aria-label="Close Modal"
