@@ -1,3 +1,20 @@
+<script>
+import counter from 'vue3-autocounter';
+export default {
+	components: {
+		counter,
+	},
+	data: () => {
+		return {
+			experienceTitle: 'Years of experience',
+			githubTitle: 'Stars on GitHub',
+			feedbackTitle: 'Positive feedback',
+			projectsTitle: 'Projects completed',
+		};
+	},
+};
+</script>
+
 <template>
 	<div class="mt-10 sm:mt-20 bg-primary-light dark:bg-ternary-dark shadow-sm">
 		<!-- About me counters -->
@@ -80,20 +97,3 @@
 		</div>
 	</div>
 </template>
-
-<script>
-import counter from 'vue3-autocounter';
-export default {
-	components: {
-		counter,
-	},
-	data: () => {
-		return {
-			experienceTitle: 'Years of experience',
-			githubTitle: 'Stars on GitHub',
-			feedbackTitle: 'Positive feedback',
-			projectsTitle: 'Projects completed',
-		};
-	},
-};
-</script>
