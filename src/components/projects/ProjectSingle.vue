@@ -1,5 +1,10 @@
+<script>
+export default {
+	props: ['project'],
+};
+</script>
+
 <template>
-	<!-- Single project -->
 	<router-link
 		to="/projects/single-project"
 		class="rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark"
@@ -25,11 +30,5 @@
 		</div>
 	</router-link>
 </template>
-
-<script>
-export default {
-	props: ['project'],
-};
-</script>
 
 <style lang="scss" scoped></style>

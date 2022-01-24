@@ -1,5 +1,10 @@
+<script>
+export default {
+	props: ['projectImages'],
+};
+</script>
+
 <template>
-	<!-- Project gallery -->
 	<div class="grid grid-cols-1 sm:grid-cols-3 sm:gap-10 mt-12">
 		<div
 			class="mb-10 sm:mb-0"
@@ -14,9 +19,3 @@
 		</div>
 	</div>
 </template>
-
-<script>
-export default {
-	props: ['projectImages'],
-};
-</script>

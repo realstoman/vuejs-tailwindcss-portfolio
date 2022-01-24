@@ -1,3 +1,53 @@
+<script>
+import feather from 'feather-icons';
+import ProjectsFilter from './ProjectsFilter.vue';
+import ProjectSingle from './ProjectSingle.vue';
+import projects from '../../data/projects';
+
+export default {
+	components: { ProjectSingle, ProjectsFilter },
+	data: () => {
+		return {
+			projects,
+			projectsHeading: 'Projects Portfolio',
+			selectedProject: '',
+			searchProject: '',
+		};
+	},
+	computed: {
+		// Get the filtered projects
+		filteredProjects() {
+			if (this.selectedProject) {
+				return this.filterProjectsByCategory();
+			} else if (this.searchProject) {
+				return this.filterProjectsBySearch();
+			}
+			return this.projects;
+		},
+	},
+	methods: {
+		// Filter projects by category
+		filterProjectsByCategory() {
+			return this.projects.map((item) => {
+				let category =
+					item.category.charAt(0).toUpperCase() +
+					item.category.slice(1);
+				console.log(category);
+				return category.includes(this.selectedProject);
+			});
+		},
+		// Filter projects by title search
+		filterProjectsBySearch() {
+			let project = new RegExp(this.searchProject, 'i');
+			return this.projects.filter((el) => el.title.match(project));
+		},
+	},
+	mounted() {
+		feather.replace();
+	},
+};
+</script>
+
 <template>
 	<!-- Projects grid -->
 	<section class="pt-10 sm:pt-14">
@@ -93,55 +143,5 @@
 		</div>
 	</section>
 </template>
-
-<script>
-import feather from 'feather-icons';
-import ProjectsFilter from './ProjectsFilter.vue';
-import ProjectSingle from './ProjectSingle.vue';
-import projects from '../../data/projects';
-
-export default {
-	components: { ProjectSingle, ProjectsFilter },
-	data: () => {
-		return {
-			projects,
-			projectsHeading: 'Projects Portfolio',
-			selectedProject: '',
-			searchProject: '',
-		};
-	},
-	computed: {
-		// Get the filtered projects
-		filteredProjects() {
-			if (this.selectedProject) {
-				return this.filterProjectsByCategory();
-			} else if (this.searchProject) {
-				return this.filterProjectsBySearch();
-			}
-			return this.projects;
-		},
-	},
-	methods: {
-		// Filter projects by category
-		filterProjectsByCategory() {
-			return this.projects.map((item) => {
-				let category =
-					item.category.charAt(0).toUpperCase() +
-					item.category.slice(1);
-				console.log(category);
-				return category.includes(this.selectedProject);
-			});
-		},
-		// Filter projects by title search
-		filterProjectsBySearch() {
-			let project = new RegExp(this.searchProject, 'i');
-			return this.projects.filter((el) => el.title.match(project));
-		},
-	},
-	mounted() {
-		feather.replace();
-	},
-};
-</script>
 
 <style scoped></style>

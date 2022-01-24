@@ -1,5 +1,19 @@
+<script>
+import feather from 'feather-icons';
+
+export default {
+	props: ['projectInfo'],
+
+	mounted() {
+		feather.replace();
+	},
+	updated() {
+		feather.replace();
+	},
+};
+</script>
+
 <template>
-	<!-- Project information -->
 	<div class="block sm:flex gap-0 sm:gap-10 mt-14">
 		<!-- Single project left section details -->
 		<div class="w-full sm:w-1/3 text-left">
@@ -100,18 +114,3 @@
 		</div>
 	</div>
 </template>
-
-<script>
-import feather from 'feather-icons';
-
-export default {
-	props: ['projectInfo'],
-
-	mounted() {
-		feather.replace();
-	},
-	updated() {
-		feather.replace();
-	},
-};
-</script>
