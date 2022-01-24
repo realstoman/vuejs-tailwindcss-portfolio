@@ -1,5 +1,9 @@
+<script>
+import Button from '../reusable/Button.vue';
+export default { components: { Button } };
+</script>
+
 <template>
-	<!-- Contact form -->
 	<div class="w-full md:w-1/2">
 		<div
 			class="leading-loose max-w-xl m-4 p-7 bg-secondary-light dark:bg-secondary-dark rounded-xl shadow-xl text-left"
@@ -87,10 +91,5 @@
 		</div>
 	</div>
 </template>
-
-<script>
-import Button from '../reusable/Button.vue';
-export default { components: { Button } };
-</script>
 
 <style lang="scss" scoped></style>
