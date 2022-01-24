@@ -134,7 +134,7 @@ export default {
 				{
 					id: 4,
 					value: 'branding',
-					name: 'Branding',
+					name: 'Branding & Anim',
 				},
 			],
 		};
