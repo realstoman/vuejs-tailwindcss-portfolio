@@ -1,3 +1,79 @@
+<script>
+import ThemeSwitcher from '../ThemeSwitcher';
+import HireMeModal from '../HireMeModal.vue';
+import feather from 'feather-icons';
+import AppHeaderLinks from './AppHeaderLinks.vue';
+import Button from '../reusable/Button.vue';
+
+export default {
+	components: {
+		ThemeSwitcher,
+		HireMeModal,
+		AppHeaderLinks,
+		Button,
+	},
+	data() {
+		return {
+			isOpen: false,
+			theme: '',
+			modal: false,
+			categories: [
+				{
+					id: 1,
+					value: 'web',
+					name: 'Web Application',
+				},
+				{
+					id: 2,
+					value: 'mobile',
+					name: 'Mobile Application',
+				},
+				{
+					id: 3,
+					value: 'ui-ux',
+					name: 'UI/UX Design',
+				},
+				{
+					id: 4,
+					value: 'branding',
+					name: 'Branding & Anim',
+				},
+			],
+		};
+	},
+
+	created() {
+		this.theme = localStorage.getItem('theme') || 'light';
+	},
+	mounted() {
+		feather.replace();
+		this.theme = localStorage.getItem('theme') || 'light';
+	},
+	methods: {
+		updateTheme(theme) {
+			this.theme = theme;
+		},
+		showModal() {
+			if (this.modal) {
+				// Stop screen scrolling
+				document
+					.getElementsByTagName('html')[0]
+					.classList.remove('overflow-y-hidden');
+				this.modal = false;
+			} else {
+				document
+					.getElementsByTagName('html')[0]
+					.classList.add('overflow-y-hidden');
+				this.modal = true;
+			}
+		},
+	},
+	updated() {
+		feather.replace();
+	},
+};
+</script>
+
 <template>
 	<nav id="nav" class="sm:container sm:mx-auto">
 		<!-- Header start -->
@@ -95,82 +171,6 @@
 		/>
 	</nav>
 </template>
-
-<script>
-import ThemeSwitcher from '../ThemeSwitcher';
-import HireMeModal from '../HireMeModal.vue';
-import feather from 'feather-icons';
-import AppHeaderLinks from './AppHeaderLinks.vue';
-import Button from '../reusable/Button.vue';
-
-export default {
-	components: {
-		ThemeSwitcher,
-		HireMeModal,
-		AppHeaderLinks,
-		Button,
-	},
-	data() {
-		return {
-			isOpen: false,
-			theme: '',
-			modal: false,
-			categories: [
-				{
-					id: 1,
-					value: 'web',
-					name: 'Web Application',
-				},
-				{
-					id: 2,
-					value: 'mobile',
-					name: 'Mobile Application',
-				},
-				{
-					id: 3,
-					value: 'ui-ux',
-					name: 'UI/UX Design',
-				},
-				{
-					id: 4,
-					value: 'branding',
-					name: 'Branding & Anim',
-				},
-			],
-		};
-	},
-
-	created() {
-		this.theme = localStorage.getItem('theme') || 'light';
-	},
-	mounted() {
-		feather.replace();
-		this.theme = localStorage.getItem('theme') || 'light';
-	},
-	methods: {
-		updateTheme(theme) {
-			this.theme = theme;
-		},
-		showModal() {
-			if (this.modal) {
-				// Stop screen scrolling
-				document
-					.getElementsByTagName('html')[0]
-					.classList.remove('overflow-y-hidden');
-				this.modal = false;
-			} else {
-				document
-					.getElementsByTagName('html')[0]
-					.classList.add('overflow-y-hidden');
-				this.modal = true;
-			}
-		},
-	},
-	updated() {
-		feather.replace();
-	},
-};
-</script>
 
 <style scoped>
 #nav a.router-link-exact-active {

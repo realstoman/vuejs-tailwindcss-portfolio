@@ -1,3 +1,9 @@
+<script>
+export default {
+	props: ['showModal', 'isOpen'],
+};
+</script>
+
 <template>
 	<!-- Header links -->
 	<div
@@ -35,11 +41,5 @@
 		</div>
 	</div>
 </template>
-
-<script>
-export default {
-	props: ['showModal', 'isOpen'],
-};
-</script>
 
 <style lang="scss" scoped></style>

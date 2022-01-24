@@ -1,3 +1,15 @@
+<script>
+export default {
+	data: () => {
+		return {
+			copyrightDate: new Date().getFullYear(),
+			projectName: 'Vue.js & TailwindCSS Portfolio',
+			author: 'Stoman',
+		};
+	},
+};
+</script>
+
 <template>
 	<div class="flex justify-center items-center text-center">
 		<div
@@ -21,17 +33,5 @@
 		</div>
 	</div>
 </template>
-
-<script>
-export default {
-	data: () => {
-		return {
-			copyrightDate: new Date().getFullYear(),
-			projectName: 'Vue.js & TailwindCSS Portfolio',
-			author: 'Stoman',
-		};
-	},
-};
-</script>
 
 <style lang="scss" scoped></style>

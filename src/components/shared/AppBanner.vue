@@ -1,5 +1,28 @@
+<script>
+import feather from 'feather-icons';
+
+export default {
+	name: 'Home',
+	data: () => {
+		return {
+			theme: '',
+		};
+	},
+	created() {
+		this.theme = localStorage.getItem('theme') || 'light';
+	},
+	mounted() {
+		feather.replace();
+		this.theme = localStorage.getItem('theme') || 'light';
+	},
+	updated() {
+		feather.replace();
+	},
+	methods: {},
+};
+</script>
+
 <template>
-	<!-- App Banner -->
 	<section
 		class="flex flex-col sm:justify-between items-center sm:flex-row mt-12 sm:mt-10"
 	>
@@ -49,29 +72,5 @@
 		</div>
 	</section>
 </template>
-
-<script>
-import feather from 'feather-icons';
-
-export default {
-	name: 'Home',
-	data: () => {
-		return {
-			theme: '',
-		};
-	},
-	created() {
-		this.theme = localStorage.getItem('theme') || 'light';
-	},
-	mounted() {
-		feather.replace();
-		this.theme = localStorage.getItem('theme') || 'light';
-	},
-	updated() {
-		feather.replace();
-	},
-	methods: {},
-};
-</script>
 
 <style scoped></style>
