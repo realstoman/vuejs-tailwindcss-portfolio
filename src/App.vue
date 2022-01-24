@@ -1,28 +1,3 @@
-<template>
-	<div :class="appTheme" class="pt-0.5">
-		<!-- App header -->
-		<AppHeader />
-
-		<!-- Render active component contents with transition -->
-		<transition name="fade" mode="out-in">
-			<router-view :theme="appTheme" />
-		</transition>
-
-		<!-- Scroll to top -->
-		<back-to-top
-			visibleoffset="500"
-			right="30px"
-			bottom="20px"
-			class="shadow-lg"
-		>
-			<i data-feather="chevron-up"></i>
-		</back-to-top>
-
-		<!-- App footer -->
-		<AppFooter />
-	</div>
-</template>
-
 <script>
 import feather from 'feather-icons';
 import AppHeader from './components/shared/AppHeader';
@@ -46,6 +21,31 @@ export default {
 	},
 };
 </script>
+
+<template>
+	<div :class="appTheme" class="pt-0.5">
+		<!-- App header -->
+		<AppHeader />
+
+		<!-- Render active component contents with vue transition -->
+		<transition name="fade" mode="out-in">
+			<router-view :theme="appTheme" />
+		</transition>
+
+		<!-- Scroll to top -->
+		<back-to-top
+			visibleoffset="500"
+			right="30px"
+			bottom="20px"
+			class="shadow-lg"
+		>
+			<i data-feather="chevron-up"></i>
+		</back-to-top>
+
+		<!-- App footer -->
+		<AppFooter />
+	</div>
+</template>
 
 <style>
 #app {
