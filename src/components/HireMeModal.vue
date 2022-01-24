@@ -1,5 +1,23 @@
+<script>
+import feather from 'feather-icons';
+import Button from './reusable/Button.vue';
+export default {
+	props: ['showModal', 'modal', 'categories'],
+	components: { Button },
+	data() {
+		return {};
+	},
+	mounted() {
+		feather.replace();
+	},
+	updated() {
+		feather.replace();
+	},
+	methods: {},
+};
+</script>
+
 <template>
-	<!-- Hire me modal -->
 	<transition name="fade">
 		<div v-show="modal" class="font-general-regular fixed inset-0 z-30">
 			<!-- Modal body background as backdrop -->
@@ -128,25 +146,6 @@
 		</div>
 	</transition>
 </template>
-
-<script>
-import feather from 'feather-icons';
-import Button from './reusable/Button.vue';
-export default {
-	props: ['showModal', 'modal', 'categories'],
-	components: { Button },
-	data() {
-		return {};
-	},
-	mounted() {
-		feather.replace();
-	},
-	updated() {
-		feather.replace();
-	},
-	methods: {},
-};
-</script>
 
 <style scoped>
 .modal-body {

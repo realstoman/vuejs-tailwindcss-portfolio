@@ -1,7 +1,3 @@
-<template>
-	<button>{{ title }}</button>
-</template>
-
 <script>
 export default {
 	props: ['title'],
@@ -12,5 +8,9 @@ export default {
 	},
 };
 </script>
+
+<template>
+	<button>{{ title }}</button>
+</template>
 
 <style lang="scss" scoped></style>
