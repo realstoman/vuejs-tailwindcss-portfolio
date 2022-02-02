@@ -21,7 +21,7 @@ export default {
 
 <template>
 	<select
-		@change="$emit('change', $event.target.value)"
+		@change="$emit('filter', $event.target.value)"
 		:name="select"
 		:id="select"
 		class="font-general-medium

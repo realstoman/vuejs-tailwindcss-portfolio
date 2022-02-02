@@ -10,14 +10,14 @@ export default {
 		return {
 			projects,
 			projectsHeading: 'Projects Portfolio',
-			selectedProject: '',
+			selectedCategory: '',
 			searchProject: '',
 		};
 	},
 	computed: {
 		// Get the filtered projects
 		filteredProjects() {
-			if (this.selectedProject) {
+			if (this.selectedCategory) {
 				return this.filterProjectsByCategory();
 			} else if (this.searchProject) {
 				return this.filterProjectsBySearch();
@@ -28,12 +28,12 @@ export default {
 	methods: {
 		// Filter projects by category
 		filterProjectsByCategory() {
-			return this.projects.map((item) => {
+			return this.projects.filter((item) => {
 				let category =
 					item.category.charAt(0).toUpperCase() +
 					item.category.slice(1);
 				console.log(category);
-				return category.includes(this.selectedProject);
+				return category.includes(this.selectedCategory);
 			});
 		},
 		// Filter projects by title search
@@ -127,7 +127,7 @@ export default {
 						aria-label="Name"
 					/>
 				</div>
-				<ProjectsFilter @change="selectedProject = $event" />
+				<ProjectsFilter @filter="selectedCategory = $event" />
 			</div>
 		</div>
 
