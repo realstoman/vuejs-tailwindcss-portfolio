@@ -29,7 +29,7 @@ export default {
 		<!-- Banner left contents -->
 		<div class="w-full md:w-1/3 text-left">
 			<h1
-				class="font-general-semibold text-3xl md:text-3xl xl:text-4xl text-center sm:text-left text-ternary-dark dark:text-primary-light uppercase"
+				class="text-emerald font-general-semibold text-3xl md:text-3xl xl:text-4xl text-center sm:text-left text-ternary-dark dark:text-primary-light uppercase"
 			>
 				Hi, Iam Stoman
 			</h1>
