@@ -12,7 +12,7 @@ A simple portfolio starter theme built with Vue.js v3 and TailwindCSS v2.
 
 -   Simple and responsive design
 -   [Vue.js v3](https://vuejs.org) with [Vue Router](https://router.vuejs.org)
--   [Tailwind CSS v2](https://tailwindcss.com)
+-   [Tailwind CSS v3](https://tailwindcss.com)
 -   Theme Switcher with Dark Mode
 -   Composition API
 -   Vue transitions
