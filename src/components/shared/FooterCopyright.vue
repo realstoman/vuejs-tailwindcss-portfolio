@@ -3,7 +3,7 @@ export default {
 	data: () => {
 		return {
 			copyrightDate: new Date().getFullYear(),
-			projectName: 'Vue.js & TailwindCSS Portfolio',
+			projectName: 'Vue.js & Tailwind CSS Portfolio',
 			author: 'Stoman',
 		};
 	},
