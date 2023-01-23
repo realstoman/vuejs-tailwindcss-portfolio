@@ -1,6 +1,7 @@
 <script>
 import feather from 'feather-icons';
 import FooterCopyright from './FooterCopyright.vue';
+
 export default {
 	components: { FooterCopyright },
 	data() {
@@ -8,27 +9,33 @@ export default {
 			socials: [
 				{
 					id: 1,
+					name: 'Website',
+					icon: 'globe',
+					url: 'https://www.stoman.me/',
+				},
+				{
+					id: 2,
 					name: 'GitHub',
 					icon: 'github',
 					url: 'https://github.com/realstoman',
 				},
 				{
-					id: 2,
+					id: 3,
 					name: 'Twitter',
 					icon: 'twitter',
 					url: 'https://twitter.com/realstoman',
 				},
 				{
-					id: 3,
-					name: 'Medium',
-					icon: 'book',
-					url: 'https://stoman.medium.com',
+					id: 4,
+					name: 'LinkedIn',
+					icon: 'linkedin',
+					url: 'https://www.linkedin.com/in/realstoman',
 				},
 				{
-					id: 4,
-					name: 'Instagram',
-					icon: 'instagram',
-					url: 'https://instagram.com/realstoman',
+					id: 5,
+					name: 'YouTube',
+					icon: 'youtube',
+					url: 'https://www.youtube.com/c/realstoman',
 				},
 			],
 		};
@@ -43,7 +50,7 @@ export default {
 </script>
 
 <template>
-	<div class="container mx-auto ">
+	<div class="container mx-auto">
 		<div
 			class="pt-20 sm:pt-30 pb-8 mt-20 border-t-2 border-primary-light dark:border-secondary-dark"
 		>
