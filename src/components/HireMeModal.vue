@@ -2,9 +2,10 @@
 import feather from 'feather-icons';
 import Button from './reusable/Button.vue';
 import FormInput from './reusable/FormInput.vue';
+import FormTextarea from './reusable/FormTextarea.vue';
 export default {
 	props: ['showModal', 'modal', 'categories'],
-	components: { Button, FormInput },
+	components: { Button, FormInput, FormTextarea },
 	data() {
 		return {};
 	},
@@ -67,7 +68,7 @@ export default {
 										inputType="email"
 									/>
 
-									<div class="mt-6">
+									<div class="mt-6 mb-4">
 										<label
 											class="block mb-2 text-lg text-primary-dark dark:text-primary-light"
 											for="project"
@@ -91,24 +92,12 @@ export default {
 										</select>
 									</div>
 
-									<div class="mt-6">
-										<label
-											class="block mb-2 text-lg text-primary-dark dark:text-primary-light"
-											for="details"
-											>Details</label
-										>
-										<textarea
-											class="w-full px-5 py-2 border-1 border-gray-200 dark:border-secondary-dark rounded-md text-md bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
-											id="details"
-											name="details"
-											cols="14"
-											rows="6"
-											aria-label="Details"
-											placeholder="Project description"
-										></textarea>
-									</div>
+									<FormTextarea
+										label="Details"
+										textareaIdentifier="details"
+									/>
 
-									<div class="mt-6 pb-4 sm:pb-1">
+									<div class="mt-7 pb-4 sm:pb-1">
 										<Button
 											title="Send Request"
 											class="px-4 sm:px-6 py-2 sm:py-2.5 text-white bg-indigo-500 hover:bg-indigo-600 rounded-md focus:ring-1 focus:ring-indigo-900 duration-500"

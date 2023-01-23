@@ -34,11 +34,11 @@ export default {
 			:name="inputIdentifier"
 			:placeholder="label"
 			:aria-label="inputIdentifier"
-			required
-			v-bind="$attrs"
 			:value="val"
-			@input="$emit('update:val', $event.target.value)"
 			:type="inputType"
+			v-bind="$attrs"
+			@input="$emit('update:val', $event.target.value)"
+			required
 		/>
 	</div>
 </template>
