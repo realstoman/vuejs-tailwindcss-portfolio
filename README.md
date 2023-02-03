@@ -71,3 +71,6 @@ npm run serve
 -   Images from [Unsplash](https://unsplash.com)
 -   Feel free to use it as your own portfolio
 -   Contributions are welcome
+
+### License
+[MIT](https://github.com/realstoman/vuejs-tailwindcss-portfolio/blob/main/LICENSE)
