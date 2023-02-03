@@ -12,10 +12,6 @@ Please note that this project is released with a [Code of Conduct](https://githu
 Visit: https://github.com/realstoman/vuejs-tailwindcss-portfolio.git
 ```
 
-```
-brew install node
-```
-
 ### Check the issues section if there are already issues and see if you can fix them
 
 ```
