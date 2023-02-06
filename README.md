@@ -26,9 +26,7 @@ A simple portfolio starter theme built with Vue.js v3 and Tailwind CSS v3.
 -   Scroll to top button
 -   Download file button
 
-## To Contribute to this project:
-
-[See Contribution Guidlines](https://github.com/realstoman/vuejs-tailwindcss-portfolio/blob/main/CONTRIBUTING.md)
+### To Contribute to this project, read the [Contribution Guidlines](https://github.com/realstoman/vuejs-tailwindcss-portfolio/blob/main/CONTRIBUTING.md)
 
 ## Setup
 
