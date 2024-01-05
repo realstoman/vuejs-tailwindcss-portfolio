@@ -23,7 +23,7 @@ A simple portfolio starter theme built with Vue.js v3, Composition API and Tailw
 -   Composition API
 -   Vue transitions
 -   Reusable Components
--   Auto Counter
+-   Auto Counter Component
 -   Projects filter by category
 -   Projects filter by search
 -   Projects carousel
